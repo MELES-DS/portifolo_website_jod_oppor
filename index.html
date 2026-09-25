@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melis Melakie · Data Science Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="htmlcss.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">
+      <i class="fas fa-code"></i> <span data-i18n="brand">Portfolio</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks"></ul>
+    <div class="nav-actions">
+      <button class="lang-btn" id="langBtn" aria-label="Toggle language">
+        <i class="fas fa-globe"></i> <span id="langLabel">EN</span>
+      </button>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+    <i class="fas fa-times"></i>
+  </button>
+  <div class="lightbox-content" id="lightboxContent"></div>
+  <div class="lightbox-hint" id="lightboxHint">
+    <i class="fas fa-mouse-pointer"></i> Click anywhere or press Esc to close
+  </div>
+</div>
+
+<main>
+
+  <!-- HOME -->
+  <section class="section section-home" id="home">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="home.title">Welcome Everyones</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="home-layout">
+        <div class="home-text">
+          <div class="rotator-wrap">
+            <span class="rotator-prefix" data-i18n="home.greet">Hi, I'm</span>
+            <span class="rotator-text" id="jobRotator">Data Scientist</span>
+          </div>
+          <h1><span data-i18n="home.name">Melis Melakie</span></h1>
+          <p data-i18n="home.desc">
+I’m a passionate Data Science student interested in turning data into meaningful insights and practical solutions. I enjoy working with data, exploring patterns, analysing data, building machine learning models, develop data-driven applications and  projects that solve real-world problems.</p>
+
+          <div class="home-cta-row">
+            <div class="home-cta">
+              <a href="#projects" class="filter-btn active">
+                <i class="fas fa-chart-line"></i> <span data-i18n="home.viewProjects">View Projects</span>
+              </a>
+              <a href="#contact" class="filter-btn">
+                <i class="fas fa-paper-plane"></i> <span data-i18n="home.getInTouch">Get in Touch</span>
+              </a>
+            </div>
+
+            <div class="home-stats-inline">
+              <div class="stat-chip">
+                <div class="stat-chip-icon"><i class="fas fa-eye"></i></div>
+                <div class="stat-chip-info">
+                  <div class="stat-chip-label" data-i18n="stats.visitorsShort">Visitors</div>
+                  <div class="stat-chip-value" id="visitorCount">0</div>
+                </div>
+              </div>
+              <div class="stat-chip">
+                <div class="stat-chip-icon rating-icon"><i class="fas fa-star"></i></div>
+                <div class="stat-chip-info">
+                  <div class="stat-chip-label" data-i18n="stats.rateShort">Rate my work</div>
+                  <div class="star-row-inline" id="starRow" role="radiogroup" aria-label="Rating"></div>
+                  <div class="rating-mini">
+                    <strong id="avgRating">0.0</strong> / 5 · <strong id="ratingCount">0</strong>
+                    <span data-i18n="stats.ratings">ratings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="circular-media" id="homeMedia"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section-about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="about.title">About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-layout">
+        <div class="circular-media" id="aboutMedia"></div>
+        <div>
+          <p class="about-intro" data-i18n="about.intro">
+            I'm a fourth-year Data Science student who loves turning messy data into clear stories.
+          </p>
+          <div class="about-grid">
+            <div class="about-item">
+              <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="about-item-content">
+                <h4 data-i18n="about.academic">Academic Background</h4>
+                <p data-i18n="about.academicDesc">Currently pursuing a B.Sc. in Data Science with a focus on ML, statistics, and data engineering.</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon"><i class="fas fa-heart"></i></div>
+              <div class="about-item-content">
+                <h4 data-i18n="about.career">Career Interests</h4>
+                <p data-i18n="about.careerDesc">Passionate about applied machine learning, NLP, and building data products that create real impact.</p>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+              <div class="about-item-content">
+                <h4 data-i18n="about.goals">Professional Goals</h4>
+                <p data-i18n="about.goalsDesc">To become a data scientist who ships end-to-end ML systems from data collection to deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="edu.title">Education</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="education-grid" id="educationGrid"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="skills.title">Skills</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="filter-bar" id="skillsFilterBar"></div>
+      <div class="skills-grid" id="skillsGrid"></div>
+      <div class="view-more-wrap" id="skillsViewMoreWrap" style="display: none;">
+        <button class="view-more-btn" id="skillsViewMoreBtn">
+          <span data-i18n="projects.viewMore">View More</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-inline">
+          <h2 data-i18n="projects.title">Projects</h2>
+          <span class="total-badge" id="projectsTotalBadge">
+            <i class="fas fa-diagram-project"></i>
+            <span class="total-num" id="projectsTotalCount">0</span>
+          </span>
+        </div>
+        <div class="underline"></div>
+      </div>
+      <div class="projects-grid" id="projectsContainer"></div>
+      <div class="view-more-wrap" id="projectsViewMoreWrap" style="display: none;">
+        <button class="view-more-btn" id="projectsViewMoreBtn">
+          <span data-i18n="projects.viewMore">View More</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="section section-certificates" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-inline">
+          <h2 data-i18n="certs.title">Certificates</h2>
+          <span class="total-badge" id="certsTotalBadge">
+            <i class="fas fa-award"></i>
+            <span class="total-num" id="certsTotalCount">0</span>
+          </span>
+        </div>
+        <div class="underline"></div>
+      </div>
+      <div class="filter-bar" id="certsFilterBar"></div>
+      <div class="certificates-grid" id="certificatesGrid"></div>
+      <div class="view-more-wrap" id="certsViewMoreWrap" style="display: none;">
+        <button class="view-more-btn" id="certsViewMoreBtn">
+          <span data-i18n="projects.viewMore">View More</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="srv.title">Services</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="filter-bar" id="srvFilterBar"></div>
+      <div class="services-grid" id="servicesGrid"></div>
+      <div class="view-more-wrap" id="srvViewMoreWrap" style="display: none;">
+        <button class="view-more-btn" id="srvViewMoreBtn">
+          <span data-i18n="projects.viewMore">View More</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section class="section section-cv" id="cv">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="cv.title">Curriculum Vitae</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="cv-card">
+        <div class="cv-info">
+          <h3 data-i18n="cv.heading">Melis Melakie — Curriculum Vitae</h3>
+          <p data-i18n="cv.desc">A concise overview of my education, technical skills, projects, and certifications.</p>
+          <div class="cv-meta-list">
+            <span class="cv-meta-item"><i class="fas fa-file-pdf"></i> PDF</span>
+            <span class="cv-meta-item"><i class="fas fa-file-alt"></i> 2 pages</span>
+            <span class="cv-meta-item"><i class="fas fa-calendar-alt"></i> Updated 2025</span>
+          </div>
+          <div class="cv-actions">
+            <a href="#" id="cvOpenBtn" class="cv-btn cv-btn-primary" target="_blank" rel="noopener">
+              <i class="fas fa-eye"></i> <span data-i18n="cv.open">Open CV</span>
+            </a>
+            <a href="#" id="cvDownloadBtn" class="cv-btn cv-btn-outline" download>
+              <i class="fas fa-download"></i> <span data-i18n="cv.download">Download CV</span>
+            </a>
+          </div>
+        </div>
+        <div class="cv-icon-box" aria-hidden="true">
+          <i class="fas fa-file-pdf"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="contact.title">Contact</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-card">
+        <p data-i18n="contact.desc">Send me an email and I'll get back to you as soon as possible.</p>
+        <form class="email-form" id="contactForm" novalidate>
+          <input type="text" id="fromName" name="fromName" required placeholder="Your name" data-i18n-placeholder="contact.name">
+          <input type="email" id="fromEmail" name="fromEmail" required placeholder="Your email" data-i18n-placeholder="contact.email">
+          <textarea id="message" name="message" rows="5" required placeholder="Your message..." data-i18n-placeholder="contact.message"></textarea>
+          <button type="submit" id="submitBtn">
+            <i class="fas fa-paper-plane"></i> <span data-i18n="contact.send">Send Message</span>
+          </button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+        <div class="email-direct">
+          <span data-i18n="contact.orEmail">Or email me directly at</span>
+          <a href="mailto:melismelakie27@gmail.com">melismelakie27@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <i class="fas fa-code"></i> <span data-i18n="brand">Portfolio</span>
+    </div>
+    <p class="footer-tagline" data-i18n="footer.tagline">Data Science Student · Building intelligent systems</p>
+    <div class="social-icons" id="socialIcons"></div>
+    <div class="footer-copy" data-i18n-html="footer.copy">
+      © 2025 Melis Melakie · Built with <i class="fas fa-heart"></i> using vanilla HTML, CSS &amp; JavaScript
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="htmljs.js"></script>
+</body>
+</html>
