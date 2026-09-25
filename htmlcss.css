@@ -35,7 +35,6 @@
   --sec-cv-bg:        #f5f3fb;
   --sec-contact-bg:   #eff6ff;
 
-  /* Nav hover accent colors */
   --nav-hover-1: #2563eb;
   --nav-hover-2: #7c3aed;
   --nav-hover-3: #0891b2;
@@ -45,6 +44,8 @@
   --nav-hover-7: #4f46e5;
   --nav-hover-8: #be123c;
   --nav-hover-9: #0d9488;
+
+  --scrollbar-width: 0px;
 }
 
 [data-theme="dark"] {
@@ -71,7 +72,12 @@
   --sec-contact-bg:   #0f1d30;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable both-edges;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
 
 body {
   font-family: 'Inter', 'Noto Sans Ethiopic', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -88,6 +94,57 @@ body.lang-am { font-family: 'Noto Sans Ethiopic', 'Inter', sans-serif; }
 
 img, video { max-width: 100%; display: block; }
 a { color: var(--primary); text-decoration: none; transition: var(--transition); }
+
+/* ============================================================
+   PARAGRAPH — Standard margins / padding / indentation
+   ============================================================ */
+p {
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-indent: 1.5em;
+  max-width: 68ch;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.content-para {
+  margin: 0.75rem 0 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-indent: 1.5em;
+  max-width: 68ch;
+  line-height: 1.75;
+}
+
+.about-item-content p,
+.project-desc,
+.cert-desc,
+.srv-desc,
+.edu-body p {
+  text-indent: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0.6rem;
+  max-width: 100%;
+}
+
+.contact-card p.content-para,
+.cv-info p.content-para {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.home-text p.content-para,
+.about-intro.content-para {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-indent: 1.5em;
+}
 
 /* ============================================================
    NAVBAR
@@ -134,7 +191,6 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   position: relative;
 }
 
-/* --- automatic hover color per menu item --- */
 .nav-links li:nth-child(1) a:hover { color: var(--nav-hover-1); background: rgba(37,99,235,0.08); }
 .nav-links li:nth-child(2) a:hover { color: var(--nav-hover-2); background: rgba(124,58,237,0.08); }
 .nav-links li:nth-child(3) a:hover { color: var(--nav-hover-3); background: rgba(8,145,178,0.08); }
@@ -145,7 +201,6 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
 .nav-links li:nth-child(8) a:hover { color: var(--nav-hover-8); background: rgba(190,18,60,0.08); }
 .nav-links li:nth-child(9) a:hover { color: var(--nav-hover-9); background: rgba(13,148,136,0.08); }
 
-/* active state keeps primary but can be adjusted per item if desired */
 .nav-links li a.active { color: var(--primary); font-weight: 600; background: rgba(37,99,235,0.1); }
 
 .nav-actions { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
@@ -187,11 +242,9 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   padding: 4.5rem 0;
   margin-bottom: 0;
   scroll-margin-top: 90px;
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease, background 0.3s ease;
+  transition: background 0.3s ease;
 }
-.section.visible { opacity: 1; transform: translateY(0); }
+.section.visible { }
 
 .section-home        { background: var(--sec-home-bg); }
 .section-about       { background: var(--sec-about-bg); }
@@ -210,6 +263,7 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   justify-content: center; gap: 0.85rem; flex-wrap: wrap;
 }
 
+.section-header h1,
 .section-header h2 {
   font-size: clamp(1.9rem, 5vw, 3rem);
   font-weight: 700; letter-spacing: -0.03em;
@@ -354,25 +408,17 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-md);
 }
-.home-text h3 {
-  font-size: 1.15rem; color: var(--primary);
-  font-weight: 700; margin-bottom: 0.5rem;
-}
-.home-text h1 {
+.home-text h2 {
   font-size: clamp(1.9rem, 4vw, 2.6rem);
   font-weight: 800; letter-spacing: -0.03em;
   line-height: 1.15; margin-bottom: 0.85rem;
   color: var(--text);
 }
-.home-text h1 span {
+.home-text h2 span {
   background: linear-gradient(135deg, var(--primary), #8b5cf6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-.home-text p {
-  color: var(--text-light); font-size: 1.05rem;
-  margin-bottom: 1.75rem; max-width: 560px;
 }
 
 /* ============================================================
@@ -404,15 +450,8 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   transition: opacity 0.35s ease, transform 0.35s ease;
   position: relative;
 }
-.rotator-text.fade-out {
-  opacity: 0;
-  transform: translateY(-8px);
-}
-.rotator-text.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* caret effect */
+.rotator-text.fade-out { opacity: 0; transform: translateY(-8px); }
+.rotator-text.fade-in  { opacity: 1; transform: translateY(0); }
 .rotator-text::after {
   content: '';
   display: inline-block;
@@ -442,7 +481,7 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
 }
 .about-intro {
   color: var(--text-light); font-size: 1rem;
-  margin-bottom: 1.5rem; line-height: 1.7;
+  line-height: 1.75;
 }
 .about-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
 .about-item {
@@ -471,7 +510,7 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   color: var(--text); margin-bottom: 0.35rem;
 }
 .about-item-content p {
-  font-size: 0.88rem; color: var(--text-light); line-height: 1.6;
+  font-size: 0.88rem; color: var(--text-light); line-height: 1.65;
 }
 
 /* ============================================================
@@ -529,7 +568,6 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   border: 1px solid var(--border);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
-  animation: fadeInUp 0.4s ease both;
 }
 .skill-card.hidden { display: none; }
 .skill-card:hover {
@@ -617,26 +655,51 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
 .project-link:hover i { transform: translateX(5px); }
 
 /* ============================================================
-   VIEW MORE
+   VIEW MORE / VIEW LESS BUTTON
    ============================================================ */
-.view-more-wrap { text-align: center; margin-top: 2rem; }
+.view-more-wrap {
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
 .view-more-btn {
-  display: inline-flex; align-items: center; gap: 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   padding: 0.85rem 2rem;
-  background: var(--surface); color: var(--primary);
+  background: var(--surface);
+  color: var(--primary);
   border: 1.5px solid var(--border);
   border-radius: 3rem;
-  font-family: inherit; font-size: 0.92rem; font-weight: 600;
-  cursor: pointer; transition: var(--transition);
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
   box-shadow: var(--shadow-xs);
 }
+
 .view-more-btn:hover {
   border-color: var(--primary);
-  background: var(--primary); color: #fff;
+  background: var(--primary);
+  color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 12px 22px -10px rgba(37,99,235,0.5);
 }
-.view-more-btn i { transition: var(--transition); }
+
+.view-more-btn i {
+  transition: var(--transition);
+  font-size: 0.85rem;
+}
+
+.view-more-btn:hover i {
+  transform: translateY(2px);
+}
+
+.view-more-btn[data-expanded="true"] i {
+  transform: rotate(180deg);
+}
 
 /* ============================================================
    CERTIFICATES
@@ -654,7 +717,6 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
   display: flex; flex-direction: column;
-  animation: fadeInUp 0.4s ease both;
   position: relative; overflow: hidden;
 }
 .cert-card.hidden { display: none; }
@@ -747,7 +809,6 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   transition: var(--transition);
   display: flex; flex-direction: column;
   position: relative; overflow: hidden;
-  animation: fadeInUp 0.4s ease both;
 }
 .srv-card.hidden { display: none; }
 .srv-card::before {
@@ -1063,7 +1124,7 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
 .empty-state i { font-size: 2.5rem; color: var(--primary-soft); display: block; margin-bottom: 0.75rem; }
 
 /* ============================================================
-   LIGHTBOX
+   LIGHTBOX — zero animation, zero blink, zero color flash
    ============================================================ */
 .lightbox {
   position: fixed; inset: 0;
@@ -1074,11 +1135,19 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   display: none;
   align-items: center; justify-content: center;
   padding: 3rem 1.5rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
   cursor: zoom-out;
+  overscroll-behavior: contain;
+  /* NO transition, NO animation, NO will-change — appears instantly */
+  transition: none;
+  animation: none;
 }
-.lightbox.open { display: flex; opacity: 1; }
+.lightbox.open {
+  display: flex;
+  opacity: 1;
+  transition: none;
+  animation: none;
+}
+
 .lightbox-content {
   max-width: 96vw; max-height: 92vh;
   width: auto; height: auto;
@@ -1087,23 +1156,27 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   overflow: hidden;
   box-shadow: 0 25px 60px -15px rgba(0,0,0,0.7);
   background: #ffffff;
-  animation: lightboxIn 0.35s cubic-bezier(.2,.9,.3,1.2);
   cursor: default;
+  transition: none;
+  animation: none;
+  transform: none;
+  will-change: auto;
 }
-@keyframes lightboxIn {
-  from { opacity: 0; transform: scale(0.85); }
-  to   { opacity: 1; transform: scale(1); }
-}
+
 .lightbox-content img,
 .lightbox-content video {
   max-width: 96vw; max-height: 92vh;
   width: auto; height: auto;
   display: block; object-fit: contain; background: #000;
+  transition: none;
+  animation: none;
 }
 .lightbox-content iframe {
   width: 90vw; height: 90vh;
   max-width: 1400px; border: none;
   display: block; background: #fff;
+  transition: none;
+  animation: none;
 }
 .lightbox-close {
   position: fixed; top: 1rem; right: 1rem;
@@ -1131,6 +1204,90 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   z-index: 10001; pointer-events: none; opacity: 0.85;
 }
 
+/* ============================================================
+   SCROLL LOCK — freeze the page while lightbox is open
+   Also: HARD LOCK to stop every animation/transition on the page
+   so nothing can flash or vibrate while the lightbox is open.
+   ============================================================ */
+body.lightbox-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  padding-right: var(--scrollbar-width, 0px);
+}
+
+/* Freeze every hover transform while the lightbox is open */
+body.lightbox-open .project-card,
+body.lightbox-open .project-card:hover,
+body.lightbox-open .cert-card,
+body.lightbox-open .cert-card:hover,
+body.lightbox-open .srv-card,
+body.lightbox-open .srv-card:hover,
+body.lightbox-open .skill-card,
+body.lightbox-open .skill-card:hover,
+body.lightbox-open .circular-media,
+body.lightbox-open .circular-media:hover,
+body.lightbox-open .edu-card,
+body.lightbox-open .edu-card:hover,
+body.lightbox-open .about-item,
+body.lightbox-open .about-item:hover,
+body.lightbox-open .stat-chip,
+body.lightbox-open .stat-chip:hover,
+body.lightbox-open .filter-btn,
+body.lightbox-open .filter-btn:hover,
+body.lightbox-open .view-more-btn,
+body.lightbox-open .view-more-btn:hover,
+body.lightbox-open .cv-btn,
+body.lightbox-open .cv-btn:hover,
+body.lightbox-open .social-icon,
+body.lightbox-open .social-icon:hover,
+body.lightbox-open .lang-btn,
+body.lightbox-open .theme-btn,
+body.lightbox-open .menu-toggle,
+body.lightbox-open .nav-links li a,
+body.lightbox-open .total-badge,
+body.lightbox-open .total-badge:hover {
+  transform: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+/* HARD LOCK — no animation, no transition anywhere on the page */
+body.lightbox-open *,
+body.lightbox-open *::before,
+body.lightbox-open *::after {
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+
+/* Lightbox itself and its children must never animate */
+body.lightbox-open .lightbox,
+body.lightbox-open .lightbox * {
+  animation: none !important;
+  transition: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Make sure the lightbox overlay paints fully opaque instantly */
+body.lightbox-open .lightbox {
+  background: rgba(10, 15, 25, 0.94);
+}
+
+/* Kill every card's shimmer ::before transition while lightbox is open */
+body.lightbox-open .project-media::before,
+body.lightbox-open .cert-preview::before,
+body.lightbox-open .edu-media::before,
+body.lightbox-open .circular-media::before {
+  opacity: 0 !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* ============================================================
+   MEDIA OVERLAY HINT
+   ============================================================ */
 .circular-media::after,
 .project-media::after,
 .cert-preview::after,
@@ -1158,9 +1315,123 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
 .project-media:has(.media-empty)::after,
 .cert-preview:has(.cert-preview-empty)::after { display: none; }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(14px); }
-  to   { opacity: 1; transform: translateY(0); }
+/* ============================================================
+   INSTANT MEDIA LOADING
+   ============================================================ */
+.project-media,
+.cert-preview,
+.edu-media,
+.circular-media {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-alt);
+}
+
+.circular-media img,
+.circular-media video,
+.circular-media iframe { content-visibility: visible; }
+
+.project-media iframe,
+.cert-preview iframe,
+.edu-media iframe,
+.circular-media iframe {
+  background: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.project-media video,
+.cert-preview video,
+.edu-media video,
+.circular-media video {
+  background: #000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+.circular-media img,
+.project-media img,
+.cert-preview img,
+.edu-media img {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.circular-media img.loaded,
+.project-media img.loaded,
+.cert-preview img.loaded,
+.edu-media img.loaded {
+  opacity: 1;
+}
+
+/* Shimmer — no fade, disappears instantly when ready */
+.project-media::before,
+.cert-preview::before,
+.edu-media::before,
+.circular-media::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg,
+    var(--surface-alt) 0%,
+    var(--border-light) 50%,
+    var(--surface-alt) 100%);
+  background-size: 200% 100%;
+  animation: skeleton 1.2s ease infinite;
+  z-index: 0;
+  pointer-events: none;
+  transition: none;   /* ← removed fade */
+}
+.project-media.media-ready::before,
+.cert-preview.media-ready::before,
+.edu-media.media-ready::before,
+.circular-media.media-ready::before {
+  opacity: 0;
+  transition: none;
+  animation: none;
+}
+
+@keyframes skeleton {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+img.media-error,
+video.media-error,
+iframe.media-error { display: none !important; }
+.media-error-box {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  background: linear-gradient(135deg, var(--primary-soft), #ede9fe);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+  z-index: 2;
+}
+.media-error-box i { font-size: 1.8rem; }
+
+/* ============================================================
+   ACCESSIBILITY
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* ============================================================
@@ -1203,11 +1474,19 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   .filter-btn { font-size: 0.8rem; padding: 0.5rem 1rem; }
   .circular-media { width: 170px; height: 170px; }
   .lightbox-content iframe { width: 94vw; height: 86vh; }
+  .lightbox { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  .project-card:hover,
+  .cert-card:hover,
+  .srv-card:hover,
+  .skill-card:hover { transform: none; }
+  .navbar { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  p { padding-left: 0.5rem; padding-right: 0.5rem; }
 }
 @media (max-width: 480px) {
   body { padding-top: 65px; }
   .logo { font-size: 1.15rem; }
   .logo i { font-size: 1.2rem; }
+  .section-header h1,
   .section-header h2 { font-size: 1.7rem; }
   .certificates-grid, .skills-grid, .projects-grid, .education-grid, .services-grid { grid-template-columns: 1fr; }
   .filter-bar { gap: 0.4rem; }
@@ -1223,8 +1502,12 @@ a { color: var(--primary); text-decoration: none; transition: var(--transition);
   .home-stats-inline { justify-content: center; }
   .total-badge { font-size: 0.78rem; padding: 0.45rem 0.85rem; }
   .rotator-wrap { font-size: 1.15rem; justify-content: center; }
+  p { padding-left: 0.25rem; padding-right: 0.25rem; text-indent: 1em; }
 }
 
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--surface-alt); }
 ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }

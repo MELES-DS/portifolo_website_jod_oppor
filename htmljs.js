@@ -23,7 +23,7 @@
       'nav.cv': 'CV', 'nav.contact': 'Contact',
 
       'home.title': 'Welcome Everyones', 'home.greet': "Hi, I'm", 'home.name': 'Melis Melakie',
-      'home.desc': ' I’m a passionate Data Science student interested in turning data into meaningful insights and practical solutions. I enjoy working with data, exploring patterns, analysing data, building machine learning models, develop data-driven applications and  projects that solve real-world problems',
+      'home.desc': "I'm a passionate Data Science student interested in turning data into meaningful insights and practical solutions. I enjoy working with data, exploring patterns, analysing data, building machine learning models, develop data-driven applications and projects that solve real-world problems.",
       'home.viewProjects': 'View Projects', 'home.getInTouch': 'Get in Touch',
 
       'stats.visitorsShort': 'Visitors',
@@ -33,9 +33,9 @@
       'stats.thanks': '✓ Thank you for your rating!',
 
       'about.title': 'About Me',
-      'about.intro': "Data Science student passionate about transforming data into meaningful insights through analysis, visualization, machine learning,deep learning and Ms-excel.",
+      'about.intro': "Data Science student passionate about transforming data into meaningful insights through analysis, visualization, machine learning, deep learning and Ms-excel.",
       'about.academic': 'Academic Background',
-      'about.academicDesc': 'Currently pursuing a B.Sc. in Data Science with a focus on ML, ,data science, statistics, and data engineering.',
+      'about.academicDesc': 'Currently pursuing a B.Sc. in Data Science with a focus on ML, data science, statistics, and data engineering.',
       'about.career': 'Career Interests',
       'about.careerDesc': 'Passionate about applied machine learning, NLP, and building data products that create real impact.',
       'about.goals': 'Professional Goals',
@@ -113,8 +113,6 @@
       'cert.ml.desc': 'Comprehensive program covering supervised and unsupervised learning, deep learning, and deployment.',
       'cert.da.title': 'Data Analyst Nanodegree',
       'cert.da.desc': 'Focused on data wrangling, exploratory data analysis, and data visualization with Python.',
-   
-      //add gebeya certificates tittle,Id,description here
       'cert.ds.title': 'Data Science Bootcamp',
       'cert.ds.desc': 'Intensive bootcamp covering Python, statistics, machine learning, and capstone projects.',
       'cert.cloud.title': 'Cloud Fundamentals',
@@ -123,39 +121,26 @@
       'cert.ds2.desc': 'Core concepts of data science: data types, statistical reasoning, and analytical thinking.',
       'cert.entre.title': 'Entrepreneurship',
       'cert.entre.desc': 'Building entrepreneurial mindset, business models, and startup fundamentals.',
-      
-      'cert.ds.title': 'Data Science Bootcamp',
-      'cert.ds.desc': 'Intensive bootcamp covering Python, statistics, machine learning, and capstone projects.',
-      'cert.ds.title': 'Data Science Bootcamp',
-      'cert.ds.desc': 'Intensive bootcamp covering Python, statistics, machine learning, and capstone projects.',
-      'cert.ds.title': 'Data Science Bootcamp',
-      'cert.ds.desc': 'Intensive bootcamp covering Python, statistics, machine learning, and capstone projects.',
-      //add O'Reilly certificates tittle,Id,description here
       'cert.homl.title': 'Hands-On Machine Learning',
       'cert.homl.desc': 'Practical training on building ML pipelines with Scikit-learn, TensorFlow, and Keras.',
       'cert.de.title': 'Data Engineering with Python',
       'cert.de.desc': 'ETL pipelines, data warehousing, and workflow orchestration using Python and Airflow.',
-      //add demera certificates tittle,Id,description here
       'cert.social.title': 'Data for Social Impact',
       'cert.social.desc': 'Applied data science to social-good projects, including health and education analytics.',
       'cert.community.title': 'Community Data Analytics',
       'cert.community.desc': 'Hands-on program analyzing community datasets and building dashboards for local NGOs.',
-      //add kenexio certificates tittle,Id,description here
       'cert.sqladv.title': 'Advanced SQL for Analytics',
       'cert.sqladv.desc': 'Mastering window functions, CTEs, query optimization, and analytical SQL patterns.',
       'cert.pbi.title': 'Power BI Essentials',
       'cert.pbi.desc': 'Building interactive dashboards and reports with Power BI and DAX fundamentals.',
-      //add club certificates tittle,Id,description here  
       'cert.clublead.title': 'Data Science Club Lead',
       'cert.clublead.desc': 'Led weekly workshops on Python, ML, and data visualization for 50+ student members.',
       'cert.hack.title': 'Hackathon Winner — Data Track',
       'cert.hack.desc': 'First place for a real-time analytics dashboard built in 48 hours using Python and Plotly.',
-      //add recognition certificates tittle,Id,description here
       'cert.dean.title': "Dean's List — Academic Excellence",
       'cert.dean.desc': 'Recognized for outstanding academic performance in the Data Science program.',
       'cert.capstone.title': 'Best Capstone Project Award',
       'cert.capstone.desc': 'Awarded for an outstanding capstone project on predictive maintenance using ML.',
-      //add others certificates tittle,Id,description here
       'cert.google.title': 'Google Data Analytics Certificate',
       'cert.google.desc': 'Professional certificate covering data cleaning, analysis, visualization, and R programming.',
       'cert.dl.title': 'Deep Learning Specialization',
@@ -199,18 +184,18 @@
 
       'srv5.job': 'Python & ML Training',
       'srv5.company': 'For Individuals & Teams',
-      'srv5.desc': 'Hands-on workshops on Python, data science fundamentals, and applied machine learning. Tailored to your team\'s level and goals.',
+      'srv5.desc': "Hands-on workshops on Python, data science fundamentals, and applied machine learning. Tailored to your team's level and goals.",
       'srv5.duration': 'Flexible schedule',
       'srv5.tag1': 'Python', 'srv5.tag2': 'ML', 'srv5.tag3': 'Mentoring',
 
       'edu.title': 'Education',
       'edu.elementary.title': 'Primary Education',
       'edu.elementary.sub': 'Abessken Elementary School',
-      'edu.elementary.desc': ' Participated in science fairs and math competitions.',
+      'edu.elementary.desc': 'Participated in science fairs and math competitions.',
       'edu.elementary.meta': '2010 – 2018',
       'edu.highschool.title': 'High School',
       'edu.highschool.sub': 'Abay Minch preparatory school',
-      'edu.highschool.desc': 'a stream of natural sciences.',
+      'edu.highschool.desc': 'A stream of natural sciences.',
       'edu.highschool.meta': '2019 – 2022',
       'edu.university.title': 'University',
       'edu.university.sub': 'B.Sc. in Data Science',
@@ -218,7 +203,7 @@
       'edu.university.meta': '2023 – Present',
       'edu.online.title': 'Online Specializations',
       'edu.online.sub': 'Certifications & Courses',
-      'edu.online.desc': "Completed multiple specializations on O'Reilly, Gebeya,  Demera/Percipio,Amazon,Data Camp and  Udacity to deepen practical ML and analytics skills.",
+      'edu.online.desc': "Completed multiple specializations on O'Reilly, Gebeya, Demera/Percipio, Amazon, Data Camp and Udacity to deepen practical ML and analytics skills.",
       'edu.online.meta': 'Ongoing',
 
       'cv.title': 'Curriculum Vitae',
@@ -238,7 +223,7 @@
 
       'media.noImage': 'No image', 'media.noPreview': 'No preview',
       'footer.tagline': 'Data Science Student · Building intelligent systems',
-      'footer.copy': '© 2025 Melis Melakie · All rights are reserved. <i class="fas fa-heart"></i> &amp;'
+      'footer.copy': '© 2025 Melis Melakie · All rights are reserved. <i class="fas fa-heart"></i>'
     },
     am: {
       'brand': 'ፖርትፎሊዮ',
@@ -428,7 +413,7 @@
       'edu.university.meta': '2023 – አሁን',
       'edu.online.title': 'የመስመር ላይ ስፔሻላይዜሽኖች',
       'edu.online.sub': 'ሰርተፊኬቶች እና ኮርሶች',
-      'edu.online.desc': 'ተግባራዊ የML እና የትንታኔ ክህሎቶችን ለማጠናከር በCoursera፣ Udacity እና O\'Reilly ላይ በርካታ ስፔሻላይዜሽኖችን አጠናቋል።',
+      'edu.online.desc': "ተግባራዊ የML እና የትንታኔ ክህሎቶችን ለማጠናከር በO'Reilly፣ Gebeya፣ Demera/Percipio፣ Amazon፣ Data Camp እና Udacity ላይ በርካታ ስፔሻላይዜሽኖችን አጠናቋል።",
       'edu.online.meta': 'ቀጣይ',
 
       'cv.title': 'የሥራ ማስረጃ',
@@ -453,18 +438,12 @@
   };
 
   /* ============================================================
-     ⚠️  IMPORTANT PATH PREFIX
-     ============================================================
-     Since this HTML file lives inside a "codes/" folder, all
-     relative paths to images, PDFs, and the CV must go UP one
-     level with "../" to reach the "portfolio/" root where
-     "profile images/", "project images/", and "certificates/" live.
+     PATH PREFIX
      ============================================================ */
   const ASSET_PREFIX = '../';
 
   function asset(p) {
     if (!p) return p;
-    // don't touch absolute URLs
     if (/^(https?:|data:|blob:|file:|\/)/i.test(p)) return p;
     return ASSET_PREFIX + p;
   }
@@ -497,16 +476,8 @@
       { id: 'contact',      i18n: 'nav.contact' }
     ],
 
-    homeMedia: {
-      type: 'image',
-      src: 'profiles images/mele.jpg',
-      alt: 'Melis Melakie profile'
-    },
-    aboutMedia: {
-      type: 'image',
-      src: 'profile images/meleb.jpg',
-      alt: 'Working with data'
-    },
+    homeMedia:  { type: 'image', src: 'profiles images/mele.jpg', alt: 'Melis Melakie profile' },
+    aboutMedia: { type: 'image', src: 'profile images/meleb.jpg', alt: 'Working with data' },
 
     cv: {
       src: 'certificates/gebeya/product creation with AI_advanced level.pdf',
@@ -514,328 +485,60 @@
     },
 
     education: [
-      {
-        id: 'elementary',
-        i18nTitle: 'edu.elementary.title', i18nSub: 'edu.elementary.sub',
-        i18nDesc: 'edu.elementary.desc',   i18nMeta: 'edu.elementary.meta',
-        icon: 'fas fa-child-reaching',
-        media: { type: 'none', src: '' }
-      },
-      {
-        id: 'highschool',
-        i18nTitle: 'edu.highschool.title', i18nSub: 'edu.highschool.sub',
-        i18nDesc: 'edu.highschool.desc',   i18nMeta: 'edu.highschool.meta',
-        icon: 'fas fa-school',
-        media: { type: 'image', src: 'profile images/meleb.jpg', alt: 'High school' }
-      },
-      {
-        id: 'university',
-        i18nTitle: 'edu.university.title', i18nSub: 'edu.university.sub',
-        i18nDesc: 'edu.university.desc',   i18nMeta: 'edu.university.meta',
-        icon: 'fas fa-university',
-        media: { type: 'video', src: 'project images/Best Funny People Falling Over Videos of The Week - Fail Unlucky (1080p, h264).mp4', alt: 'University' }
-      },
-      {
-        id: 'online',
-        i18nTitle: 'edu.online.title', i18nSub: 'edu.online.sub',
-        i18nDesc: 'edu.online.desc',   i18nMeta: 'edu.online.meta',
-        icon: 'fas fa-laptop',
-        media: { type: 'none', src: '' }
-      }
+      { id: 'elementary', i18nTitle: 'edu.elementary.title', i18nSub: 'edu.elementary.sub', i18nDesc: 'edu.elementary.desc', i18nMeta: 'edu.elementary.meta', icon: 'fas fa-child-reaching', media: { type: 'none', src: '' } },
+      { id: 'highschool', i18nTitle: 'edu.highschool.title', i18nSub: 'edu.highschool.sub', i18nDesc: 'edu.highschool.desc', i18nMeta: 'edu.highschool.meta', icon: 'fas fa-school', media: { type: 'image', src: 'profile images/meleb.jpg', alt: 'High school' } },
+      { id: 'university', i18nTitle: 'edu.university.title', i18nSub: 'edu.university.sub', i18nDesc: 'edu.university.desc', i18nMeta: 'edu.university.meta', icon: 'fas fa-university', media: { type: 'video', src: 'project images/Best Funny People Falling Over Videos of The Week - Fail Unlucky (1080p, h264).mp4', alt: 'University' } },
+      { id: 'online', i18nTitle: 'edu.online.title', i18nSub: 'edu.online.sub', i18nDesc: 'edu.online.desc', i18nMeta: 'edu.online.meta', icon: 'fas fa-laptop', media: { type: 'none', src: '' } }
     ],
 
     projects: [
-      {
-        i18nTitle: 'proj.churn.title', i18nDesc: 'proj.churn.desc',
-        i18nTags: ['tag.python', 'tag.sklearn', 'tag.pandas'],
-        github: 'https://github.com/',
-        media: { type: 'image', src: 'project images/eep.png', alt: 'Churn analytics' }
-      },
-      {
-        i18nTitle: 'proj.cnn.title', i18nDesc: 'proj.cnn.desc',
-        i18nTags: ['tag.tensorflow', 'tag.keras', 'tag.cnn'],
-        github: 'https://github.com/',
-        media: { type: 'pdf', src: 'project images/Data analysis.pdf' }
-      },
-      {
-        i18nTitle: 'proj.covid.title', i18nDesc: 'proj.covid.desc',
-        i18nTags: ['tag.plotly', 'tag.pandas', 'tag.dataviz'],
-        github: 'https://github.com/',
-        media: { type: 'pdf', src: 'project images/Data analysis.pdf' }
-      },
-      {
-        i18nTitle: 'proj.movie.title', i18nDesc: 'proj.movie.desc',
-        i18nTags: ['tag.python', 'tag.surprise', 'tag.ml'],
-        github: 'https://github.com/',
-        media: { type: 'video', src: 'project images/Best Funny People Falling Over Videos of The Week - Fail Unlucky (1080p, h264).mp4' }
-      },
-      {
-        i18nTitle: 'proj.sentiment.title', i18nDesc: 'proj.sentiment.desc',
-        i18nTags: ['tag.nlp', 'tag.bert', 'tag.nltk'],
-        github: 'https://github.com/',
-        media: { type: 'video', src: 'project images/Best Funny People Falling Over Videos of The Week - Fail Unlucky (1080p, h264).mp4' }
-      },
-      {
-        i18nTitle: 'proj.sales.title', i18nDesc: 'proj.sales.desc',
-        i18nTags: ['tag.sql', 'tag.postgresql', 'tag.analytics'],
-        github: 'https://github.com/',
-        media: { type: 'image', src: 'project images/fake.png', alt: 'Sales analytics' }
-      },
-      {
-        i18nTitle: 'proj.timeseries.title', i18nDesc: 'proj.timeseries.desc',
-        i18nTags: ['tag.timeseries', 'tag.arima', 'tag.lstm'],
-        github: 'https://github.com/',
-        media: { type: 'image', src: 'project images/languages.png', alt: 'Time series' }
-      },
-      {
-        i18nTitle: 'proj.fraud.title', i18nDesc: 'proj.fraud.desc',
-        i18nTags: ['tag.anomaly', 'tag.ml', 'tag.python'],
-        github: 'https://github.com/',
-        media: { type: 'image', src: 'project images/camera.png', alt: 'Fraud detection' }
-      }
+      { i18nTitle: 'proj.churn.title', i18nDesc: 'proj.churn.desc', i18nTags: ['tag.python','tag.sklearn','tag.pandas'], github: 'https://github.com/', media: { type: 'image', src: 'project images/eep.png', alt: 'Churn analytics' } },
+      { i18nTitle: 'proj.cnn.title', i18nDesc: 'proj.cnn.desc', i18nTags: ['tag.tensorflow','tag.keras','tag.cnn'], github: 'https://github.com/', media: { type: 'pdf', src: 'project images/Data analysis.pdf' } },
+      { i18nTitle: 'proj.covid.title', i18nDesc: 'proj.covid.desc', i18nTags: ['tag.plotly','tag.pandas','tag.dataviz'], github: 'https://github.com/', media: { type: 'pdf', src: 'project images/Data analysis.pdf' } },
+      { i18nTitle: 'proj.movie.title', i18nDesc: 'proj.movie.desc', i18nTags: ['tag.python','tag.surprise','tag.ml'], github: 'https://github.com/', media: { type: 'video', src: 'project images/Best Funny People Falling Over Videos of The Week - Fail Unlucky (1080p, h264).mp4' } },
+      { i18nTitle: 'proj.sentiment.title', i18nDesc: 'proj.sentiment.desc', i18nTags: ['tag.nlp','tag.bert','tag.nltk'], github: 'https://github.com/', media: { type: 'video', src: 'project images/Best Funny People Falling Over Videos of The Week - Fail Unlucky (1080p, h264).mp4' } },
+      { i18nTitle: 'proj.sales.title', i18nDesc: 'proj.sales.desc', i18nTags: ['tag.sql','tag.postgresql','tag.analytics'], github: 'https://github.com/', media: { type: 'image', src: 'project images/fake.png', alt: 'Sales analytics' } },
+      { i18nTitle: 'proj.timeseries.title', i18nDesc: 'proj.timeseries.desc', i18nTags: ['tag.timeseries','tag.arima','tag.lstm'], github: 'https://github.com/', media: { type: 'image', src: 'project images/languages.png', alt: 'Time series' } },
+      { i18nTitle: 'proj.fraud.title', i18nDesc: 'proj.fraud.desc', i18nTags: ['tag.anomaly','tag.ml','tag.python'], github: 'https://github.com/', media: { type: 'image', src: 'project images/camera.png', alt: 'Fraud detection' } }
     ],
 
     certificates: [
-      {
-        i18nTitle: 'cert.ml.title', i18nDesc: 'cert.ml.desc',
-        provider: 'Udacity', category: 'udacity',
-        icon: 'fas fa-brain',
-        preview: { type: 'pdf', src: 'certificates/udacity/Programming fundamentals.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.da.title', i18nDesc: 'cert.da.desc',
-        provider: 'Udacity', category: 'udacity',
-        icon: 'fas fa-chart-line',
-        preview: { type: 'pdf', src: 'certificates/udacity/Data analysis.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.ds.title', i18nDesc: 'cert.ds.desc',
-        provider: 'Gebeya', category: 'gebeya',
-        icon: 'fas fa-laptop-code',
-        preview: { type: 'pdf', src: 'certificates/gebeya/AI essentials for Everyones.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.cloud.title', i18nDesc: 'cert.cloud.desc',
-        provider: 'Gebeya', category: 'gebeya',
-        icon: 'fas fa-cloud',
-        preview: { type: 'pdf', src: 'certificates/gebeya/cloud computing.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.ds2.title', i18nDesc: 'cert.ds2.desc',
-        provider: 'Gebeya', category: 'gebeya',
-        icon: 'fas fa-laptop-code',
-        preview: { type: 'pdf', src: 'certificates/gebeya/data science fundamentals.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.entre.title', i18nDesc: 'cert.entre.desc',
-        provider: 'Gebeya', category: 'gebeya',
-        icon: 'fas fa-lightbulb',
-        preview: { type: 'pdf', src: 'certificates/gebeya/Entrepreneurship.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.entre.title', i18nDesc: 'cert.entre.desc',
-        provider: 'Gebeya', category: 'gebeya',
-        icon: 'fas fa-lightbulb',
-        preview: { type: 'pdf', src: 'certificates/gebeya/language and communication skill.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.entre.title', i18nDesc: 'cert.entre.desc',
-        provider: 'Gebeya', category: 'gebeya',
-        icon: 'fas fa-lightbulb',
-        preview: { type: 'pdf', src: 'certificates/gebeya/Power BI.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.entre.title', i18nDesc: 'cert.entre.desc',
-        provider: 'Gebeya', category: 'gebeya',
-        icon: 'fas fa-lightbulb',
-        preview: { type: 'pdf', src: 'certificates/gebeya/product creation with AI_advanced level.pdf' },
-        link: '#'
-      },
-      //add o'reilley certficates here
-      {
-        i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-robot',
-        preview: { type: 'pdf', src: 'certificates/others/AI Security & Ethics.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-database',
-        preview: { type: 'pdf', src: 'certificates/oreilly/CHAT GPT engineering.pdf', alt: 'Data Engineering' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-robot',
-        preview: { type: 'pdf', src: 'certificates/oreilly/cloud computing with aws.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-database',
-        preview: { type: 'pdf', src: 'certificates/oreilly/Python A-Z_ 15 Projects.pdf', alt: 'Data Engineering' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-robot',
-        preview: { type: 'pdf', src: 'certificates/oreilly/Data Science & ML A to Z.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-database',
-        preview: { type: 'pdf', src: 'certificates/oreilly/Digital marketing analytics.pdf', alt: 'Data Engineering' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-robot',
-        preview: { type: 'pdf', src: 'certificates/oreilly/ML in python for Everyones.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-database',
-        preview: { type: 'pdf', src: 'certificates/oreilly/ML Projects_ Beginner to Pro.pdf', alt: 'Data Engineering' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-robot',
-        preview: { type: 'pdf', src: 'certificates/oreilly/ML, Data Science & GenAI.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc',
-        provider: "O'Reilly", category: 'oreilly',
-        icon: 'fas fa-database',
-        preview: { type: 'pdf', src: 'certificates/oreilly/Power BI Masterclass.pdf', alt: 'Data Engineering' },
-        link: '#'
-      },
-      //add demera certificates pdf/image here
-      {
-        i18nTitle: 'cert.social.title', i18nDesc: 'cert.social.desc',
-        provider: 'Demera Project', category: 'demera',
-        icon: 'fas fa-hands-holding-heart',
-        preview: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.community.title', i18nDesc: 'cert.community.desc',
-        provider: 'Demera Project', category: 'demera',
-        icon: 'fas fa-users',
-        preview: { type: 'image', src: 'certificates/demera/machine learning specialist.png', alt: 'Community Analytics' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.social.title', i18nDesc: 'cert.social.desc',
-        provider: 'Demera Project', category: 'demera',
-        icon: 'fas fa-hands-holding-heart',
-        preview: { type: 'pdf', src: 'certificates/demera/Data Visualization Basics.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.community.title', i18nDesc: 'cert.community.desc',
-        provider: 'Demera Project', category: 'demera',
-        icon: 'fas fa-users',
-        preview: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf', alt: 'Community Analytics' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.social.title', i18nDesc: 'cert.social.desc',
-        provider: 'Demera Project', category: 'demera',
-        icon: 'fas fa-hands-holding-heart',
-        preview: { type: 'image', src: 'certificates/demera/machine learning pipelines.png' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.community.title', i18nDesc: 'cert.community.desc',
-        provider: 'Demera Project', category: 'demera',
-        icon: 'fas fa-users',
-        preview: { type: 'image', src: 'certificates/demera/principle of data privacy.png', alt: 'Community Analytics' },
-        link: '#'
-      },
-
-      {
-        i18nTitle: 'cert.sqladv.title', i18nDesc: 'cert.sqladv.desc',
-        provider: 'Kenexio', category: 'kenexio',
-        icon: 'fas fa-database',
-        preview: { type: 'pdf', src: 'certificates/kenexio/Programming fundamentals.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.pbi.title', i18nDesc: 'cert.pbi.desc',
-        provider: 'Kenexio', category: 'kenexio',
-        icon: 'fas fa-chart-pie',
-        preview: { type: 'none', src: '' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.clublead.title', i18nDesc: 'cert.clublead.desc',
-        provider: 'Data Club', category: 'club',
-        icon: 'fas fa-people-group',
-        preview: { type: 'image', src: 'profile images/meleb.jpg', alt: 'Club Lead' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.hack.title', i18nDesc: 'cert.hack.desc',
-        provider: 'Tech Club', category: 'club',
-        icon: 'fas fa-trophy',
-        preview: { type: 'pdf', src: 'certificates/club/Artificial intelligence.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.dean.title', i18nDesc: 'cert.dean.desc',
-        provider: 'University', category: 'recognition',
-        icon: 'fas fa-medal',
-        preview: { type: 'image', src: 'profile images/meleb.jpg', alt: "Dean's List" },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.capstone.title', i18nDesc: 'cert.capstone.desc',
-        provider: 'DS Department', category: 'recognition',
-        icon: 'fas fa-award',
-        preview: { type: 'pdf', src: 'certificates/recognition/Data analysis.pdf' },
-        link: '#'
-      },
-      //add other certificates here
-      {
-        i18nTitle: 'cert.google.title', i18nDesc: 'cert.google.desc',
-        provider: 'Google', category: 'other',
-        icon: 'fas fa-certificate',
-        preview: { type: 'pdf', src: 'certificates/others/udara-certificate.pdf' },
-        link: '#'
-      },
-      {
-        i18nTitle: 'cert.dl.title', i18nDesc: 'cert.dl.desc',
-        provider: 'DeepLearning.AI', category: 'other',
-        icon: 'fas fa-network-wired',
-        preview: { type: 'pdf', src: 'certificates/others/Job Roles in the Cloud.pdf' },
-        link: '#'
-      },
-      
+      { i18nTitle: 'cert.ml.title', i18nDesc: 'cert.ml.desc', provider: 'Udacity', category: 'udacity', icon: 'fas fa-brain', preview: { type: 'pdf', src: 'certificates/udacity/Programming fundamentals.pdf' }, link: '#' },
+      { i18nTitle: 'cert.da.title', i18nDesc: 'cert.da.desc', provider: 'Udacity', category: 'udacity', icon: 'fas fa-chart-line', preview: { type: 'pdf', src: 'certificates/udacity/Data analysis.pdf' }, link: '#' },
+      { i18nTitle: 'cert.ds.title', i18nDesc: 'cert.ds.desc', provider: 'Gebeya', category: 'gebeya', icon: 'fas fa-laptop-code', preview: { type: 'pdf', src: 'certificates/gebeya/AI essentials for Everyones.pdf' }, link: '#' },
+      { i18nTitle: 'cert.cloud.title', i18nDesc: 'cert.cloud.desc', provider: 'Gebeya', category: 'gebeya', icon: 'fas fa-cloud', preview: { type: 'pdf', src: 'certificates/gebeya/cloud computing.pdf' }, link: '#' },
+      { i18nTitle: 'cert.ds2.title', i18nDesc: 'cert.ds2.desc', provider: 'Gebeya', category: 'gebeya', icon: 'fas fa-laptop-code', preview: { type: 'pdf', src: 'certificates/gebeya/data science fundamentals.pdf' }, link: '#' },
+      { i18nTitle: 'cert.entre.title', i18nDesc: 'cert.entre.desc', provider: 'Gebeya', category: 'gebeya', icon: 'fas fa-lightbulb', preview: { type: 'pdf', src: 'certificates/gebeya/Entrepreneurship.pdf' }, link: '#' },
+      { i18nTitle: 'cert.entre.title', i18nDesc: 'cert.entre.desc', provider: 'Gebeya', category: 'gebeya', icon: 'fas fa-lightbulb', preview: { type: 'pdf', src: 'certificates/gebeya/language and communication skill.pdf' }, link: '#' },
+      { i18nTitle: 'cert.entre.title', i18nDesc: 'cert.entre.desc', provider: 'Gebeya', category: 'gebeya', icon: 'fas fa-lightbulb', preview: { type: 'pdf', src: 'certificates/gebeya/Power BI.pdf' }, link: '#' },
+      { i18nTitle: 'cert.entre.title', i18nDesc: 'cert.entre.desc', provider: 'Gebeya', category: 'gebeya', icon: 'fas fa-lightbulb', preview: { type: 'pdf', src: 'certificates/gebeya/product creation with AI_advanced level.pdf' }, link: '#' },
+      { i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-robot', preview: { type: 'pdf', src: 'certificates/others/AI Security & Ethics.pdf' }, link: '#' },
+      { i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-database', preview: { type: 'pdf', src: 'certificates/oreilly/CHAT GPT engineering.pdf' }, link: '#' },
+      { i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-robot', preview: { type: 'pdf', src: 'certificates/oreilly/cloud computing with aws.pdf' }, link: '#' },
+      { i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-database', preview: { type: 'pdf', src: 'certificates/oreilly/Python A-Z_ 15 Projects.pdf' }, link: '#' },
+      { i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-robot', preview: { type: 'pdf', src: 'certificates/oreilly/Data Science & ML A to Z.pdf' }, link: '#' },
+      { i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-database', preview: { type: 'pdf', src: 'certificates/oreilly/Digital marketing analytics.pdf' }, link: '#' },
+      { i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-robot', preview: { type: 'pdf', src: 'certificates/oreilly/ML in python for Everyones.pdf' }, link: '#' },
+      { i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-database', preview: { type: 'pdf', src: 'certificates/oreilly/ML Projects_ Beginner to Pro.pdf' }, link: '#' },
+      { i18nTitle: 'cert.homl.title', i18nDesc: 'cert.homl.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-robot', preview: { type: 'pdf', src: 'certificates/oreilly/ML, Data Science & GenAI.pdf' }, link: '#' },
+      { i18nTitle: 'cert.de.title', i18nDesc: 'cert.de.desc', provider: "O'Reilly", category: 'oreilly', icon: 'fas fa-database', preview: { type: 'pdf', src: 'certificates/oreilly/Power BI Masterclass.pdf' }, link: '#' },
+      { i18nTitle: 'cert.social.title', i18nDesc: 'cert.social.desc', provider: 'Demera Project', category: 'demera', icon: 'fas fa-hands-holding-heart', preview: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf' }, link: '#' },
+      { i18nTitle: 'cert.community.title', i18nDesc: 'cert.community.desc', provider: 'Demera Project', category: 'demera', icon: 'fas fa-users', preview: { type: 'image', src: 'certificates/demera/machine learning specialist.png', alt: 'Community Analytics' }, link: '#' },
+      { i18nTitle: 'cert.social.title', i18nDesc: 'cert.social.desc', provider: 'Demera Project', category: 'demera', icon: 'fas fa-hands-holding-heart', preview: { type: 'pdf', src: 'certificates/demera/Data Visualization Basics.pdf' }, link: '#' },
+      { i18nTitle: 'cert.community.title', i18nDesc: 'cert.community.desc', provider: 'Demera Project', category: 'demera', icon: 'fas fa-users', preview: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf' }, link: '#' },
+      { i18nTitle: 'cert.social.title', i18nDesc: 'cert.social.desc', provider: 'Demera Project', category: 'demera', icon: 'fas fa-hands-holding-heart', preview: { type: 'image', src: 'certificates/demera/machine learning pipelines.png' }, link: '#' },
+      { i18nTitle: 'cert.community.title', i18nDesc: 'cert.community.desc', provider: 'Demera Project', category: 'demera', icon: 'fas fa-users', preview: { type: 'image', src: 'certificates/demera/principle of data privacy.png' }, link: '#' },
+      { i18nTitle: 'cert.sqladv.title', i18nDesc: 'cert.sqladv.desc', provider: 'Kenexio', category: 'kenexio', icon: 'fas fa-database', preview: { type: 'pdf', src: 'certificates/kenexio/Programming fundamentals.pdf' }, link: '#' },
+      { i18nTitle: 'cert.pbi.title', i18nDesc: 'cert.pbi.desc', provider: 'Kenexio', category: 'kenexio', icon: 'fas fa-chart-pie', preview: { type: 'none', src: '' }, link: '#' },
+      { i18nTitle: 'cert.clublead.title', i18nDesc: 'cert.clublead.desc', provider: 'Data Club', category: 'club', icon: 'fas fa-people-group', preview: { type: 'image', src: 'profile images/meleb.jpg', alt: 'Club Lead' }, link: '#' },
+      { i18nTitle: 'cert.hack.title', i18nDesc: 'cert.hack.desc', provider: 'Tech Club', category: 'club', icon: 'fas fa-trophy', preview: { type: 'pdf', src: 'certificates/club/Artificial intelligence.pdf' }, link: '#' },
+      { i18nTitle: 'cert.dean.title', i18nDesc: 'cert.dean.desc', provider: 'University', category: 'recognition', icon: 'fas fa-medal', preview: { type: 'image', src: 'profile images/meleb.jpg', alt: "Dean's List" }, link: '#' },
+      { i18nTitle: 'cert.capstone.title', i18nDesc: 'cert.capstone.desc', provider: 'DS Department', category: 'recognition', icon: 'fas fa-award', preview: { type: 'pdf', src: 'certificates/recognition/Data analysis.pdf' }, link: '#' },
+      { i18nTitle: 'cert.google.title', i18nDesc: 'cert.google.desc', provider: 'Google', category: 'other', icon: 'fas fa-certificate', preview: { type: 'pdf', src: 'certificates/others/udara-certificate.pdf' }, link: '#' },
+      { i18nTitle: 'cert.dl.title', i18nDesc: 'cert.dl.desc', provider: 'DeepLearning.AI', category: 'other', icon: 'fas fa-network-wired', preview: { type: 'pdf', src: 'certificates/others/Job Roles in the Cloud.pdf' }, link: '#' }
     ],
 
     certCategories: [
-      
       { key: 'oreilly',     i18nLabel: 'certcat.oreilly',     icon: 'fas fa-book' },
       { key: 'demera',      i18nLabel: 'certcat.demera',      icon: 'fas fa-hands-holding-heart' },
       { key: 'gebeya',      i18nLabel: 'certcat.gebeya',      icon: 'fas fa-laptop-code' },
@@ -847,36 +550,11 @@
     ],
 
     services: [
-      {
-        id: 'srv1', i18nJob: 'srv1.job', i18nCompany: 'srv1.company',
-        i18nDuration: 'srv1.duration', i18nDesc: 'srv1.desc',
-        i18nTags: ['srv1.tag1', 'srv1.tag2', 'srv1.tag3', 'srv1.tag4'],
-        category: 'data-analysis', icon: 'fas fa-chart-bar'
-      },
-      {
-        id: 'srv2', i18nJob: 'srv2.job', i18nCompany: 'srv2.company',
-        i18nDuration: 'srv2.duration', i18nDesc: 'srv2.desc',
-        i18nTags: ['srv2.tag1', 'srv2.tag2', 'srv2.tag3'],
-        category: 'ml', icon: 'fas fa-brain'
-      },
-      {
-        id: 'srv3', i18nJob: 'srv3.job', i18nCompany: 'srv3.company',
-        i18nDuration: 'srv3.duration', i18nDesc: 'srv3.desc',
-        i18nTags: ['srv3.tag1', 'srv3.tag2', 'srv3.tag3'],
-        category: 'dataviz', icon: 'fas fa-chart-pie'
-      },
-      {
-        id: 'srv4', i18nJob: 'srv4.job', i18nCompany: 'srv4.company',
-        i18nDuration: 'srv4.duration', i18nDesc: 'srv4.desc',
-        i18nTags: ['srv4.tag1', 'srv4.tag2', 'srv4.tag3'],
-        category: 'consulting', icon: 'fas fa-lightbulb'
-      },
-      {
-        id: 'srv5', i18nJob: 'srv5.job', i18nCompany: 'srv5.company',
-        i18nDuration: 'srv5.duration', i18nDesc: 'srv5.desc',
-        i18nTags: ['srv5.tag1', 'srv5.tag2', 'srv5.tag3'],
-        category: 'training', icon: 'fas fa-chalkboard-user'
-      }
+      { id: 'srv1', i18nJob: 'srv1.job', i18nCompany: 'srv1.company', i18nDuration: 'srv1.duration', i18nDesc: 'srv1.desc', i18nTags: ['srv1.tag1','srv1.tag2','srv1.tag3','srv1.tag4'], category: 'data-analysis', icon: 'fas fa-chart-bar' },
+      { id: 'srv2', i18nJob: 'srv2.job', i18nCompany: 'srv2.company', i18nDuration: 'srv2.duration', i18nDesc: 'srv2.desc', i18nTags: ['srv2.tag1','srv2.tag2','srv2.tag3'], category: 'ml', icon: 'fas fa-brain' },
+      { id: 'srv3', i18nJob: 'srv3.job', i18nCompany: 'srv3.company', i18nDuration: 'srv3.duration', i18nDesc: 'srv3.desc', i18nTags: ['srv3.tag1','srv3.tag2','srv3.tag3'], category: 'dataviz', icon: 'fas fa-chart-pie' },
+      { id: 'srv4', i18nJob: 'srv4.job', i18nCompany: 'srv4.company', i18nDuration: 'srv4.duration', i18nDesc: 'srv4.desc', i18nTags: ['srv4.tag1','srv4.tag2','srv4.tag3'], category: 'consulting', icon: 'fas fa-lightbulb' },
+      { id: 'srv5', i18nJob: 'srv5.job', i18nCompany: 'srv5.company', i18nDuration: 'srv5.duration', i18nDesc: 'srv5.desc', i18nTags: ['srv5.tag1','srv5.tag2','srv5.tag3'], category: 'training', icon: 'fas fa-chalkboard-user' }
     ],
 
     srvCategories: [
@@ -893,7 +571,6 @@
       { i18nName: 'skill.sql',        icon: 'fas fa-database',        category: 'programming', i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.javascript', icon: 'fab fa-js',              category: 'programming', i18nLevel: 'lvl.intermediate' },
       { i18nName: 'skill.java',       icon: 'fab fa-java',            category: 'programming', i18nLevel: 'lvl.basic' },
-
       { i18nName: 'skill.pandas',     icon: 'fas fa-table',           category: 'datasci',     i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.numpy',      icon: 'fas fa-calculator',      category: 'datasci',     i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.sklearn',    icon: 'fas fa-brain',           category: 'datasci',     i18nLevel: 'lvl.advanced' },
@@ -901,14 +578,12 @@
       { i18nName: 'skill.matplotlib', icon: 'fas fa-chart-bar',       category: 'datasci',     i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.statistics', icon: 'fas fa-chart-area',      category: 'datasci',     i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.nlp',        icon: 'fas fa-language',        category: 'datasci',     i18nLevel: 'lvl.intermediate' },
-
       { i18nName: 'skill.git',        icon: 'fab fa-git-alt',         category: 'tools',       i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.jupyter',    icon: 'fas fa-flask',           category: 'tools',       i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.tableau',    icon: 'fas fa-chart-pie',       category: 'tools',       i18nLevel: 'lvl.intermediate' },
       { i18nName: 'skill.excel',      icon: 'fas fa-file-excel',      category: 'tools',       i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.docker',     icon: 'fab fa-docker',          category: 'tools',       i18nLevel: 'lvl.basic' },
       { i18nName: 'skill.aws',        icon: 'fas fa-cloud',           category: 'tools',       i18nLevel: 'lvl.basic' },
-
       { i18nName: 'skill.communication', icon: 'fas fa-comments',        category: 'soft', i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.teamwork',      icon: 'fas fa-people-group',    category: 'soft', i18nLevel: 'lvl.advanced' },
       { i18nName: 'skill.problem',       icon: 'fas fa-lightbulb',       category: 'soft', i18nLevel: 'lvl.advanced' },
@@ -965,7 +640,7 @@
   function markRated() { localStorage.setItem(STORAGE_KEYS.rated, '1'); }
 
   /* ============================================================
-     TRANSLATION ENGINE
+     TRANSLATION
      ============================================================ */
   let currentLang = localStorage.getItem('portfolio-lang') || 'en';
   function t(key) {
@@ -983,66 +658,127 @@
     if (/^(https?:|data:|blob:|file:)/i.test(p)) return p;
     p = p.replace(/\\/g, '/');
     p = p.replace(/\/{2,}/g, '/');
-    // Preserve leading "../" segments
     return p;
   }
 
   /* ============================================================
-     LIGHTBOX
+     LIGHTBOX — instant open, NO animation, NO color flash,
+     NO fast auto-scroll when closing
      ============================================================ */
   const lightbox = document.getElementById('lightbox');
   const lightboxContent = document.getElementById('lightboxContent');
   const lightboxClose = document.getElementById('lightboxClose');
 
+  let savedScrollY = 0;
+  let locked = false;
+
+  function lockScroll() {
+    if (locked) return;
+    locked = true;
+
+    /* 1. Measure the scrollbar width FIRST (while it's still visible) */
+    const sbw = window.innerWidth - document.documentElement.clientWidth;
+    document.documentElement.style.setProperty('--scrollbar-width', sbw + 'px');
+
+    /* 2. Save current scroll position */
+    savedScrollY = window.scrollY || window.pageYOffset || 0;
+
+    /* 3. Freeze the body in place — padding compensates the scrollbar */
+    document.body.style.paddingRight = sbw + 'px';
+    document.body.style.top = -savedScrollY + 'px';
+    document.body.classList.add('lightbox-open');
+  }
+
+  function unlockScroll() {
+    if (!locked) return;
+    locked = false;
+
+    document.body.classList.remove('lightbox-open');
+    document.body.style.top = '';
+    document.body.style.paddingRight = '';
+
+    /* Restore the exact scroll position — no smooth scroll, no jump */
+    window.scrollTo(0, savedScrollY);
+  }
+
   function openLightbox(media) {
     if (!media || !media.src) return;
+
+    /* 1. Freeze the page first so nothing moves behind the lightbox */
+    lockScroll();
+
+    /* 2. Build the media element BEFORE we display it */
     const src = normalizePath(media.src);
-    lightboxContent.innerHTML = '';
+    let element;
+
     if (media.type === 'pdf') {
-      const iframe = document.createElement('iframe');
-      iframe.src = src + '#toolbar=0&navpanes=0&scrollbar=1&view=FitH';
-      iframe.title = 'PDF full view';
-      lightboxContent.appendChild(iframe);
+      element = document.createElement('iframe');
+      element.src = src + '#toolbar=1&navpanes=0&scrollbar=1&view=FitH';
+      element.title = 'PDF full view';
+      element.style.cssText =
+        'width:90vw;height:90vh;max-width:1400px;border:none;display:block;background:#fff;';
     } else if (media.type === 'video') {
-      const video = document.createElement('video');
-      video.src = src; video.controls = true; video.autoplay = true;
-      video.loop = true; video.playsInline = true;
-      lightboxContent.appendChild(video);
+      element = document.createElement('video');
+      element.src = src;
+      element.controls = true;
+      element.autoplay = true;
+      element.loop = true;
+      element.playsInline = true;
+      element.preload = 'auto';
     } else {
-      const img = document.createElement('img');
-      img.src = src; img.alt = media.alt || 'Media';
-      lightboxContent.appendChild(img);
+      element = document.createElement('img');
+      element.src = src;
+      element.alt = media.alt || 'Media';
+      element.decoding = 'async';
     }
+
+    /* 3. Replace the previous content with the new element in one step */
+    lightboxContent.innerHTML = '';
+    lightboxContent.appendChild(element);
+
+    /* 4. Show the lightbox — no animation runs because of the CSS lock */
     lightbox.classList.add('open');
-    document.body.style.overflow = 'hidden';
   }
+
   function closeLightbox() {
+    /* 1. Hide the lightbox instantly */
     lightbox.classList.remove('open');
-    document.body.style.overflow = '';
-    setTimeout(function () {
-      if (!lightbox.classList.contains('open')) lightboxContent.innerHTML = '';
-    }, 300);
+    lightboxContent.innerHTML = '';
+
+    /* 2. Restore the page to exactly where it was */
+    unlockScroll();
   }
-  lightboxClose.addEventListener('click', function (e) { e.stopPropagation(); closeLightbox(); });
-  lightbox.addEventListener('click', function (e) { if (e.target === lightbox) closeLightbox(); });
+
+  lightboxClose.addEventListener('click', function (e) {
+    e.stopPropagation();
+    closeLightbox();
+  });
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox || e.target === lightboxContent) closeLightbox();
+  });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
   });
-  lightboxContent.addEventListener('click', function (e) { e.stopPropagation(); });
 
+  /* ============================================================
+     RENDER MEDIA
+     ============================================================ */
   function renderMediaInto(container, media, opts) {
     opts = opts || {};
     container.innerHTML = '';
+    container.classList.remove('media-ready');
 
     if (!media || !media.src) {
       if (opts.showEmpty) {
         const empty = document.createElement('div');
         empty.className = opts.emptyClass || 'media-empty';
-        empty.innerHTML = '<i class="fas fa-image"></i><span>' + (opts.emptyLabel || t('media.noImage')) + '</span>';
+        empty.innerHTML = '<i class="fas fa-image"></i><span>' +
+                          (opts.emptyLabel || t('media.noImage')) + '</span>';
         container.appendChild(empty);
       }
       container.style.cursor = 'default';
       container.onclick = null;
+      container.classList.add('media-ready');
       return;
     }
 
@@ -1057,47 +793,61 @@
       openLightbox({ type: type, src: src, alt: media.alt });
     };
 
+    function showError(icon) {
+      container.classList.add('media-ready');
+      const box = document.createElement('div');
+      box.className = 'media-error-box';
+      box.innerHTML = '<i class="fas ' + (icon || 'fa-image') + '"></i><span>' +
+                      (opts.emptyLabel || t('media.noImage')) + '</span>';
+      container.appendChild(box);
+    }
+
     if (type === 'pdf') {
       const iframe = document.createElement('iframe');
       iframe.src = src + '#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
       iframe.title = 'PDF preview';
-      iframe.loading = 'lazy';
+      iframe.setAttribute('loading', 'eager');
+      iframe.onload = function () { container.classList.add('media-ready'); };
+      iframe.onerror = function () { showError('fa-file-pdf'); };
       container.appendChild(iframe);
-    } else if (type === 'video') {
+      setTimeout(function () { container.classList.add('media-ready'); }, 1200);
+      return;
+    }
+
+    if (type === 'video') {
       const video = document.createElement('video');
-      video.autoplay = true; video.muted = true;
-      video.loop = true; video.playsInline = true;
+      video.autoplay = true; video.muted = true; video.loop = true;
+      video.playsInline = true; video.preload = 'auto';
       if (media.poster) video.poster = asset(normalizePath(media.poster));
       const source = document.createElement('source');
-      source.src = src;
-      source.type = 'video/mp4';
+      source.src = src; source.type = 'video/mp4';
       video.appendChild(source);
-      video.onerror = function () {
-        container.innerHTML = '';
-        const empty = document.createElement('div');
-        empty.className = opts.emptyClass || 'media-empty';
-        empty.innerHTML = '<i class="fas fa-video"></i><span>' + t('media.noImage') + '</span>';
-        container.appendChild(empty);
-        container.style.cursor = 'default';
-        container.onclick = null;
-      };
+      video.addEventListener('loadeddata', function () { container.classList.add('media-ready'); });
+      video.addEventListener('canplay', function () { container.classList.add('media-ready'); });
+      video.onerror = function () { showError('fa-video'); };
       container.appendChild(video);
-    } else {
-      const img = document.createElement('img');
-      img.src = src;
-      img.alt = media.alt || '';
-      img.loading = 'lazy';
-      img.onerror = function () {
-        container.innerHTML = '';
-        const empty = document.createElement('div');
-        empty.className = opts.emptyClass || 'media-empty';
-        empty.innerHTML = '<i class="fas fa-image"></i><span>' + t('media.noImage') + '</span>';
-        container.appendChild(empty);
-        container.style.cursor = 'default';
-        container.onclick = null;
-      };
-      container.appendChild(img);
+      setTimeout(function () { container.classList.add('media-ready'); }, 1200);
+      return;
     }
+
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = media.alt || '';
+    img.decoding = 'async';
+    img.loading = 'eager';
+    img.width = 600; img.height = 400;
+    img.addEventListener('load', function () {
+      img.classList.add('loaded');
+      container.classList.add('media-ready');
+    });
+    img.addEventListener('error', function () { showError('fa-image'); });
+    container.appendChild(img);
+    setTimeout(function () {
+      if (!container.classList.contains('media-ready')) {
+        img.classList.add('loaded');
+        container.classList.add('media-ready');
+      }
+    }, 1200);
   }
 
   /* ============================================================
@@ -1109,7 +859,6 @@
   function startJobRotator() {
     const el = document.getElementById('jobRotator');
     if (!el) return;
-
     if (rotatorTimer) clearInterval(rotatorTimer);
 
     const titles = (CONFIG.jobTitles[currentLang] && CONFIG.jobTitles[currentLang].length)
@@ -1160,88 +909,154 @@
     if (c) renderMediaInto(c, CONFIG.aboutMedia, {});
   }
 
+  /* ============================================================
+     PROJECTS
+     ============================================================ */
   let projectsExpanded = false;
+  let projectsRendered = 0;
+
+  function buildProjectCard(p) {
+    const card = document.createElement('div');
+    card.className = 'project-card';
+
+    const mediaEl = document.createElement('div');
+    mediaEl.className = 'project-media';
+    renderMediaInto(mediaEl, p.media, {
+      showEmpty: true, emptyClass: 'media-empty', emptyLabel: t('media.noImage')
+    });
+
+    const body = document.createElement('div');
+    body.className = 'project-body';
+
+    const titleEl = document.createElement('h3');
+    titleEl.textContent = t(p.i18nTitle);
+
+    const descEl = document.createElement('p');
+    descEl.className = 'project-desc';
+    descEl.textContent = t(p.i18nDesc);
+
+    const tagsEl = document.createElement('div');
+    tagsEl.className = 'project-tags';
+    (p.i18nTags || []).forEach(function (tagKey) {
+      const span = document.createElement('span');
+      span.className = 'tag';
+      span.textContent = t(tagKey);
+      tagsEl.appendChild(span);
+    });
+
+    const linkEl = document.createElement('a');
+    linkEl.href = p.github || '#';
+    linkEl.target = '_blank'; linkEl.rel = 'noopener noreferrer';
+    linkEl.className = 'project-link';
+    linkEl.innerHTML = t('projects.github') + ' <i class="fab fa-github"></i>';
+    if (!p.github) linkEl.style.display = 'none';
+
+    body.appendChild(titleEl); body.appendChild(descEl);
+    body.appendChild(tagsEl); body.appendChild(linkEl);
+    card.appendChild(mediaEl); card.appendChild(body);
+    return card;
+  }
+
   function renderProjectsTotal() {
     const badge = document.getElementById('projectsTotalCount');
     if (badge) badge.textContent = CONFIG.projects.length;
   }
+
+  function updateProjectsBtn() {
+    const btn = document.getElementById('projectsViewMoreBtn');
+    if (!btn) return;
+    if (projectsExpanded) {
+      btn.innerHTML = '<span>' + t('projects.viewLess') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'true');
+    } else {
+      btn.innerHTML = '<span>' + t('projects.viewMore') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'false');
+    }
+  }
+
   function renderProjects() {
     const container = document.getElementById('projectsContainer');
     const wrap = document.getElementById('projectsViewMoreWrap');
     if (!container) return;
     container.innerHTML = '';
-    const initial = CONFIG.projectsInitialCount || 5;
-    const total = CONFIG.projects.length;
-    CONFIG.projects.forEach(function (p, idx) {
-      const card = document.createElement('div');
-      card.className = 'project-card';
-      if (idx >= initial && !projectsExpanded) card.classList.add('hidden');
+    projectsRendered = 0;
+    projectsExpanded = false;
 
-      const mediaEl = document.createElement('div');
-      mediaEl.className = 'project-media';
-      renderMediaInto(mediaEl, p.media, { showEmpty: true, emptyClass: 'media-empty', emptyLabel: t('media.noImage') });
-
-      const body = document.createElement('div');
-      body.className = 'project-body';
-
-      const titleEl = document.createElement('h3');
-      titleEl.textContent = t(p.i18nTitle);
-
-      const descEl = document.createElement('p');
-      descEl.className = 'project-desc';
-      descEl.textContent = t(p.i18nDesc);
-
-      const tagsEl = document.createElement('div');
-      tagsEl.className = 'project-tags';
-      (p.i18nTags || []).forEach(function (tagKey) {
-        const span = document.createElement('span');
-        span.className = 'tag';
-        span.textContent = t(tagKey);
-        tagsEl.appendChild(span);
-      });
-
-      const linkEl = document.createElement('a');
-      linkEl.href = p.github || '#';
-      linkEl.target = '_blank'; linkEl.rel = 'noopener noreferrer';
-      linkEl.className = 'project-link';
-      linkEl.innerHTML = t('projects.github') + ' <i class="fab fa-github"></i>';
-      if (!p.github) linkEl.style.display = 'none';
-
-      body.appendChild(titleEl); body.appendChild(descEl);
-      body.appendChild(tagsEl); body.appendChild(linkEl);
-      card.appendChild(mediaEl); card.appendChild(body);
-      container.appendChild(card);
-    });
-    if (wrap) {
-      if (total > initial) {
-        wrap.style.display = 'block';
-        const btn = document.getElementById('projectsViewMoreBtn');
-        if (btn) {
-          btn.innerHTML = projectsExpanded
-            ? '<span>' + t('projects.viewLess') + '</span><i class="fas fa-chevron-up"></i>'
-            : '<span>' + t('projects.viewMore') + '</span><i class="fas fa-chevron-down"></i>';
-        }
-      } else {
-        wrap.style.display = 'none';
-      }
+    const initial = Math.min(CONFIG.projectsInitialCount || 5, CONFIG.projects.length);
+    for (let i = 0; i < initial; i++) {
+      container.appendChild(buildProjectCard(CONFIG.projects[i]));
+      projectsRendered++;
     }
+
+    if (wrap) {
+      wrap.style.display = (CONFIG.projects.length > initial) ? 'block' : 'none';
+    }
+    updateProjectsBtn();
+    renderProjectsTotal();
   }
+
+  function toggleProjects() {
+    const container = document.getElementById('projectsContainer');
+    if (!container) return;
+    const total = CONFIG.projects.length;
+    const initial = Math.min(CONFIG.projectsInitialCount || 5, total);
+
+    if (!projectsExpanded) {
+      for (let i = projectsRendered; i < total; i++) {
+        container.appendChild(buildProjectCard(CONFIG.projects[i]));
+      }
+      projectsRendered = total;
+      projectsExpanded = true;
+    } else {
+      const cards = container.querySelectorAll('.project-card');
+      cards.forEach(function (c, idx) {
+        if (idx >= initial) c.classList.add('hidden');
+      });
+      projectsExpanded = false;
+    }
+    updateProjectsBtn();
+  }
+
   function initProjectsViewMore() {
     const btn = document.getElementById('projectsViewMoreBtn');
     if (!btn) return;
     btn.addEventListener('click', function () {
-      projectsExpanded = !projectsExpanded;
-      renderProjects();
-      const section = document.getElementById('projects');
-      if (section) {
-        const top = section.getBoundingClientRect().top + window.pageYOffset - 90;
-        window.scrollTo({ top: top, behavior: 'smooth' });
-      }
+      toggleProjects();
     });
   }
 
+  /* ============================================================
+     SKILLS
+     ============================================================ */
   let currentSkillCategory = null;
   let skillsExpanded = false;
+  let skillsRendered = 0;
+
+  function buildSkillCard(skill) {
+    const card = document.createElement('div');
+    card.className = 'skill-card';
+    card.innerHTML =
+      '<i class="' + skill.icon + '"></i>' +
+      '<span>' + t(skill.i18nName) + '</span>' +
+      '<span class="skill-level">' + t(skill.i18nLevel) + '</span>';
+    return card;
+  }
+
+  function updateSkillsBtn() {
+    const btn = document.getElementById('skillsViewMoreBtn');
+    if (!btn) return;
+    if (skillsExpanded) {
+      btn.innerHTML = '<span>' + t('projects.viewLess') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'true');
+    } else {
+      btn.innerHTML = '<span>' + t('projects.viewMore') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'false');
+    }
+  }
 
   function renderSkillFilterButtons() {
     const bar = document.getElementById('skillsFilterBar');
@@ -1254,7 +1069,6 @@
       btn.innerHTML = '<i class="' + cat.icon + '"></i> <span>' + t(cat.i18nLabel) + '</span>';
       btn.addEventListener('click', function () {
         currentSkillCategory = cat.key;
-        skillsExpanded = false;
         bar.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         renderSkills(cat.key);
@@ -1266,69 +1080,137 @@
       renderSkills(currentSkillCategory);
     }
   }
+
   function renderSkills(category) {
     const grid = document.getElementById('skillsGrid');
     const wrap = document.getElementById('skillsViewMoreWrap');
     if (!grid) return;
     grid.innerHTML = '';
+    skillsRendered = 0;
+    skillsExpanded = false;
+
     if (!category) {
-      grid.innerHTML = '<div class="empty-state"><i class="fas fa-hand-pointer"></i>' + t('skills.selectCategory') + '</div>';
+      grid.innerHTML = '<div class="empty-state"><i class="fas fa-hand-pointer"></i>' +
+                       t('skills.selectCategory') + '</div>';
       if (wrap) wrap.style.display = 'none';
+      updateSkillsBtn();
       return;
     }
     const filtered = CONFIG.skills.filter(function (s) { return s.category === category; });
     if (filtered.length === 0) {
-      grid.innerHTML = '<div class="empty-state"><i class="fas fa-inbox"></i>' + t('skills.empty') + '</div>';
+      grid.innerHTML = '<div class="empty-state"><i class="fas fa-inbox"></i>' +
+                       t('skills.empty') + '</div>';
       if (wrap) wrap.style.display = 'none';
+      updateSkillsBtn();
       return;
     }
-    const initial = CONFIG.skillsInitialCount || 5;
-    filtered.forEach(function (skill, i) {
-      const card = document.createElement('div');
-      card.className = 'skill-card';
-      card.style.animationDelay = (i * 0.04) + 's';
-      if (i >= initial && !skillsExpanded) card.classList.add('hidden');
-      card.innerHTML =
-        '<i class="' + skill.icon + '"></i>' +
-        '<span>' + t(skill.i18nName) + '</span>' +
-        '<span class="skill-level">' + t(skill.i18nLevel) + '</span>';
-      grid.appendChild(card);
-    });
-    if (wrap) {
-      if (filtered.length > initial) {
-        wrap.style.display = 'block';
-        const btn = document.getElementById('skillsViewMoreBtn');
-        if (btn) {
-          btn.innerHTML = skillsExpanded
-            ? '<span>' + t('projects.viewLess') + '</span><i class="fas fa-chevron-up"></i>'
-            : '<span>' + t('projects.viewMore') + '</span><i class="fas fa-chevron-down"></i>';
-        }
-      } else {
-        wrap.style.display = 'none';
-      }
+
+    const initial = Math.min(CONFIG.skillsInitialCount || 5, filtered.length);
+    for (let i = 0; i < initial; i++) {
+      grid.appendChild(buildSkillCard(filtered[i]));
+      skillsRendered++;
     }
+
+    if (wrap) {
+      wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
+    }
+    updateSkillsBtn();
   }
+
+  function toggleSkills() {
+    const grid = document.getElementById('skillsGrid');
+    if (!grid || !currentSkillCategory) return;
+    const filtered = CONFIG.skills.filter(function (s) { return s.category === currentSkillCategory; });
+    const initial = Math.min(CONFIG.skillsInitialCount || 5, filtered.length);
+
+    if (!skillsExpanded) {
+      for (let i = skillsRendered; i < filtered.length; i++) {
+        grid.appendChild(buildSkillCard(filtered[i]));
+      }
+      skillsRendered = filtered.length;
+      skillsExpanded = true;
+    } else {
+      const cards = grid.querySelectorAll('.skill-card');
+      cards.forEach(function (c, idx) {
+        if (idx >= initial) c.classList.add('hidden');
+      });
+      skillsExpanded = false;
+    }
+    updateSkillsBtn();
+  }
+
   function initSkillsViewMore() {
     const btn = document.getElementById('skillsViewMoreBtn');
     if (!btn) return;
     btn.addEventListener('click', function () {
-      skillsExpanded = !skillsExpanded;
-      renderSkills(currentSkillCategory);
-      const section = document.getElementById('skills');
-      if (section) {
-        const top = section.getBoundingClientRect().top + window.pageYOffset - 90;
-        window.scrollTo({ top: top, behavior: 'smooth' });
-      }
+      toggleSkills();
     });
   }
 
+  /* ============================================================
+     CERTIFICATES
+     ============================================================ */
   let currentCertCategory = null;
   let certsExpanded = false;
+  let certsRendered = 0;
+
+  function buildCertCard(cert) {
+    const card = document.createElement('div');
+    card.className = 'cert-card';
+
+    const previewEl = document.createElement('div');
+    previewEl.className = 'cert-preview';
+    renderMediaInto(previewEl, cert.preview, {
+      showEmpty: true, emptyClass: 'cert-preview-empty', emptyLabel: t('media.noPreview')
+    });
+
+    const top = document.createElement('div');
+    top.className = 'cert-top';
+    top.innerHTML =
+      '<div class="cert-icon"><i class="' + cert.icon + '"></i></div>' +
+      '<div>' +
+        '<div class="cert-title">' + t(cert.i18nTitle) + '</div>' +
+        '<div class="cert-provider">' + cert.provider + '</div>' +
+      '</div>';
+
+    const desc = document.createElement('p');
+    desc.className = 'cert-desc';
+    desc.textContent = t(cert.i18nDesc);
+
+    const footer = document.createElement('div');
+    footer.className = 'cert-footer';
+    const verifyLink = document.createElement('a');
+    verifyLink.href = cert.link || '#';
+    verifyLink.target = '_blank'; verifyLink.rel = 'noopener noreferrer';
+    verifyLink.className = 'cert-verify';
+    verifyLink.innerHTML = t('certs.view') + ' <i class="fas fa-arrow-right"></i>';
+    if (!cert.link || cert.link === '#') verifyLink.style.display = 'none';
+    footer.appendChild(verifyLink);
+
+    card.appendChild(previewEl); card.appendChild(top);
+    card.appendChild(desc); card.appendChild(footer);
+    return card;
+  }
 
   function renderCertsTotal() {
     const badge = document.getElementById('certsTotalCount');
     if (badge) badge.textContent = CONFIG.certificates.length;
   }
+
+  function updateCertsBtn() {
+    const btn = document.getElementById('certsViewMoreBtn');
+    if (!btn) return;
+    if (certsExpanded) {
+      btn.innerHTML = '<span>' + t('projects.viewLess') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'true');
+    } else {
+      btn.innerHTML = '<span>' + t('projects.viewMore') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'false');
+    }
+  }
+
   function renderCertFilterButtons() {
     const bar = document.getElementById('certsFilterBar');
     if (!bar) return;
@@ -1343,7 +1225,6 @@
         '<span class="count-badge">' + count + '</span>';
       btn.addEventListener('click', function () {
         currentCertCategory = cat.key;
-        certsExpanded = false;
         bar.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         renderCertificates(cat.key);
@@ -1355,90 +1236,113 @@
       renderCertificates(currentCertCategory);
     }
   }
+
   function renderCertificates(category) {
     const grid = document.getElementById('certificatesGrid');
     const wrap = document.getElementById('certsViewMoreWrap');
     if (!grid) return;
     grid.innerHTML = '';
+    certsRendered = 0;
+    certsExpanded = false;
+
     if (!category) {
-      grid.innerHTML = '<div class="empty-state"><i class="fas fa-hand-pointer"></i>' + t('skills.selectCategory') + '</div>';
+      grid.innerHTML = '<div class="empty-state"><i class="fas fa-hand-pointer"></i>' +
+                       t('skills.selectCategory') + '</div>';
       if (wrap) wrap.style.display = 'none';
+      updateCertsBtn();
       return;
     }
     const filtered = CONFIG.certificates.filter(function (c) { return c.category === category; });
     if (filtered.length === 0) {
-      grid.innerHTML = '<div class="empty-state"><i class="fas fa-inbox"></i>' + t('certs.empty') + '</div>';
+      grid.innerHTML = '<div class="empty-state"><i class="fas fa-inbox"></i>' +
+                       t('certs.empty') + '</div>';
       if (wrap) wrap.style.display = 'none';
+      updateCertsBtn();
       return;
     }
-    const initial = CONFIG.certsInitialCount || 3;
-    filtered.forEach(function (cert, i) {
-      const card = document.createElement('div');
-      card.className = 'cert-card';
-      card.style.animationDelay = (i * 0.05) + 's';
-      if (i >= initial && !certsExpanded) card.classList.add('hidden');
 
-      const previewEl = document.createElement('div');
-      previewEl.className = 'cert-preview';
-      renderMediaInto(previewEl, cert.preview, { showEmpty: true, emptyClass: 'cert-preview-empty', emptyLabel: t('media.noPreview') });
-
-      const top = document.createElement('div');
-      top.className = 'cert-top';
-      top.innerHTML =
-        '<div class="cert-icon"><i class="' + cert.icon + '"></i></div>' +
-        '<div>' +
-          '<div class="cert-title">' + t(cert.i18nTitle) + '</div>' +
-          '<div class="cert-provider">' + cert.provider + '</div>' +
-        '</div>';
-
-      const desc = document.createElement('p');
-      desc.className = 'cert-desc';
-      desc.textContent = t(cert.i18nDesc);
-
-      const footer = document.createElement('div');
-      footer.className = 'cert-footer';
-      const verifyLink = document.createElement('a');
-      verifyLink.href = cert.link || '#';
-      verifyLink.target = '_blank'; verifyLink.rel = 'noopener noreferrer';
-      verifyLink.className = 'cert-verify';
-      verifyLink.innerHTML = t('certs.view') + ' <i class="fas fa-arrow-right"></i>';
-      if (!cert.link || cert.link === '#') verifyLink.style.display = 'none';
-      footer.appendChild(verifyLink);
-
-      card.appendChild(previewEl); card.appendChild(top);
-      card.appendChild(desc); card.appendChild(footer);
-      grid.appendChild(card);
-    });
-    if (wrap) {
-      if (filtered.length > initial) {
-        wrap.style.display = 'block';
-        const btn = document.getElementById('certsViewMoreBtn');
-        if (btn) {
-          btn.innerHTML = certsExpanded
-            ? '<span>' + t('projects.viewLess') + '</span><i class="fas fa-chevron-up"></i>'
-            : '<span>' + t('projects.viewMore') + '</span><i class="fas fa-chevron-down"></i>';
-        }
-      } else {
-        wrap.style.display = 'none';
-      }
+    const initial = Math.min(CONFIG.certsInitialCount || 3, filtered.length);
+    for (let i = 0; i < initial; i++) {
+      grid.appendChild(buildCertCard(filtered[i]));
+      certsRendered++;
     }
+
+    if (wrap) {
+      wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
+    }
+    updateCertsBtn();
   }
+
+  function toggleCerts() {
+    const grid = document.getElementById('certificatesGrid');
+    if (!grid || !currentCertCategory) return;
+    const filtered = CONFIG.certificates.filter(function (c) { return c.category === currentCertCategory; });
+    const initial = Math.min(CONFIG.certsInitialCount || 3, filtered.length);
+
+    if (!certsExpanded) {
+      for (let i = certsRendered; i < filtered.length; i++) {
+        grid.appendChild(buildCertCard(filtered[i]));
+      }
+      certsRendered = filtered.length;
+      certsExpanded = true;
+    } else {
+      const cards = grid.querySelectorAll('.cert-card');
+      cards.forEach(function (c, idx) {
+        if (idx >= initial) c.classList.add('hidden');
+      });
+      certsExpanded = false;
+    }
+    updateCertsBtn();
+  }
+
   function initCertsViewMore() {
     const btn = document.getElementById('certsViewMoreBtn');
     if (!btn) return;
     btn.addEventListener('click', function () {
-      certsExpanded = !certsExpanded;
-      renderCertificates(currentCertCategory);
-      const section = document.getElementById('certificates');
-      if (section) {
-        const top = section.getBoundingClientRect().top + window.pageYOffset - 90;
-        window.scrollTo({ top: top, behavior: 'smooth' });
-      }
+      toggleCerts();
     });
   }
 
+  /* ============================================================
+     SERVICES
+     ============================================================ */
   let currentSrvCategory = null;
   let srvExpanded = false;
+  let srvRendered = 0;
+
+  function buildSrvCard(srv) {
+    const card = document.createElement('div');
+    card.className = 'srv-card';
+    const tagHTML = (srv.i18nTags || []).map(function (k) {
+      return '<span class="srv-tag">' + t(k) + '</span>';
+    }).join('');
+    card.innerHTML =
+      '<div class="srv-header">' +
+        '<div class="srv-logo"><i class="' + srv.icon + '"></i></div>' +
+        '<div>' +
+          '<div class="srv-title">' + t(srv.i18nJob) + '</div>' +
+          '<div class="srv-company"><i class="fas fa-briefcase"></i> ' + t(srv.i18nCompany) + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<span class="srv-duration"><i class="fas fa-clock"></i> ' + t(srv.i18nDuration) + '</span>' +
+      '<p class="srv-desc">' + t(srv.i18nDesc) + '</p>' +
+      '<div class="srv-tags">' + tagHTML + '</div>';
+    return card;
+  }
+
+  function updateSrvBtn() {
+    const btn = document.getElementById('srvViewMoreBtn');
+    if (!btn) return;
+    if (srvExpanded) {
+      btn.innerHTML = '<span>' + t('projects.viewLess') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'true');
+    } else {
+      btn.innerHTML = '<span>' + t('projects.viewMore') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'false');
+    }
+  }
 
   function renderSrvFilterButtons() {
     const bar = document.getElementById('srvFilterBar');
@@ -1454,7 +1358,6 @@
         '<span class="count-badge">' + count + '</span>';
       btn.addEventListener('click', function () {
         currentSrvCategory = cat.key;
-        srvExpanded = false;
         bar.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         renderServices(cat.key);
@@ -1466,75 +1369,76 @@
       renderServices(currentSrvCategory);
     }
   }
+
   function renderServices(category) {
     const grid = document.getElementById('servicesGrid');
     const wrap = document.getElementById('srvViewMoreWrap');
     if (!grid) return;
     grid.innerHTML = '';
+    srvRendered = 0;
+    srvExpanded = false;
+
     if (!category) {
-      grid.innerHTML = '<div class="empty-state"><i class="fas fa-hand-pointer"></i>' + t('skills.selectCategory') + '</div>';
+      grid.innerHTML = '<div class="empty-state"><i class="fas fa-hand-pointer"></i>' +
+                       t('skills.selectCategory') + '</div>';
       if (wrap) wrap.style.display = 'none';
+      updateSrvBtn();
       return;
     }
     const filtered = CONFIG.services.filter(function (s) { return s.category === category; });
     if (filtered.length === 0) {
-      grid.innerHTML = '<div class="empty-state"><i class="fas fa-inbox"></i>' + t('srv.empty') + '</div>';
+      grid.innerHTML = '<div class="empty-state"><i class="fas fa-inbox"></i>' +
+                       t('srv.empty') + '</div>';
       if (wrap) wrap.style.display = 'none';
+      updateSrvBtn();
       return;
     }
-    const initial = CONFIG.srvInitialCount || 4;
-    filtered.forEach(function (srv, i) {
-      const card = document.createElement('div');
-      card.className = 'srv-card';
-      card.style.animationDelay = (i * 0.05) + 's';
-      if (i >= initial && !srvExpanded) card.classList.add('hidden');
 
-      const tagHTML = (srv.i18nTags || []).map(function (k) {
-        return '<span class="srv-tag">' + t(k) + '</span>';
-      }).join('');
-
-      card.innerHTML =
-        '<div class="srv-header">' +
-          '<div class="srv-logo"><i class="' + srv.icon + '"></i></div>' +
-          '<div>' +
-            '<div class="srv-title">' + t(srv.i18nJob) + '</div>' +
-            '<div class="srv-company"><i class="fas fa-briefcase"></i> ' + t(srv.i18nCompany) + '</div>' +
-          '</div>' +
-        '</div>' +
-        '<span class="srv-duration"><i class="fas fa-clock"></i> ' + t(srv.i18nDuration) + '</span>' +
-        '<p class="srv-desc">' + t(srv.i18nDesc) + '</p>' +
-        '<div class="srv-tags">' + tagHTML + '</div>';
-
-      grid.appendChild(card);
-    });
-    if (wrap) {
-      if (filtered.length > initial) {
-        wrap.style.display = 'block';
-        const btn = document.getElementById('srvViewMoreBtn');
-        if (btn) {
-          btn.innerHTML = srvExpanded
-            ? '<span>' + t('projects.viewLess') + '</span><i class="fas fa-chevron-up"></i>'
-            : '<span>' + t('projects.viewMore') + '</span><i class="fas fa-chevron-down"></i>';
-        }
-      } else {
-        wrap.style.display = 'none';
-      }
+    const initial = Math.min(CONFIG.srvInitialCount || 4, filtered.length);
+    for (let i = 0; i < initial; i++) {
+      grid.appendChild(buildSrvCard(filtered[i]));
+      srvRendered++;
     }
+
+    if (wrap) {
+      wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
+    }
+    updateSrvBtn();
   }
+
+  function toggleServices() {
+    const grid = document.getElementById('servicesGrid');
+    if (!grid || !currentSrvCategory) return;
+    const filtered = CONFIG.services.filter(function (s) { return s.category === currentSrvCategory; });
+    const initial = Math.min(CONFIG.srvInitialCount || 4, filtered.length);
+
+    if (!srvExpanded) {
+      for (let i = srvRendered; i < filtered.length; i++) {
+        grid.appendChild(buildSrvCard(filtered[i]));
+      }
+      srvRendered = filtered.length;
+      srvExpanded = true;
+    } else {
+      const cards = grid.querySelectorAll('.srv-card');
+      cards.forEach(function (c, idx) {
+        if (idx >= initial) c.classList.add('hidden');
+      });
+      srvExpanded = false;
+    }
+    updateSrvBtn();
+  }
+
   function initSrvViewMore() {
     const btn = document.getElementById('srvViewMoreBtn');
     if (!btn) return;
     btn.addEventListener('click', function () {
-      srvExpanded = !srvExpanded;
-      renderServices(currentSrvCategory);
-      const section = document.getElementById('services');
-      if (section) {
-        const top = section.getBoundingClientRect().top + window.pageYOffset - 90;
-        window.scrollTo({ top: top, behavior: 'smooth' });
-      }
+      toggleServices();
     });
   }
 
+  /* ============================================================
+     EDUCATION
+     ============================================================ */
   function renderEducation() {
     const grid = document.getElementById('educationGrid');
     if (!grid) return;
@@ -1580,6 +1484,9 @@
     });
   }
 
+  /* ============================================================
+     SOCIAL / CV
+     ============================================================ */
   function renderSocial() {
     const container = document.getElementById('socialIcons');
     if (!container) return;
@@ -1624,6 +1531,9 @@
     }
   }
 
+  /* ============================================================
+     VISITOR / RATING
+     ============================================================ */
   function initVisitorCounter() {
     incrementVisitorCount();
     const n = getVisitorCount();
@@ -1728,21 +1638,11 @@
     startJobRotator();
   }
 
+  /* ============================================================
+     SCROLL / NAV
+     ============================================================ */
   function initScrollReveal() {
-    const sections = document.querySelectorAll('.section');
-    if (!('IntersectionObserver' in window)) {
-      sections.forEach(function (s) { s.classList.add('visible'); });
-      return;
-    }
-    const observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
-    sections.forEach(function (s) { observer.observe(s); });
+    document.querySelectorAll('.section').forEach(function (s) { s.classList.add('visible'); });
   }
   function initSmoothAnchors() {
     document.addEventListener('click', function (e) {
@@ -1885,7 +1785,24 @@
     });
   }
 
+  /* ============================================================
+     INIT
+     ============================================================ */
   function init() {
+    const PRIORITY = [
+      '../profile images/meleb.jpg',
+      '../profile images/mele.jpg',
+      '../project images/eep.png'
+    ];
+    PRIORITY.forEach(function (u) {
+      const l = document.createElement('link');
+      l.rel = 'preload';
+      l.as = 'image';
+      l.href = u;
+      l.fetchPriority = 'high';
+      document.head.appendChild(l);
+    });
+
     renderNav();
     renderHomeMedia();
     renderAboutMedia();
@@ -1900,6 +1817,13 @@
     renderCVActions();
 
     applyTranslations();
+
+    document.addEventListener('error', function (e) {
+      const el = e.target;
+      if (el && (el.tagName === 'IMG' || el.tagName === 'VIDEO')) {
+        el.classList.add('media-error');
+      }
+    }, true);
 
     initScrollReveal();
     initSmoothAnchors();
