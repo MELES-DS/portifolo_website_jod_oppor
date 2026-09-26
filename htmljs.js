@@ -12,6 +12,40 @@
   }
 
   /* ============================================================
+     PDF.js — will be dynamically imported when a PDF needs to be shown
+     ============================================================ */
+  const PDFJS_URL        = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs';
+  const PDFJS_WORKER_URL = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs';
+
+  let pdfjsPromise = null;
+  function loadPdfJs() {
+    if (!pdfjsPromise) {
+      pdfjsPromise = import(PDFJS_URL).then(function (pdfjsLib) {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER_URL;
+        return pdfjsLib;
+      });
+    }
+    return pdfjsPromise;
+  }
+
+  /* Render page N of a PDF into a canvas element */
+  function renderPdfPageToCanvas(pdf, pageNumber, scale) {
+    return pdf.getPage(pageNumber).then(function (page) {
+      const viewport = page.getViewport({ scale: scale || 1.5 });
+      const canvas = document.createElement('canvas');
+      canvas.width  = Math.floor(viewport.width);
+      canvas.height = Math.floor(viewport.height);
+      canvas.style.cssText =
+        'width:100%;height:auto;display:block;background:#fff;' +
+        'border-radius:0;object-fit:contain;';
+      const ctx = canvas.getContext('2d');
+      return page.render({ canvasContext: ctx, viewport: viewport }).promise.then(function () {
+        return canvas;
+      });
+    });
+  }
+
+  /* ============================================================
      🌍 TRANSLATIONS
      ============================================================ */
   const STRINGS = {
@@ -662,7 +696,7 @@
   }
 
   /* ============================================================
-     LIGHTBOX — instant open, no animation, no color flash
+     LIGHTBOX — instant open, no animation
      ============================================================ */
   const lightbox = document.getElementById('lightbox');
   const lightboxContent = document.getElementById('lightboxContent');
@@ -697,19 +731,43 @@
     lightboxContent.innerHTML = '';
 
     if (media.type === 'pdf') {
-      const iframe = document.createElement('iframe');
-      iframe.src = src + '#toolbar=1&navpanes=0&scrollbar=1&view=FitH';
-      iframe.title = 'PDF full view';
-      iframe.style.cssText =
-        'width:90vw;height:90vh;max-width:1400px;border:none;display:block;background:#fff;';
-      lightboxContent.appendChild(iframe);
+      /* ---- PDF in lightbox — rendered by PDF.js ---- */
+      const wrap = document.createElement('div');
+      wrap.className = 'lightbox-pdf-wrap';
+      wrap.style.cssText =
+        'width:90vw;height:90vh;max-width:1400px;overflow:auto;background:#525659;' +
+        'padding:1rem;display:flex;flex-direction:column;gap:1rem;align-items:center;';
+      lightboxContent.appendChild(wrap);
+
+      loadPdfJs().then(function (pdfjsLib) {
+        return pdfjsLib.getDocument(src).promise;
+      }).then(function (pdf) {
+        let chain = Promise.resolve();
+        for (let n = 1; n <= pdf.numPages; n++) {
+          (function (pageNum) {
+            chain = chain.then(function () {
+              return renderPdfPageToCanvas(pdf, pageNum, 1.8);
+            }).then(function (canvas) {
+              canvas.style.cssText =
+                'max-width:100%;height:auto;display:block;background:#fff;' +
+                'box-shadow:0 4px 14px rgba(0,0,0,0.4);border-radius:4px;';
+              wrap.appendChild(canvas);
+            });
+          })(n);
+        }
+        return chain;
+      }).catch(function (err) {
+        console.error('PDF.js lightbox error:', err);
+        wrap.innerHTML =
+          '<div style="color:#fff;font-weight:600;padding:2rem;text-align:center;">' +
+          'Could not render this PDF.' +
+          '</div>';
+      });
     } else if (media.type === 'video') {
       const video = document.createElement('video');
       video.src = src;
-      video.controls = true;
-      video.autoplay = true;
-      video.loop = true;
-      video.playsInline = true;
+      video.controls = true; video.autoplay = true;
+      video.loop = true; video.playsInline = true;
       video.preload = 'auto';
       lightboxContent.appendChild(video);
     } else {
@@ -737,7 +795,7 @@
   });
 
   /* ============================================================
-     RENDER MEDIA
+     RENDER MEDIA — image / video / PDF (PDF rendered by PDF.js)
      ============================================================ */
   function renderMediaInto(container, media, opts) {
     opts = opts || {};
@@ -778,18 +836,35 @@
       container.appendChild(box);
     }
 
+    /* ---------- PDF — rendered as an image on the card via PDF.js ---------- */
     if (type === 'pdf') {
-      const iframe = document.createElement('iframe');
-      iframe.src = src + '#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
-      iframe.title = 'PDF preview';
-      iframe.setAttribute('loading', 'eager');
-      iframe.onload = function () { container.classList.add('media-ready'); };
-      iframe.onerror = function () { showError('fa-file-pdf'); };
-      container.appendChild(iframe);
-      setTimeout(function () { container.classList.add('media-ready'); }, 1200);
+      const wrap = document.createElement('div');
+      wrap.style.cssText =
+        'position:absolute;inset:0;overflow:hidden;background:#fff;' +
+        'display:flex;align-items:flex-start;justify-content:center;';
+      container.appendChild(wrap);
+
+      loadPdfJs().then(function (pdfjsLib) {
+        return pdfjsLib.getDocument(src).promise;
+      }).then(function (pdf) {
+        return renderPdfPageToCanvas(pdf, 1, 1.5);
+      }).then(function (canvas) {
+        canvas.style.cssText =
+          'width:100%;height:100%;object-fit:cover;display:block;background:#fff;' +
+          'object-position:top center;';
+        wrap.appendChild(canvas);
+        container.classList.add('media-ready');
+      }).catch(function (err) {
+        console.error('PDF.js card error:', err);
+        showError('fa-file-pdf');
+      });
+
+      /* Safety net — hide shimmer after 4 s even if PDF.js is slow */
+      setTimeout(function () { container.classList.add('media-ready'); }, 4000);
       return;
     }
 
+    /* ---------- VIDEO ---------- */
     if (type === 'video') {
       const video = document.createElement('video');
       video.autoplay = true; video.muted = true; video.loop = true;
@@ -806,6 +881,7 @@
       return;
     }
 
+    /* ---------- IMAGE ---------- */
     const img = document.createElement('img');
     img.src = src;
     img.alt = media.alt || '';
