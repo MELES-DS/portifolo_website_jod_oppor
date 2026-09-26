@@ -12,7 +12,7 @@
   }
 
   /* ============================================================
-     PDF.js — will be dynamically imported when a PDF needs to be shown
+     PDF.js
      ============================================================ */
   const PDFJS_URL        = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs';
   const PDFJS_WORKER_URL = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs';
@@ -28,7 +28,6 @@
     return pdfjsPromise;
   }
 
-  /* Render page N of a PDF into a canvas element */
   function renderPdfPageToCanvas(pdf, pageNumber, scale) {
     return pdf.getPage(pageNumber).then(function (page) {
       const viewport = page.getViewport({ scale: scale || 1.5 });
@@ -696,7 +695,7 @@
   }
 
   /* ============================================================
-     LIGHTBOX — instant open, no animation
+     LIGHTBOX
      ============================================================ */
   const lightbox = document.getElementById('lightbox');
   const lightboxContent = document.getElementById('lightboxContent');
@@ -731,7 +730,6 @@
     lightboxContent.innerHTML = '';
 
     if (media.type === 'pdf') {
-      /* ---- PDF in lightbox — rendered by PDF.js ---- */
       const wrap = document.createElement('div');
       wrap.className = 'lightbox-pdf-wrap';
       wrap.style.cssText =
@@ -795,7 +793,7 @@
   });
 
   /* ============================================================
-     RENDER MEDIA — image / video / PDF (PDF rendered by PDF.js)
+     RENDER MEDIA
      ============================================================ */
   function renderMediaInto(container, media, opts) {
     opts = opts || {};
@@ -836,7 +834,6 @@
       container.appendChild(box);
     }
 
-    /* ---------- PDF — rendered as an image on the card via PDF.js ---------- */
     if (type === 'pdf') {
       const wrap = document.createElement('div');
       wrap.style.cssText =
@@ -859,12 +856,10 @@
         showError('fa-file-pdf');
       });
 
-      /* Safety net — hide shimmer after 4 s even if PDF.js is slow */
       setTimeout(function () { container.classList.add('media-ready'); }, 4000);
       return;
     }
 
-    /* ---------- VIDEO ---------- */
     if (type === 'video') {
       const video = document.createElement('video');
       video.autoplay = true; video.muted = true; video.loop = true;
@@ -881,7 +876,6 @@
       return;
     }
 
-    /* ---------- IMAGE ---------- */
     const img = document.createElement('img');
     img.src = src;
     img.alt = media.alt || '';

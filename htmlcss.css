@@ -96,7 +96,7 @@ img, video { max-width: 100%; display: block; }
 a { color: var(--primary); text-decoration: none; transition: var(--transition); }
 
 /* ============================================================
-   PARAGRAPH — Standard margins / padding / indentation
+   PARAGRAPH
    ============================================================ */
 p {
   margin: 0 0 1rem;
@@ -244,7 +244,6 @@ p {
   scroll-margin-top: 90px;
   transition: background 0.3s ease;
 }
-.section.visible { }
 
 .section-home        { background: var(--sec-home-bg); }
 .section-about       { background: var(--sec-about-bg); }
@@ -1124,7 +1123,7 @@ p {
 .empty-state i { font-size: 2.5rem; color: var(--primary-soft); display: block; margin-bottom: 0.75rem; }
 
 /* ============================================================
-   LIGHTBOX — zero animation, zero blink, zero color flash
+   LIGHTBOX — zero animation
    ============================================================ */
 .lightbox {
   position: fixed; inset: 0;
@@ -1137,7 +1136,6 @@ p {
   padding: 3rem 1.5rem;
   cursor: zoom-out;
   overscroll-behavior: contain;
-  /* NO transition, NO animation, NO will-change — appears instantly */
   transition: none;
   animation: none;
 }
@@ -1205,9 +1203,7 @@ p {
 }
 
 /* ============================================================
-   SCROLL LOCK — freeze the page while lightbox is open
-   Also: HARD LOCK to stop every animation/transition on the page
-   so nothing can flash or vibrate while the lightbox is open.
+   SCROLL LOCK
    ============================================================ */
 body.lightbox-open {
   overflow: hidden;
@@ -1216,7 +1212,6 @@ body.lightbox-open {
   padding-right: var(--scrollbar-width, 0px);
 }
 
-/* Freeze every hover transform while the lightbox is open */
 body.lightbox-open .project-card,
 body.lightbox-open .project-card:hover,
 body.lightbox-open .cert-card,
@@ -1252,7 +1247,6 @@ body.lightbox-open .total-badge:hover {
   box-shadow: none !important;
 }
 
-/* HARD LOCK — no animation, no transition anywhere on the page */
 body.lightbox-open *,
 body.lightbox-open *::before,
 body.lightbox-open *::after {
@@ -1261,7 +1255,6 @@ body.lightbox-open *::after {
   will-change: auto !important;
 }
 
-/* Lightbox itself and its children must never animate */
 body.lightbox-open .lightbox,
 body.lightbox-open .lightbox * {
   animation: none !important;
@@ -1270,12 +1263,10 @@ body.lightbox-open .lightbox * {
   transform: none !important;
 }
 
-/* Make sure the lightbox overlay paints fully opaque instantly */
 body.lightbox-open .lightbox {
   background: rgba(10, 15, 25, 0.94);
 }
 
-/* Kill every card's shimmer ::before transition while lightbox is open */
 body.lightbox-open .project-media::before,
 body.lightbox-open .cert-preview::before,
 body.lightbox-open .edu-media::before,
@@ -1371,7 +1362,6 @@ body.lightbox-open .circular-media::before {
   opacity: 1;
 }
 
-/* Shimmer — no fade, disappears instantly when ready */
 .project-media::before,
 .cert-preview::before,
 .edu-media::before,
@@ -1386,7 +1376,7 @@ body.lightbox-open .circular-media::before {
   animation: skeleton 1.2s ease infinite;
   z-index: 0;
   pointer-events: none;
-  transition: none;   /* ← removed fade */
+  transition: none;
 }
 .project-media.media-ready::before,
 .cert-preview.media-ready::before,
