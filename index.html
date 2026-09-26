@@ -5,26 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#2563eb">
 
+  <!-- ============================================================
+       SEO
+       ============================================================ -->
   <title>Melis Melakie | Data Scientist · ML Engineer · Portfolio</title>
   <meta name="title" content="Melis Melakie | Data Scientist · ML Engineer · Portfolio">
-  <meta name="description" content="Portfolio of Melis Melakie — Data Science student specializing in machine learning, NLP, data analysis, and interactive dashboards.">
-  <meta name="keywords" content="Melis Melakie, Data Scientist, Machine Learning, Data Analyst, Python, Portfolio, Ethiopia">
+  <meta name="description" content="Portfolio of Melis Melakie — Data Science student specializing in machine learning, NLP, data analysis, and interactive dashboards. Explore projects, certificates, and services.">
+  <meta name="keywords" content="Melis Melakie, Data Scientist, Machine Learning, ML Engineer, Data Analyst, Python, Portfolio, Ethiopia, Data Science, NLP, Deep Learning, Scikit-learn, TensorFlow">
   <meta name="author" content="Melis Melakie">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="language" content="English, Amharic">
+  <meta name="rating" content="general">
   <link rel="canonical" href="https://melismelakie.dev/">
 
+  <!-- ============================================================
+       Open Graph
+       ============================================================ -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://melismelakie.dev/">
   <meta property="og:title" content="Melis Melakie | Data Scientist · ML Engineer">
-  <meta property="og:description" content="Data Science student passionate about turning data into meaningful insights.">
+  <meta property="og:description" content="Data Science student passionate about turning data into meaningful insights through analysis, visualization, ML, and deep learning.">
   <meta property="og:image" content="https://melismelakie.dev/profile%20images/meleb.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Melis Melakie — Data Scientist">
   <meta property="og:site_name" content="Melis Melakie Portfolio">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="am_ET">
 
+  <!-- ============================================================
+       Twitter Card
+       ============================================================ -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://melismelakie.dev/">
   <meta name="twitter:title" content="Melis Melakie | Data Scientist · ML Engineer">
-  <meta name="twitter:description" content="Data Science student passionate about turning data into meaningful insights.">
+  <meta name="twitter:description" content="Data Science student passionate about turning data into meaningful insights through ML, NLP, and data engineering.">
   <meta name="twitter:image" content="https://melismelakie.dev/profile%20images/meleb.jpg">
+  <meta name="twitter:image:alt" content="Melis Melakie — Data Scientist">
+  <meta name="twitter:creator" content="@melismelakie">
 
+  <!-- ============================================================
+       Structured Data
+       ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,10 +55,24 @@
     "url": "https://melismelakie.dev/",
     "image": "https://melismelakie.dev/profile%20images/meleb.jpg",
     "jobTitle": "Data Scientist",
-    "email": "mailto:melismelakie27@gmail.com"
+    "description": "Data Science student specializing in machine learning, NLP, and data engineering.",
+    "email": "mailto:melismelakie27@gmail.com",
+    "sameAs": [
+      "https://linkedin.com/in/",
+      "https://github.com/",
+      "https://t.me/",
+      "https://x.com/"
+    ],
+    "knowsAbout": [
+      "Data Science", "Machine Learning", "Python", "SQL", "Deep Learning",
+      "NLP", "Data Analysis", "Data Visualization", "TensorFlow", "Scikit-learn"
+    ]
   }
   </script>
 
+  <!-- ============================================================
+       Performance
+       ============================================================ -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
@@ -64,12 +100,42 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
 
-  <!-- ⭐ PDF.js — Renders PDF pages inline as canvas (works on every browser) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs" type="module"></script>
+  <!-- ============================================================
+       Critical inline CSS
+       ============================================================ -->
+  <style>
+    .project-media, .cert-preview, .edu-media, .circular-media {
+      background: #e2e8f0;
+      position: relative;
+      overflow: hidden;
+    }
+    .project-media::before, .cert-preview::before,
+    .edu-media::before, .circular-media::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, #e2e8f0 0%, #f1f5f9 50%, #e2e8f0 100%);
+      background-size: 200% 100%;
+      animation: skeleton 1.2s ease infinite;
+      z-index: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .project-media.media-ready::before,
+    .cert-preview.media-ready::before,
+    .edu-media.media-ready::before,
+    .circular-media.media-ready::before { opacity: 0; }
+    @keyframes skeleton {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    img, video, iframe { position: relative; z-index: 1; }
+  </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="#home" class="logo" aria-label="Melis Melakie Portfolio Home">
@@ -90,7 +156,9 @@
   </div>
 </nav>
 
-<!-- LIGHTBOX -->
+<!-- ============================================================
+     LIGHTBOX
+     ============================================================ -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
   <button class="lightbox-close" id="lightboxClose" aria-label="Close">
     <i class="fas fa-times"></i>
@@ -103,7 +171,9 @@
 
 <main>
 
-  <!-- HOME -->
+  <!-- ============================================================
+       HOME
+       ============================================================ -->
   <section class="section section-home" id="home">
     <div class="container">
       <div class="section-header">
@@ -159,7 +229,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
   <section class="section section-about" id="about">
     <div class="container">
       <div class="section-header">
@@ -200,7 +272,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- EDUCATION -->
+  <!-- ============================================================
+       EDUCATION
+       ============================================================ -->
   <section class="section section-education" id="education">
     <div class="container">
       <div class="section-header">
@@ -211,7 +285,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ============================================================
+       SKILLS
+       ============================================================ -->
   <section class="section section-skills" id="skills">
     <div class="container">
       <div class="section-header">
@@ -229,7 +305,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- ============================================================
+       PROJECTS
+       ============================================================ -->
   <section class="section section-projects" id="projects">
     <div class="container">
       <div class="section-header">
@@ -252,7 +330,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- CERTIFICATES -->
+  <!-- ============================================================
+       CERTIFICATES
+       ============================================================ -->
   <section class="section section-certificates" id="certificates">
     <div class="container">
       <div class="section-header">
@@ -276,7 +356,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- ============================================================
+       SERVICES
+       ============================================================ -->
   <section class="section section-services" id="services">
     <div class="container">
       <div class="section-header">
@@ -294,7 +376,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- CV -->
+  <!-- ============================================================
+       CV
+       ============================================================ -->
   <section class="section section-cv" id="cv">
     <div class="container">
       <div class="section-header">
@@ -326,7 +410,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
   <section class="section section-contact" id="contact">
     <div class="container">
       <div class="section-header">
@@ -354,7 +440,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
 
 </main>
 
-<!-- FOOTER -->
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
