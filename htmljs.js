@@ -12,6 +12,40 @@
   }
 
   /* ============================================================
+     PDF.js — will be dynamically imported when a PDF needs to be shown
+     ============================================================ */
+  const PDFJS_URL        = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs';
+  const PDFJS_WORKER_URL = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs';
+
+  let pdfjsPromise = null;
+  function loadPdfJs() {
+    if (!pdfjsPromise) {
+      pdfjsPromise = import(PDFJS_URL).then(function (pdfjsLib) {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS_WORKER_URL;
+        return pdfjsLib;
+      });
+    }
+    return pdfjsPromise;
+  }
+
+  /* Render page N of a PDF into a canvas element */
+  function renderPdfPageToCanvas(pdf, pageNumber, scale) {
+    return pdf.getPage(pageNumber).then(function (page) {
+      const viewport = page.getViewport({ scale: scale || 1.5 });
+      const canvas = document.createElement('canvas');
+      canvas.width  = Math.floor(viewport.width);
+      canvas.height = Math.floor(viewport.height);
+      canvas.style.cssText =
+        'width:100%;height:auto;display:block;background:#fff;' +
+        'border-radius:0;object-fit:contain;';
+      const ctx = canvas.getContext('2d');
+      return page.render({ canvasContext: ctx, viewport: viewport }).promise.then(function () {
+        return canvas;
+      });
+    });
+  }
+
+  /* ============================================================
      🌍 TRANSLATIONS
      ============================================================ */
   const STRINGS = {
@@ -662,8 +696,7 @@
   }
 
   /* ============================================================
-     LIGHTBOX — instant open, NO animation, NO color flash,
-     NO fast auto-scroll when closing
+     LIGHTBOX — instant open, no animation
      ============================================================ */
   const lightbox = document.getElementById('lightbox');
   const lightboxContent = document.getElementById('lightboxContent');
@@ -675,84 +708,85 @@
   function lockScroll() {
     if (locked) return;
     locked = true;
-
-    /* 1. Measure the scrollbar width FIRST (while it's still visible) */
     const sbw = window.innerWidth - document.documentElement.clientWidth;
     document.documentElement.style.setProperty('--scrollbar-width', sbw + 'px');
-
-    /* 2. Save current scroll position */
     savedScrollY = window.scrollY || window.pageYOffset || 0;
-
-    /* 3. Freeze the body in place — padding compensates the scrollbar */
     document.body.style.paddingRight = sbw + 'px';
     document.body.style.top = -savedScrollY + 'px';
     document.body.classList.add('lightbox-open');
   }
-
   function unlockScroll() {
     if (!locked) return;
     locked = false;
-
     document.body.classList.remove('lightbox-open');
     document.body.style.top = '';
     document.body.style.paddingRight = '';
-
-    /* Restore the exact scroll position — no smooth scroll, no jump */
     window.scrollTo(0, savedScrollY);
   }
 
   function openLightbox(media) {
     if (!media || !media.src) return;
-
-    /* 1. Freeze the page first so nothing moves behind the lightbox */
     lockScroll();
-
-    /* 2. Build the media element BEFORE we display it */
     const src = normalizePath(media.src);
-    let element;
+    lightboxContent.innerHTML = '';
 
     if (media.type === 'pdf') {
-      element = document.createElement('iframe');
-      element.src = src + '#toolbar=1&navpanes=0&scrollbar=1&view=FitH';
-      element.title = 'PDF full view';
-      element.style.cssText =
-        'width:90vw;height:90vh;max-width:1400px;border:none;display:block;background:#fff;';
+      /* ---- PDF in lightbox — rendered by PDF.js ---- */
+      const wrap = document.createElement('div');
+      wrap.className = 'lightbox-pdf-wrap';
+      wrap.style.cssText =
+        'width:90vw;height:90vh;max-width:1400px;overflow:auto;background:#525659;' +
+        'padding:1rem;display:flex;flex-direction:column;gap:1rem;align-items:center;';
+      lightboxContent.appendChild(wrap);
+
+      loadPdfJs().then(function (pdfjsLib) {
+        return pdfjsLib.getDocument(src).promise;
+      }).then(function (pdf) {
+        let chain = Promise.resolve();
+        for (let n = 1; n <= pdf.numPages; n++) {
+          (function (pageNum) {
+            chain = chain.then(function () {
+              return renderPdfPageToCanvas(pdf, pageNum, 1.8);
+            }).then(function (canvas) {
+              canvas.style.cssText =
+                'max-width:100%;height:auto;display:block;background:#fff;' +
+                'box-shadow:0 4px 14px rgba(0,0,0,0.4);border-radius:4px;';
+              wrap.appendChild(canvas);
+            });
+          })(n);
+        }
+        return chain;
+      }).catch(function (err) {
+        console.error('PDF.js lightbox error:', err);
+        wrap.innerHTML =
+          '<div style="color:#fff;font-weight:600;padding:2rem;text-align:center;">' +
+          'Could not render this PDF.' +
+          '</div>';
+      });
     } else if (media.type === 'video') {
-      element = document.createElement('video');
-      element.src = src;
-      element.controls = true;
-      element.autoplay = true;
-      element.loop = true;
-      element.playsInline = true;
-      element.preload = 'auto';
+      const video = document.createElement('video');
+      video.src = src;
+      video.controls = true; video.autoplay = true;
+      video.loop = true; video.playsInline = true;
+      video.preload = 'auto';
+      lightboxContent.appendChild(video);
     } else {
-      element = document.createElement('img');
-      element.src = src;
-      element.alt = media.alt || 'Media';
-      element.decoding = 'async';
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = media.alt || 'Media';
+      img.decoding = 'async';
+      lightboxContent.appendChild(img);
     }
-
-    /* 3. Replace the previous content with the new element in one step */
-    lightboxContent.innerHTML = '';
-    lightboxContent.appendChild(element);
-
-    /* 4. Show the lightbox — no animation runs because of the CSS lock */
     lightbox.classList.add('open');
   }
 
   function closeLightbox() {
-    /* 1. Hide the lightbox instantly */
     lightbox.classList.remove('open');
     lightboxContent.innerHTML = '';
-
-    /* 2. Restore the page to exactly where it was */
     unlockScroll();
   }
 
-  lightboxClose.addEventListener('click', function (e) {
-    e.stopPropagation();
-    closeLightbox();
-  });
+  lightboxClose.addEventListener('click', function (e) { e.stopPropagation(); closeLightbox(); });
   lightbox.addEventListener('click', function (e) {
     if (e.target === lightbox || e.target === lightboxContent) closeLightbox();
   });
@@ -761,7 +795,7 @@
   });
 
   /* ============================================================
-     RENDER MEDIA
+     RENDER MEDIA — image / video / PDF (PDF rendered by PDF.js)
      ============================================================ */
   function renderMediaInto(container, media, opts) {
     opts = opts || {};
@@ -802,18 +836,35 @@
       container.appendChild(box);
     }
 
+    /* ---------- PDF — rendered as an image on the card via PDF.js ---------- */
     if (type === 'pdf') {
-      const iframe = document.createElement('iframe');
-      iframe.src = src + '#toolbar=0&navpanes=0&scrollbar=0&view=FitH';
-      iframe.title = 'PDF preview';
-      iframe.setAttribute('loading', 'eager');
-      iframe.onload = function () { container.classList.add('media-ready'); };
-      iframe.onerror = function () { showError('fa-file-pdf'); };
-      container.appendChild(iframe);
-      setTimeout(function () { container.classList.add('media-ready'); }, 1200);
+      const wrap = document.createElement('div');
+      wrap.style.cssText =
+        'position:absolute;inset:0;overflow:hidden;background:#fff;' +
+        'display:flex;align-items:flex-start;justify-content:center;';
+      container.appendChild(wrap);
+
+      loadPdfJs().then(function (pdfjsLib) {
+        return pdfjsLib.getDocument(src).promise;
+      }).then(function (pdf) {
+        return renderPdfPageToCanvas(pdf, 1, 1.5);
+      }).then(function (canvas) {
+        canvas.style.cssText =
+          'width:100%;height:100%;object-fit:cover;display:block;background:#fff;' +
+          'object-position:top center;';
+        wrap.appendChild(canvas);
+        container.classList.add('media-ready');
+      }).catch(function (err) {
+        console.error('PDF.js card error:', err);
+        showError('fa-file-pdf');
+      });
+
+      /* Safety net — hide shimmer after 4 s even if PDF.js is slow */
+      setTimeout(function () { container.classList.add('media-ready'); }, 4000);
       return;
     }
 
+    /* ---------- VIDEO ---------- */
     if (type === 'video') {
       const video = document.createElement('video');
       video.autoplay = true; video.muted = true; video.loop = true;
@@ -830,6 +881,7 @@
       return;
     }
 
+    /* ---------- IMAGE ---------- */
     const img = document.createElement('img');
     img.src = src;
     img.alt = media.alt || '';
@@ -909,9 +961,7 @@
     if (c) renderMediaInto(c, CONFIG.aboutMedia, {});
   }
 
-  /* ============================================================
-     PROJECTS
-     ============================================================ */
+  /* PROJECTS */
   let projectsExpanded = false;
   let projectsRendered = 0;
 
@@ -989,10 +1039,7 @@
       container.appendChild(buildProjectCard(CONFIG.projects[i]));
       projectsRendered++;
     }
-
-    if (wrap) {
-      wrap.style.display = (CONFIG.projects.length > initial) ? 'block' : 'none';
-    }
+    if (wrap) wrap.style.display = (CONFIG.projects.length > initial) ? 'block' : 'none';
     updateProjectsBtn();
     renderProjectsTotal();
   }
@@ -1010,8 +1057,7 @@
       projectsRendered = total;
       projectsExpanded = true;
     } else {
-      const cards = container.querySelectorAll('.project-card');
-      cards.forEach(function (c, idx) {
+      container.querySelectorAll('.project-card').forEach(function (c, idx) {
         if (idx >= initial) c.classList.add('hidden');
       });
       projectsExpanded = false;
@@ -1022,14 +1068,10 @@
   function initProjectsViewMore() {
     const btn = document.getElementById('projectsViewMoreBtn');
     if (!btn) return;
-    btn.addEventListener('click', function () {
-      toggleProjects();
-    });
+    btn.addEventListener('click', function () { toggleProjects(); });
   }
 
-  /* ============================================================
-     SKILLS
-     ============================================================ */
+  /* SKILLS */
   let currentSkillCategory = null;
   let skillsExpanded = false;
   let skillsRendered = 0;
@@ -1104,16 +1146,12 @@
       updateSkillsBtn();
       return;
     }
-
     const initial = Math.min(CONFIG.skillsInitialCount || 5, filtered.length);
     for (let i = 0; i < initial; i++) {
       grid.appendChild(buildSkillCard(filtered[i]));
       skillsRendered++;
     }
-
-    if (wrap) {
-      wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
-    }
+    if (wrap) wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
     updateSkillsBtn();
   }
 
@@ -1130,8 +1168,7 @@
       skillsRendered = filtered.length;
       skillsExpanded = true;
     } else {
-      const cards = grid.querySelectorAll('.skill-card');
-      cards.forEach(function (c, idx) {
+      grid.querySelectorAll('.skill-card').forEach(function (c, idx) {
         if (idx >= initial) c.classList.add('hidden');
       });
       skillsExpanded = false;
@@ -1142,14 +1179,10 @@
   function initSkillsViewMore() {
     const btn = document.getElementById('skillsViewMoreBtn');
     if (!btn) return;
-    btn.addEventListener('click', function () {
-      toggleSkills();
-    });
+    btn.addEventListener('click', function () { toggleSkills(); });
   }
 
-  /* ============================================================
-     CERTIFICATES
-     ============================================================ */
+  /* CERTIFICATES */
   let currentCertCategory = null;
   let certsExpanded = false;
   let certsRendered = 0;
@@ -1260,16 +1293,12 @@
       updateCertsBtn();
       return;
     }
-
     const initial = Math.min(CONFIG.certsInitialCount || 3, filtered.length);
     for (let i = 0; i < initial; i++) {
       grid.appendChild(buildCertCard(filtered[i]));
       certsRendered++;
     }
-
-    if (wrap) {
-      wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
-    }
+    if (wrap) wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
     updateCertsBtn();
   }
 
@@ -1286,8 +1315,7 @@
       certsRendered = filtered.length;
       certsExpanded = true;
     } else {
-      const cards = grid.querySelectorAll('.cert-card');
-      cards.forEach(function (c, idx) {
+      grid.querySelectorAll('.cert-card').forEach(function (c, idx) {
         if (idx >= initial) c.classList.add('hidden');
       });
       certsExpanded = false;
@@ -1298,14 +1326,10 @@
   function initCertsViewMore() {
     const btn = document.getElementById('certsViewMoreBtn');
     if (!btn) return;
-    btn.addEventListener('click', function () {
-      toggleCerts();
-    });
+    btn.addEventListener('click', function () { toggleCerts(); });
   }
 
-  /* ============================================================
-     SERVICES
-     ============================================================ */
+  /* SERVICES */
   let currentSrvCategory = null;
   let srvExpanded = false;
   let srvRendered = 0;
@@ -1393,16 +1417,12 @@
       updateSrvBtn();
       return;
     }
-
     const initial = Math.min(CONFIG.srvInitialCount || 4, filtered.length);
     for (let i = 0; i < initial; i++) {
       grid.appendChild(buildSrvCard(filtered[i]));
       srvRendered++;
     }
-
-    if (wrap) {
-      wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
-    }
+    if (wrap) wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
     updateSrvBtn();
   }
 
@@ -1419,8 +1439,7 @@
       srvRendered = filtered.length;
       srvExpanded = true;
     } else {
-      const cards = grid.querySelectorAll('.srv-card');
-      cards.forEach(function (c, idx) {
+      grid.querySelectorAll('.srv-card').forEach(function (c, idx) {
         if (idx >= initial) c.classList.add('hidden');
       });
       srvExpanded = false;
@@ -1431,14 +1450,10 @@
   function initSrvViewMore() {
     const btn = document.getElementById('srvViewMoreBtn');
     if (!btn) return;
-    btn.addEventListener('click', function () {
-      toggleServices();
-    });
+    btn.addEventListener('click', function () { toggleServices(); });
   }
 
-  /* ============================================================
-     EDUCATION
-     ============================================================ */
+  /* EDUCATION */
   function renderEducation() {
     const grid = document.getElementById('educationGrid');
     if (!grid) return;
@@ -1484,9 +1499,7 @@
     });
   }
 
-  /* ============================================================
-     SOCIAL / CV
-     ============================================================ */
+  /* SOCIAL / CV */
   function renderSocial() {
     const container = document.getElementById('socialIcons');
     if (!container) return;
@@ -1531,9 +1544,7 @@
     }
   }
 
-  /* ============================================================
-     VISITOR / RATING
-     ============================================================ */
+  /* VISITOR / RATING */
   function initVisitorCounter() {
     incrementVisitorCount();
     const n = getVisitorCount();
@@ -1638,9 +1649,7 @@
     startJobRotator();
   }
 
-  /* ============================================================
-     SCROLL / NAV
-     ============================================================ */
+  /* SCROLL / NAV */
   function initScrollReveal() {
     document.querySelectorAll('.section').forEach(function (s) { s.classList.add('visible'); });
   }
@@ -1785,9 +1794,7 @@
     });
   }
 
-  /* ============================================================
-     INIT
-     ============================================================ */
+  /* INIT */
   function init() {
     const PRIORITY = [
       '../profile images/meleb.jpg',
