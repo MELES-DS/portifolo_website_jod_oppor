@@ -635,7 +635,7 @@
     social: [
       { name: 'LinkedIn',  icon: 'fab fa-linkedin-in',    url: 'https://linkedin.com/in/melismelakie', cls: 'linkedin' },
       { name: 'GitHub',    icon: 'fab fa-github',         url: 'https://github.com/MELES-DS',      cls: 'github' },
-      { name: 'Telegram',  icon: 'fab fa-telegram-plane', url: 'https://t.me/@Mele2927',            cls: 'telegram' },
+      { name: 'Telegram',  icon: 'fab fa-telegram-plane', url: 'https://t.me/@Mele2729',            cls: 'telegram' },
       { name: 'WhatsApp',  icon: 'fab fa-whatsapp',       url: 'https://wa.me/',           cls: 'whatsapp' },
       { name: 'Facebook',  icon: 'fab fa-facebook-f',     url: 'https://facebook.com/',    cls: 'facebook' },
       { name: 'Instagram', icon: 'fab fa-instagram',      url: 'https://instagram.com/',   cls: 'instagram' },
