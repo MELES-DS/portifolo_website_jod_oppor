@@ -640,9 +640,8 @@
       { name: 'Facebook',  icon: 'fab fa-facebook-f',     url: 'https://facebook.com/melismelakie',    cls: 'facebook' },
       { name: 'Instagram', icon: 'fab fa-instagram',      url: 'https://instagram.com/melismelakie',   cls: 'instagram' },
       { name: 'Discord',   icon: 'fab fa-discord',        url: 'https://discord.com/melismelakie',     cls: 'discord' },
-      { name: 'Pinterest', icon: 'fab fa-pinterest-p',    url: 'https://pinterest.com/melismelakie',   cls: 'pinterest' },
-      { name: 'Twitter/X', icon: 'fab fa-x-twitter',      url: 'https://x.com/@MelakieMel38871
-',           cls: 'twitter' },
+      { name: 'Pinterest', icon: 'fab fa-pinterest-p',    url: 'https://pinterest.com/',   cls: 'pinterest' },
+      { name: 'Twitter/X', icon: 'fab fa-x-twitter',      url: 'https://x.com/@MelakieMel38871', cls: 'twitter' },
       { name: 'Reddit',    icon: 'fab fa-reddit-alien',   url: 'https://reddit.com/melismelakie',      cls: 'reddit' }
     ]
   };
