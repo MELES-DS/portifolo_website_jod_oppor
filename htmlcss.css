@@ -22,20 +22,18 @@
   --radius: 1.5rem;
   --radius-sm: 1rem;
   --transition: all 0.25s ease;
-  --star: #fbbf24;
   --success: #16a34a;
 
-  /* === slightly different background per section === */
-  --sec-home-bg:      #f0f4f9;   /* cool light blue-grey */
-  --sec-about-bg:     #eef4ff;   /* soft sky blue        */
-  --sec-edu-bg:       #f1f6fb;   /* pale blue            */
-  --sec-skills-bg:    #ecf3fc;   /* icy blue             */
-  --sec-projects-bg:  #f0f4f9;   /* back to cool grey    */
-  --sec-exp-bg:       #eef7f2;   /* very light mint      */
-  --sec-certs-bg:     #f3f2fb;   /* lavender tint        */
-  --sec-services-bg:  #f0f7f4;   /* soft green           */
-  --sec-cv-bg:        #f5f3fb;   /* light violet         */
-  --sec-contact-bg:   #eff6ff;   /* bright pale blue     */
+  --sec-home-bg:      #f0f4f9;
+  --sec-about-bg:     #eef4ff;
+  --sec-edu-bg:       #f1f6fb;
+  --sec-skills-bg:    #ecf3fc;
+  --sec-projects-bg:  #f0f4f9;
+  --sec-exp-bg:       #eef7f2;
+  --sec-certs-bg:     #f3f2fb;
+  --sec-services-bg:  #f0f7f4;
+  --sec-cv-bg:        #f5f3fb;
+  --sec-contact-bg:   #eff6ff;
 
   --nav-hover-1: #2563eb;
   --nav-hover-2: #7c3aed;
@@ -283,22 +281,26 @@ p {
 }
 
 /* ============================================================
-   SECTION SUBTITLE — Descriptive sentence under each title
+   SECTION SUBTITLE — identical left & right edges everywhere
    ============================================================ */
 .section-subtitle {
-  max-width: 640px;
+  width: 720px;
+  max-width: 100%;
   margin: 1rem auto 0;
-  padding: 0 1.25rem;
+  padding: 0 !important;
   text-align: center;
+  text-indent: 0;
   font-size: 0.98rem;
   line-height: 1.65;
-  color: var(--text-light);
   font-weight: 400;
-  text-indent: 0;
+  color: var(--text-light);
   letter-spacing: 0.005em;
+  display: block;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-/* When a badge (total count) is present, keep spacing consistent */
 .section-header-inline + .underline + .section-subtitle {
   margin-top: 1rem;
 }
@@ -475,7 +477,7 @@ p {
 }
 
 /* ============================================================
-   FILTER BAR
+   FILTER BAR — icon hugs the label
    ============================================================ */
 .filter-bar {
   display: flex; flex-wrap: wrap; justify-content: center;
@@ -483,7 +485,7 @@ p {
   max-width: 1100px; margin-left: auto; margin-right: auto;
 }
 .filter-btn {
-  display: inline-flex; align-items: center; gap: 0.4rem;
+  display: inline-flex; align-items: center; gap: 0.35rem;
   padding: 0.6rem 1.2rem;
   font-family: inherit; font-size: 0.85rem; font-weight: 600;
   color: var(--text-light); background: var(--surface);
@@ -492,7 +494,8 @@ p {
   transition: var(--transition); white-space: nowrap;
   box-shadow: var(--shadow-xs);
 }
-.filter-btn i { font-size: 0.85rem; color: var(--primary); transition: var(--transition); }
+.filter-btn i { font-size: 0.85rem; color: var(--primary); transition: var(--transition); margin: 0; }
+.filter-btn-label { margin: 0; }
 .filter-btn:hover {
   color: var(--primary); border-color: var(--primary-light);
   transform: translateY(-2px);
@@ -616,7 +619,7 @@ p {
 .project-link:hover i { transform: translateX(5px); }
 
 /* ============================================================
-   EXPERIENCE
+   EXPERIENCE — icon sits very close to the title
    ============================================================ */
 .experience-grid {
   display: grid;
@@ -655,8 +658,8 @@ p {
 }
 .exp-header {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.55rem;
   margin-bottom: 1rem;
 }
 .exp-logo {
@@ -667,6 +670,13 @@ p {
   display: flex; align-items: center; justify-content: center;
   font-size: 1.5rem;
   flex-shrink: 0;
+  margin-right: 0;
+}
+.exp-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
 }
 .exp-title {
   font-size: 1.05rem;
@@ -762,7 +772,7 @@ p {
 .view-more-btn[data-expanded="true"] i { transform: rotate(180deg); }
 
 /* ============================================================
-   CERTIFICATES
+   CERTIFICATES — icon hugs the title
    ============================================================ */
 .certificates-grid {
   display: grid;
@@ -822,7 +832,12 @@ p {
   font-size: 0.68rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.5px;
 }
-.cert-top { display: flex; align-items: flex-start; gap: 0.9rem; margin-bottom: 0.9rem; }
+.cert-top {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.9rem;
+}
 .cert-icon {
   font-size: 1.5rem; color: var(--primary);
   background: var(--primary-soft);
@@ -830,6 +845,13 @@ p {
   border-radius: 0.85rem;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
+  margin-right: 0;
+}
+.cert-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
 }
 .cert-title { font-size: 1.02rem; font-weight: 700; color: var(--text); line-height: 1.35; }
 .cert-provider {
@@ -853,7 +875,7 @@ p {
 .cert-verify:hover i { transform: translateX(4px); }
 
 /* ============================================================
-   SERVICES
+   SERVICES — icon hugs the title
    ============================================================ */
 .services-grid {
   display: grid;
@@ -883,7 +905,12 @@ p {
   box-shadow: var(--shadow-hover);
   border-color: var(--primary-light);
 }
-.srv-header { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
+.srv-header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
 .srv-logo {
   width: 3.25rem; height: 3.25rem;
   border-radius: 0.85rem;
@@ -891,6 +918,13 @@ p {
   color: var(--primary);
   display: flex; align-items: center; justify-content: center;
   font-size: 1.5rem; flex-shrink: 0;
+  margin-right: 0;
+}
+.srv-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
 }
 .srv-title {
   font-size: 1.05rem; font-weight: 700;
@@ -1063,7 +1097,7 @@ p {
 .cv-icon-box i { pointer-events: none; }
 
 /* ============================================================
-   CONTACT — matches reference layout (info left, form right)
+   CONTACT
    ============================================================ */
 .contact-card {
   display: grid;
@@ -1079,7 +1113,6 @@ p {
 }
 .contact-card:hover { box-shadow: none; }
 
-/* ---------- LEFT: contact info column ---------- */
 .contact-side-info {
   display: flex;
   flex-direction: column;
@@ -1107,7 +1140,7 @@ p {
   width: 60px;
   height: 60px;
   border-radius: 16px;
-  background: #e6edfb;               /* pale blue chip */
+  background: #e6edfb;
   color: var(--primary);
   display: flex;
   align-items: center;
@@ -1148,7 +1181,6 @@ a.contact-info-value:hover { color: var(--primary); }
 .contact-info-email { color: var(--text); }
 .contact-info-email:hover { text-decoration: underline; }
 
-/* ---------- RIGHT: form ---------- */
 .email-form {
   display: flex;
   flex-direction: column;
@@ -1233,17 +1265,6 @@ a.contact-info-value:hover { color: var(--primary); }
 .form-status.success { color: var(--success); }
 .form-status.error   { color: #dc2626; }
 .form-status.sending { color: var(--primary); }
-
-/* ---------- Responsive ---------- */
-@media (max-width: 900px) {
-  .contact-card {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* ============================================================
    FOOTER
@@ -1408,8 +1429,6 @@ body.lightbox-open .edu-card,
 body.lightbox-open .edu-card:hover,
 body.lightbox-open .about-item,
 body.lightbox-open .about-item:hover,
-body.lightbox-open .stat-chip,
-body.lightbox-open .stat-chip:hover,
 body.lightbox-open .filter-btn,
 body.lightbox-open .filter-btn:hover,
 body.lightbox-open .view-more-btn,
@@ -1610,13 +1629,23 @@ iframe.media-error { display: none !important; }
   .about-layout .circular-media { order: -1; }
   .about-item { text-align: left; }
 }
+
 @media (max-width: 900px) {
   .cv-card { grid-template-columns: 1fr; text-align: center; }
   .cv-icon-box { margin: 0 auto; }
   .cv-actions { flex-direction: row; justify-content: center; flex-wrap: wrap; }
   .cv-info p { margin-left: auto; margin-right: auto; }
   .cv-meta-list { justify-content: center; }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
 }
+
 @media (max-width: 768px) {
   body { padding-top: 68px; }
   .menu-toggle { display: inline-flex; }
@@ -1647,13 +1676,16 @@ iframe.media-error { display: none !important; }
   .navbar { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
   p { padding-left: 0.5rem; padding-right: 0.5rem; }
 
-  /* Subtitle responsive on tablet */
   .section-subtitle {
+    width: 92%;
+    max-width: 92%;
+    padding: 0 !important;
+    margin: 0.85rem auto 0;
     font-size: 0.92rem;
-    padding: 0 1rem;
-    margin-top: 0.85rem;
+    line-height: 1.6;
   }
 }
+
 @media (max-width: 480px) {
   body { padding-top: 65px; }
   .logo { font-size: 1.15rem; }
@@ -1679,11 +1711,12 @@ iframe.media-error { display: none !important; }
   .email-form { padding: 1.5rem 1.25rem; }
   p { padding-left: 0.25rem; padding-right: 0.25rem; text-indent: 1em; }
 
-  /* Subtitle responsive on mobile */
   .section-subtitle {
+    width: 94%;
+    max-width: 94%;
+    padding: 0 !important;
+    margin: 0.75rem auto 0;
     font-size: 0.88rem;
-    padding: 0 0.75rem;
-    margin-top: 0.75rem;
     line-height: 1.55;
   }
 }

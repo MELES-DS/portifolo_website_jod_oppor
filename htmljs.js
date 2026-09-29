@@ -12,7 +12,7 @@
   }
 
   /* ============================================================
-     PDF.js — loaded on demand (only when a PDF needs to render)
+     PDF.js — loaded on demand
      ============================================================ */
   const PDFJS_URL        = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs';
   const PDFJS_WORKER_URL = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs';
@@ -44,8 +44,6 @@
 
   /* ============================================================
      🌍 TRANSLATIONS
-     ════════════════════════════════════════════════════════════
-     To translate a new item, add the SAME KEY to both `en` and `am`.
      ============================================================ */
   const STRINGS = {
     en: {
@@ -55,12 +53,10 @@
       'nav.certificates': 'Certificates', 'nav.services': 'Services',
       'nav.cv': 'CV', 'nav.contact': 'Contact',
 
-      /* --- Home --- */
       'home.title': 'Welcome Everyones', 'home.greet': "Hi, I'm", 'home.name': 'Melis Melakie',
       'home.desc': "I'm a passionate Data Science student interested in turning data into meaningful insights and practical solutions. I enjoy working with data, exploring patterns, analysing data, building machine learning models, develop data-driven applications and projects that solve real-world problems.",
       'home.viewProjects': 'View Projects', 'home.getInTouch': 'Get in Touch',
 
-      /* --- About --- */
       'about.title': 'About Me',
       'about.intro': "Data Science student passionate about transforming data into meaningful insights through analysis, visualization, machine learning, deep learning and Ms-excel.",
       'about.academic': 'Academic Background',
@@ -70,7 +66,6 @@
       'about.goals': 'Professional Goals',
       'about.goalsDesc': 'To become a data scientist who ships end-to-end ML systems from data collection to deployment.',
 
-      /* --- Skills --- */
       'skills.title': 'Skills',
       'skills.subtitle': 'Technologies, tools and soft skills I use to bring data to life.',
       'skills.empty': 'No skills found in this category.',
@@ -91,7 +86,6 @@
       'skill.problem': 'Problem Solving', 'skill.time': 'Time Management',
       'skill.critical': 'Critical Thinking', 'skill.presentation': 'Presentation',
 
-      /* --- Projects --- */
       'projects.title': 'Projects',
       'projects.subtitle': 'A selection of hands-on projects where I apply machine learning and data analysis to real problems.',
       'projects.github': 'View on GitHub',
@@ -121,7 +115,6 @@
       'tag.timeseries': 'Time Series', 'tag.arima': 'ARIMA', 'tag.lstm': 'LSTM',
       'tag.anomaly': 'Anomaly Detection',
 
-      /* --- Experience --- */
       'exp.title': 'Experience',
       'exp.subtitle': 'Internships, freelance work and community roles that shaped my practical skills.',
       'exp.empty': 'No experience in this category yet.',
@@ -161,7 +154,6 @@
       'exp7.duration': '2023 – Present',
       'exp7.tag1': 'Leadership', 'exp7.tag2': 'Community', 'exp7.tag3': 'Workshops',
 
-      /* --- Certificates --- */
       'certs.title': 'Certificates',
       'certs.subtitle': "Verified courses and programs I've completed to deepen my expertise.",
       'certs.empty': 'No certificates found in this category yet.',
@@ -209,7 +201,6 @@
       'cert.ibm.title': 'IBM Data Science Professional',
       'cert.ibm.desc': 'Hands-on program covering Python, SQL, ML, and data science methodology.',
 
-      /* --- Services --- */
       'srv.title': 'Services',
       'srv.subtitle': 'What I can offer you — from data analysis to ML models and dashboards.',
       'srv.empty': 'No services in this category yet.',
@@ -237,7 +228,6 @@
       'srv5.duration': 'Flexible schedule',
       'srv5.tag1': 'Python', 'srv5.tag2': 'ML', 'srv5.tag3': 'Mentoring',
 
-      /* --- Education --- */
       'edu.title': 'Education',
       'edu.subtitle': 'My academic journey and the foundations that shaped my data science path.',
       'edu.elementary.title': 'Primary Education', 'edu.elementary.sub': 'Abessken Elementary School',
@@ -251,14 +241,12 @@
       'edu.online.desc': "Completed multiple specializations on O'Reilly, Gebeya, Demera/Percipio, Amazon, Data Camp and Udacity to deepen practical ML and analytics skills.",
       'edu.online.meta': 'Ongoing',
 
-      /* --- CV --- */
       'cv.title': 'Curriculum Vitae',
       'cv.subtitle': 'A concise overview of my education, skills, projects and certifications.',
       'cv.heading': 'Melis Melakie — Curriculum Vitae',
       'cv.desc': 'A concise overview of my education, technical skills, projects, and certifications.',
       'cv.open': 'Open CV', 'cv.download': 'Download CV',
 
-      /* --- Contact --- */
       'contact.title': 'Contact',
       'contact.subtitle': "Have a project in mind? Let's talk — I'm always open to new ideas and collaborations.",
       'contact.orEmail': 'Or email me directly at',
@@ -281,7 +269,6 @@
       'contact.sending': 'Sending message...',
       'contact.serverError': 'Something went wrong. Please email me directly.',
 
-      /* --- Misc --- */
       'media.noImage': 'No image', 'media.noPreview': 'No preview',
       'footer.tagline': 'Data Science Student · Building intelligent systems',
       'footer.copy': '© 2025 Melis Melakie · All rights are reserved. <i class="fas fa-heart"></i>'
@@ -520,19 +507,29 @@
   /* ============================================================
      ⚙️ CONFIG — THE ONLY PLACE YOU EDIT
      ════════════════════════════════════════════════════════════
-     Every entry below is a plain object. Add / remove / reorder
-     freely — the renderers read directly from these arrays.
-     ============================================================ */
+     ICON CHEAT SHEET
+     ────────────────
+     Every item AND every category has an `icon:` field.
+     Just paste any Font Awesome class (e.g. 'fas fa-code'
+     or 'fab fa-python').
+
+     To add: paste a new object with an icon: line.
+     To remove: delete the object.
+     To change an icon: edit only the icon: value.
+     ════════════════════════════════════════════════════════════ */
   const CONFIG = {
 
     email: 'melismelakie27@gmail.com',
 
+    /* Number of items shown before "View More".
+       Experience & Services = 3 → show 3, then "View More"
+       when a category has more than 3. */
     initialCounts: {
-      projects:    5,
-      experience:  4,
+      projects:     5,
+      experience:   3,
       certificates: 3,
-      skills:      5,
-      services:    4
+      skills:       5,
+      services:     3
     },
 
     jobTitles: {
@@ -541,9 +538,7 @@
     },
     jobRotateInterval: 2400,
 
-    /* --------------------------------------------------------
-       NAVIGATION — add/remove: { id: 'newId', i18n: 'nav.newId' }
-       -------------------------------------------------------- */
+    /* --- NAVIGATION --- */
     nav: [
       { id: 'home',         i18n: 'nav.home' },
       { id: 'about',        i18n: 'nav.about' },
@@ -557,24 +552,15 @@
       { id: 'contact',      i18n: 'nav.contact' }
     ],
 
-    /* --------------------------------------------------------
-       HOME / ABOUT MEDIA
-       media: { type: 'image' | 'video' | 'pdf', src, alt }
-       -------------------------------------------------------- */
     homeMedia:  { type: 'image', src: 'profiles images/mele.jpg', alt: 'Melis Melakie profile' },
     aboutMedia: { type: 'image', src: 'profile images/meleb.jpg', alt: 'Working with data' },
 
-    /* --------------------------------------------------------
-       CV
-       -------------------------------------------------------- */
     cv: {
       src: 'certificates/gebeya/product creation with AI_advanced level.pdf',
       fileName: 'Melis-Melakie-CV.pdf'
     },
 
-    /* --------------------------------------------------------
-       EDUCATION — Add: { id, i18nTitle, i18nSub, i18nDesc, i18nMeta, icon, media }
-       -------------------------------------------------------- */
+    /* --- EDUCATION --- */
     education: [
       { id: 'elementary', i18nTitle: 'edu.elementary.title', i18nSub: 'edu.elementary.sub',
         i18nDesc: 'edu.elementary.desc', i18nMeta: 'edu.elementary.meta',
@@ -591,9 +577,7 @@
         icon: 'fas fa-laptop', media: { type: 'none', src: '' } }
     ],
 
-    /* --------------------------------------------------------
-       PROJECTS — Add: { i18nTitle, i18nDesc, i18nTags, github, media }
-       -------------------------------------------------------- */
+    /* --- PROJECTS --- */
     projects: [
       { i18nTitle: 'proj.churn.title', i18nDesc: 'proj.churn.desc',
         i18nTags: ['tag.python','tag.sklearn','tag.pandas'], github: 'https://github.com/',
@@ -621,11 +605,7 @@
         media: { type: 'image', src: 'project images/camera.png', alt: 'Fraud detection' } }
     ],
 
-    /* --------------------------------------------------------
-       EXPERIENCE
-       1. Add a category: push to `experienceCategories`
-       2. Add an item:    push to `experience` (category must match)
-       -------------------------------------------------------- */
+    /* --- EXPERIENCE --- */
     experienceCategories: [
       { key: 'internship',  i18nLabel: 'expcat.internship',  icon: 'fas fa-briefcase' },
       { key: 'freelance',   i18nLabel: 'expcat.freelance',   icon: 'fas fa-laptop-code' },
@@ -660,11 +640,7 @@
         category: 'community',   icon: 'fas fa-people-group' }
     ],
 
-    /* --------------------------------------------------------
-       CERTIFICATES
-       1. Add/remove categories in `certificateCategories`
-       2. Add/remove items in `certificates` (match by `category`)
-       -------------------------------------------------------- */
+    /* --- CERTIFICATES --- */
     certificateCategories: [
       { key: 'oreilly',     i18nLabel: 'certcat.oreilly',     icon: 'fas fa-book' },
       { key: 'demera',      i18nLabel: 'certcat.demera',      icon: 'fas fa-hands-holding-heart' },
@@ -712,11 +688,7 @@
       { i18nTitle: 'cert.dl.title',       i18nDesc: 'cert.dl.desc',       provider: 'DeepLearning.AI', category: 'other',       icon: 'fas fa-network-wired',  preview: { type: 'pdf', src: 'certificates/others/Job Roles in the Cloud.pdf' },           link: '#' }
     ],
 
-    /* --------------------------------------------------------
-       SERVICES
-       1. Add/remove categories in `serviceCategories`
-       2. Add/remove items in `services` (match by `category`)
-       -------------------------------------------------------- */
+    /* --- SERVICES --- */
     serviceCategories: [
       { key: 'data-analysis', i18nLabel: 'srvcat.data-analysis', icon: 'fas fa-chart-bar' },
       { key: 'ml',            i18nLabel: 'srvcat.ml',            icon: 'fas fa-brain' },
@@ -743,11 +715,7 @@
         category: 'training',      icon: 'fas fa-chalkboard-user' }
     ],
 
-    /* --------------------------------------------------------
-       SKILLS
-       1. Add/remove categories in `skillCategories`
-       2. Add/remove skills in `skills` (match by `category`)
-       -------------------------------------------------------- */
+    /* --- SKILLS --- */
     skillCategories: [
       { key: 'programming', i18nLabel: 'cat.programming', icon: 'fas fa-code' },
       { key: 'datasci',     i18nLabel: 'cat.datasci',     icon: 'fas fa-brain' },
@@ -782,10 +750,7 @@
       { i18nName: 'skill.presentation',  icon: 'fas fa-chalkboard-user', category: 'soft', i18nLevel: 'lvl.intermediate' }
     ],
 
-    /* --------------------------------------------------------
-       SOCIAL LINKS
-       `cls` must match a `.social-icon.<cls>:hover` rule in CSS
-       -------------------------------------------------------- */
+    /* --- SOCIAL --- */
     social: [
       { name: 'LinkedIn',  icon: 'fab fa-linkedin-in', url: 'https://linkedin.com/in/melismelakie', cls: 'linkedin' },
       { name: 'GitHub',    icon: 'fab fa-github',      url: 'https://github.com/MELES-DS',          cls: 'github' },
@@ -1061,8 +1026,6 @@
 
   /* ============================================================
      GENERIC FILTERED SECTION FACTORY
-     ════════════════════════════════════════════════════════════
-     Handles: Projects / Skills / Certificates / Services / Experience
      ============================================================ */
   function createFilteredSection(opts) {
     const state = { currentCategory: null, expanded: false, rendered: 0 };
@@ -1087,8 +1050,10 @@
         const count = opts.items.filter(function (it) { return it.category === cat.key; }).length;
         const btn = el('button', 'filter-btn' + (i === 0 ? ' active' : ''));
         btn.dataset.category = cat.key;
+        /* Icon sits right before the label — no gap on either side */
         btn.innerHTML =
-          '<i class="' + cat.icon + '"></i> <span>' + t(cat.i18nLabel) + '</span>' +
+          '<i class="' + cat.icon + '"></i>' +
+          '<span class="filter-btn-label">' + t(cat.i18nLabel) + '</span>' +
           (opts.showCountBadge !== false ? '<span class="count-badge">' + count + '</span>' : '');
         btn.addEventListener('click', function () {
           state.currentCategory = cat.key;
@@ -1222,10 +1187,11 @@
       return '<span class="exp-tag">' + t(k) + '</span>';
     }).join('');
 
+    /* Icon sits IMMEDIATELY to the left of the title */
     card.innerHTML =
       '<div class="exp-header">' +
         '<div class="exp-logo"><i class="' + exp.icon + '"></i></div>' +
-        '<div>' +
+        '<div class="exp-header-text">' +
           '<div class="exp-title">' + t(exp.i18nTitle) + '</div>' +
           '<div class="exp-company"><i class="fas fa-building"></i> ' + t(exp.i18nCompany) + '</div>' +
         '</div>' +
@@ -1253,10 +1219,11 @@
       showEmpty: true, emptyClass: 'cert-preview-empty', emptyLabel: t('media.noPreview')
     });
 
+    /* Icon sits IMMEDIATELY to the left of the title */
     const top = el('div', 'cert-top');
     top.innerHTML =
       '<div class="cert-icon"><i class="' + cert.icon + '"></i></div>' +
-      '<div>' +
+      '<div class="cert-header-text">' +
         '<div class="cert-title">' + t(cert.i18nTitle) + '</div>' +
         '<div class="cert-provider">' + cert.provider + '</div>' +
       '</div>';
@@ -1287,10 +1254,12 @@
     const tagHTML = (srv.i18nTags || []).map(function (k) {
       return '<span class="srv-tag">' + t(k) + '</span>';
     }).join('');
+
+    /* Icon sits IMMEDIATELY to the left of the title */
     card.innerHTML =
       '<div class="srv-header">' +
         '<div class="srv-logo"><i class="' + srv.icon + '"></i></div>' +
-        '<div>' +
+        '<div class="srv-header-text">' +
           '<div class="srv-title">' + t(srv.i18nJob) + '</div>' +
           '<div class="srv-company"><i class="fas fa-briefcase"></i> ' + t(srv.i18nCompany) + '</div>' +
         '</div>' +
@@ -1314,7 +1283,7 @@
     items: CONFIG.experience,
     categories: CONFIG.experienceCategories,
     buildCard: buildExperienceCard,
-    initialCount: CONFIG.initialCounts.experience,
+    initialCount: CONFIG.initialCounts.experience,  /* = 3 */
     emptyLabel: 'exp.empty'
   });
 
@@ -1342,7 +1311,7 @@
     items: CONFIG.services,
     categories: CONFIG.serviceCategories,
     buildCard: buildServiceCard,
-    initialCount: CONFIG.initialCounts.services,
+    initialCount: CONFIG.initialCounts.services,    /* = 3 */
     emptyLabel: 'srv.empty'
   });
 
@@ -1759,7 +1728,6 @@
      INIT
      ============================================================ */
   function init() {
-    /* Preload priority images */
     ['../profile images/meleb.jpg',
      '../profile images/mele.jpg',
      '../project images/eep.png'].forEach(function (u) {
@@ -1771,7 +1739,6 @@
       document.head.appendChild(l);
     });
 
-    /* First render of all sections */
     renderNav();
     renderHomeMedia();
     renderAboutMedia();
@@ -1784,10 +1751,8 @@
     renderSocial();
     renderCVActions();
 
-    /* Re-render with correct language */
     applyTranslations();
 
-    /* Global error → mark broken media */
     document.addEventListener('error', function (e) {
       const el = e.target;
       if (el && (el.tagName === 'IMG' || el.tagName === 'VIDEO')) {
@@ -1795,7 +1760,6 @@
       }
     }, true);
 
-    /* Attach behaviour */
     initSmoothAnchors();
     initActiveNav();
     initThemeToggle();
