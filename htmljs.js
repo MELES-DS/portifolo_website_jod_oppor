@@ -786,16 +786,16 @@
     ],
 
     social: [
-      { name: 'LinkedIn',  icon: 'fab fa-linkedin-in',    url: 'https://linkedin.com/in/melismelakie', cls: 'linkedin' },
-      { name: 'GitHub',    icon: 'fab fa-github',         url: 'https://github.com/MELES-DS',          cls: 'github' },
-      { name: 'Telegram',  icon: 'fab fa-telegram',       url: 'https://t.me/Mele2927',                cls: 'telegram' },
-      { name: 'WhatsApp',  icon: 'fab fa-whatsapp',       url: 'https://wa.me/251945637373',           cls: 'whatsapp' },
-      { name: 'Facebook',  icon: 'fab fa-facebook-f',     url: 'https://facebook.com/',                cls: 'facebook' },
-      { name: 'Instagram', icon: 'fab fa-instagram',      url: 'https://instagram.com/',               cls: 'instagram' },
-      { name: 'Discord',   icon: 'fab fa-discord',        url: 'https://discord.com/',                 cls: 'discord' },
-      { name: 'Pinterest', icon: 'fab fa-pinterest-p',    url: 'https://pinterest.com/',               cls: 'pinterest' },
-      { name: 'Twitter/X', icon: 'fab fa-x-twitter',      url: 'https://x.com/',                       cls: 'twitter' },
-      { name: 'Reddit',    icon: 'fab fa-reddit-alien',   url: 'https://reddit.com/',                  cls: 'reddit' }
+      { name: 'LinkedIn',  icon: 'fab fa-linkedin-in',    url: 'https://linkedin.com/in/', cls: 'linkedin' },
+      { name: 'GitHub',    icon: 'fab fa-github',         url: 'https://github.com/',      cls: 'github' },
+      { name: 'Telegram',  icon: 'fab fa-telegram-plane', url: 'https://t.me/',            cls: 'telegram' },
+      { name: 'WhatsApp',  icon: 'fab fa-whatsapp',       url: 'https://wa.me/',           cls: 'whatsapp' },
+      { name: 'Facebook',  icon: 'fab fa-facebook-f',     url: 'https://facebook.com/',    cls: 'facebook' },
+      { name: 'Instagram', icon: 'fab fa-instagram',      url: 'https://instagram.com/',   cls: 'instagram' },
+      { name: 'Discord',   icon: 'fab fa-discord',        url: 'https://discord.com/',     cls: 'discord' },
+      { name: 'Pinterest', icon: 'fab fa-pinterest-p',    url: 'https://pinterest.com/',   cls: 'pinterest' },
+      { name: 'Twitter/X', icon: 'fab fa-x-twitter',      url: 'https://x.com/',           cls: 'twitter' },
+      { name: 'Reddit',    icon: 'fab fa-reddit-alien',   url: 'https://reddit.com/',      cls: 'reddit' }
     ]
   };
 
