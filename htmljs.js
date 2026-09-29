@@ -52,18 +52,13 @@
       'brand': 'Portfolio',
       'nav.home': 'Home', 'nav.about': 'About Me', 'nav.education': 'Education',
       'nav.skills': 'Skills', 'nav.projects': 'Projects',
+      'nav.experience': 'Experience',
       'nav.certificates': 'Certificates', 'nav.services': 'Services',
       'nav.cv': 'CV', 'nav.contact': 'Contact',
 
       'home.title': 'Welcome Everyones', 'home.greet': "Hi, I'm", 'home.name': 'Melis Melakie',
       'home.desc': "I'm a passionate Data Science student interested in turning data into meaningful insights and practical solutions. I enjoy working with data, exploring patterns, analysing data, building machine learning models, develop data-driven applications and projects that solve real-world problems.",
       'home.viewProjects': 'View Projects', 'home.getInTouch': 'Get in Touch',
-
-      'stats.visitorsShort': 'Visitors',
-      'stats.rateShort': 'Rate my work',
-      'stats.ratings': 'ratings',
-      'stats.alreadyRated': 'You already rated',
-      'stats.thanks': '✓ Thank you for your rating!',
 
       'about.title': 'About Me',
       'about.intro': "Data Science student passionate about transforming data into meaningful insights through analysis, visualization, machine learning, deep learning and Ms-excel.",
@@ -128,6 +123,59 @@
       'tag.sql': 'SQL', 'tag.postgresql': 'PostgreSQL', 'tag.analytics': 'Analytics',
       'tag.timeseries': 'Time Series', 'tag.arima': 'ARIMA', 'tag.lstm': 'LSTM',
       'tag.anomaly': 'Anomaly Detection',
+
+      /* ---------- EXPERIENCE ---------- */
+      'exp.title': 'Experience',
+      'exp.empty': 'No experience in this category yet.',
+      'expcat.internship': 'Internship',
+      'expcat.freelance': 'Freelance',
+      'expcat.research': 'Research',
+      'expcat.volunteer': 'Volunteer',
+      'expcat.teaching': 'Teaching',
+      'expcat.competition': 'Competition',
+      'expcat.community': 'Community',
+
+      'exp1.title': 'Data Science Intern',
+      'exp1.company': 'Tech Innovation Hub',
+      'exp1.desc': 'Worked on end-to-end ML pipelines — from data cleaning and feature engineering to model training and evaluation. Deployed a churn prediction model to production.',
+      'exp1.duration': 'Jun 2024 – Sep 2024',
+      'exp1.tag1': 'Python', 'exp1.tag2': 'Pandas', 'exp1.tag3': 'Scikit-learn', 'exp1.tag4': 'Deployment',
+
+      'exp2.title': 'Freelance Data Analyst',
+      'exp2.company': 'Self-employed',
+      'exp2.desc': 'Delivered data analysis and interactive dashboard projects for small businesses and NGOs. Focused on turning raw data into actionable business insights.',
+      'exp2.duration': '2023 – Present',
+      'exp2.tag1': 'SQL', 'exp2.tag2': 'Plotly', 'exp2.tag3': 'Dash', 'exp2.tag4': 'Reporting',
+
+      'exp3.title': 'Undergraduate Research Assistant',
+      'exp3.company': 'University Data Lab',
+      'exp3.desc': 'Assisted in research on NLP-based sentiment analysis for Amharic text. Built preprocessing pipelines and evaluated transformer models.',
+      'exp3.duration': 'Jan 2024 – May 2024',
+      'exp3.tag1': 'NLP', 'exp3.tag2': 'Transformers', 'exp3.tag3': 'Research',
+
+      'exp4.title': 'Open Source Contributor',
+      'exp4.company': 'GitHub Community',
+      'exp4.desc': 'Contributed to open-source data science projects — improved documentation, fixed bugs, and added new ML utilities to popular Python libraries.',
+      'exp4.duration': '2023 – Present',
+      'exp4.tag1': 'Open Source', 'exp4.tag2': 'Python', 'exp4.tag3': 'Git',
+
+      'exp5.title': 'Python & ML Tutor',
+      'exp5.company': 'Student Learning Center',
+      'exp5.desc': 'Taught Python fundamentals and introductory machine learning to 30+ students. Designed hands-on mini-projects and guided capstone work.',
+      'exp5.duration': '2023 – 2024',
+      'exp5.tag1': 'Teaching', 'exp5.tag2': 'Python', 'exp5.tag3': 'Mentoring',
+
+      'exp6.title': 'Hackathon Participant',
+      'exp6.company': 'National Data Hackathon',
+      'exp6.desc': 'Built a real-time analytics dashboard in 48 hours as part of a 4-person team. Won first place in the Data Track for impact and technical execution.',
+      'exp6.duration': 'Mar 2024',
+      'exp6.tag1': 'Hackathon', 'exp6.tag2': 'Plotly', 'exp6.tag3': 'Teamwork',
+
+      'exp7.title': 'Data Club Lead',
+      'exp7.company': 'University Data Science Club',
+      'exp7.desc': 'Led weekly workshops on Python, ML, and data visualization for 50+ student members. Organized guest talks and study groups.',
+      'exp7.duration': '2023 – Present',
+      'exp7.tag1': 'Leadership', 'exp7.tag2': 'Community', 'exp7.tag3': 'Workshops',
 
       'certs.title': 'Certificates',
       'certs.empty': 'No certificates found in this category yet.',
@@ -246,9 +294,27 @@
 
       'contact.title': 'Contact',
       'contact.desc': "Send me an email and I'll get back to you as soon as possible.",
+      'contact.orEmail': 'Or email me directly at',
+
+      /* New labels for the redesigned contact layout */
+      'contact.visitLabel': 'Visit Me',
+      'contact.callLabel': 'Call Me',
+      'contact.emailLabel': 'Email Me',
+      'contact.locationLabel': 'Location',
+      'contact.locationValue': 'Debre Birhan, Ethiopia',
+      'contact.phoneLabel': 'Phone',
+      'contact.phoneValue': '0945637373',
+      'contact.nameLabel': 'Full Name',
+      'contact.emailFieldLabel': 'Email Address',
+      'contact.subjectLabel': 'Subject',
+      'contact.messageLabel': 'Message',
+      'contact.namePlaceholder': 'John Doe',
+      'contact.emailPlaceholder': 'john@example.com',
+      'contact.subjectPlaceholder': 'Project Inquiry',
+      'contact.messagePlaceholder': 'Tell me about your project...',
+
       'contact.name': 'Your name', 'contact.email': 'Your email',
       'contact.message': 'Your message...', 'contact.send': 'Send Message',
-      'contact.orEmail': 'Or email me directly at',
       'contact.success': '✓ Message sent successfully! I will reply soon.',
       'contact.error': 'Please fill in all fields with a valid email.',
       'contact.sending': 'Sending message...',
@@ -262,18 +328,13 @@
       'brand': 'ፖርትፎሊዮ',
       'nav.home': 'መነሻ', 'nav.about': 'ስለ እኔ', 'nav.education': 'ትምህርት',
       'nav.skills': 'ክህሎቶች', 'nav.projects': 'ፕሮጀክቶች',
+      'nav.experience': 'ልምድ',
       'nav.certificates': 'ሰርተፊኬቶች', 'nav.services': 'አገልግሎቶች',
       'nav.cv': 'ሲቪ', 'nav.contact': 'አግኙኝ',
 
       'home.title': 'እንኳን ደህና መጡ', 'home.greet': 'ሰላም፣ እኔ', 'home.name': ' መልስ መላኬ ነኝ',
       'home.desc': 'መረጃን ወደ ትርጉም ግንዛቤዎች እና ተግባራዊ መፍትሄዎች ለመለወጥ ፍላጎት ያለው የውሂብ ሳይንስ ተማሪ ነኝ። ከውሂብ ጋር መስራት፣ ቅጦችን ማሰስ፣ መረጃን በመተንተን፣ የማሽን መማሪያ ሞዴሎችን መገንባት፣ በውሂብ ላይ የተመሰረቱ አፕሊኬሽኖችን ማዳበር እና የገሃዱ አለም ችግሮችን የሚፈቱ ፕሮጀክቶችን መስራት ያስደስተኛል።',
       'home.viewProjects': 'ፕሮጀክቶችን ይመልከቱ', 'home.getInTouch': 'ያግኙኝ',
-
-      'stats.visitorsShort': 'ጎብኚዎች',
-      'stats.rateShort': 'ሥራዬን ይገምግሙ',
-      'stats.ratings': 'ደረጃዎች',
-      'stats.alreadyRated': 'አስቀድመው ገምግመዋል',
-      'stats.thanks': '✓ ስለ ግምገማዎ እናመሰግናለን!',
 
       'about.title': 'ስለ እኔ',
       'about.intro': 'እኔ የውሂብ ሳይንስ ተማሪ ነኝ መረጃን በመተንተን፣ በምስል እይታ፣ በማሽን መማር፣ በጥልቅ መማር እና በኤምኤስ-ኤክሴል ትርጉም ወዳለው ግንዛቤ የመቀየር ፍላጎት አለኝ።',
@@ -338,6 +399,59 @@
       'tag.sql': 'SQL', 'tag.postgresql': 'PostgreSQL', 'tag.analytics': 'ትንታኔ',
       'tag.timeseries': 'ጊዜ ተከታታይ', 'tag.arima': 'ARIMA', 'tag.lstm': 'LSTM',
       'tag.anomaly': 'ማንጋት ማወቂያ',
+
+      /* ---------- EXPERIENCE (Amharic) ---------- */
+      'exp.title': 'ልምድ',
+      'exp.empty': 'በዚህ ምድብ ውስጥ እስካሁን ምንም ልምድ አልተገኘም።',
+      'expcat.internship': 'የልምምድ',
+      'expcat.freelance': 'ነጻ ሥራ',
+      'expcat.research': 'ምርምር',
+      'expcat.volunteer': 'በጎ ፈቃድ',
+      'expcat.teaching': 'ማስተማር',
+      'expcat.competition': 'ውድድር',
+      'expcat.community': 'ማህበረሰብ',
+
+      'exp1.title': 'የዳታ ሳይንስ ተለማማጅ',
+      'exp1.company': 'የቴክ ኢኖቬሽን ማዕከል',
+      'exp1.desc': 'ከመረጃ ማጽዳት እና የባህሪ ምህንድስና እስከ ሞዴል ስልጠና እና ግምገማ ድረስ በሙሉ የML ቧንቧዎች ላይ ሰርቻለሁ።',
+      'exp1.duration': 'ሰኔ 2024 – መስከረም 2024',
+      'exp1.tag1': 'ፓይተን', 'exp1.tag2': 'ፓንዳስ', 'exp1.tag3': 'ሳይኪት-ለርን', 'exp1.tag4': 'ማሰማራት',
+
+      'exp2.title': 'ነጻ የዳታ ተንታኝ',
+      'exp2.company': 'ራስን በራስ መቅጠር',
+      'exp2.desc': 'ለአነስተኛ ንግዶች እና መንግስታዊ ያልሆኑ ድርጅቶች የዳታ ትንተና እና በይነተገናኝ ዳሽቦርድ ፕሮጀክቶችን አቅርቤያለሁ።',
+      'exp2.duration': '2023 – አሁን',
+      'exp2.tag1': 'SQL', 'exp2.tag2': 'ፕሎትሊ', 'exp2.tag3': 'ዳሽ', 'exp2.tag4': 'ሪፖርት',
+
+      'exp3.title': 'የመጀመሪያ ዲግሪ የምርምር ረዳት',
+      'exp3.company': 'የዩኒቨርሲቲ ዳታ ላብ',
+      'exp3.desc': 'በአማርኛ ጽሑፍ ላይ በNLP ላይ የተመሠረተ ስሜት ትንተና ምርምር ላይ ረድቻለሁ።',
+      'exp3.duration': 'ጃንዋሪ 2024 – ሜይ 2024',
+      'exp3.tag1': 'NLP', 'exp3.tag2': 'ትራንስፎርመሮች', 'exp3.tag3': 'ምርምር',
+
+      'exp4.title': 'የክፍት ምንጭ አስተዋጽኦ አድራጊ',
+      'exp4.company': 'GitHub ማህበረሰብ',
+      'exp4.desc': 'ለክፍት ምንጭ የዳታ ሳይንስ ፕሮጀክቶች አስተዋጽኦ አድርጌያለሁ።',
+      'exp4.duration': '2023 – አሁን',
+      'exp4.tag1': 'ክፍት ምንጭ', 'exp4.tag2': 'ፓይተን', 'exp4.tag3': 'ጊት',
+
+      'exp5.title': 'የPython እና ML አስተማሪ',
+      'exp5.company': 'የተማሪ መማሪያ ማዕከል',
+      'exp5.desc': 'ለ30+ ተማሪዎች የPython መሠረታዊ ነገሮችን እና የመግቢያ ማሽን ለርኒንን አስተምሬያለሁ።',
+      'exp5.duration': '2023 – 2024',
+      'exp5.tag1': 'ማስተማር', 'exp5.tag2': 'ፓይተን', 'exp5.tag3': 'ማማከር',
+
+      'exp6.title': 'የሃካቶን ተሳታፊ',
+      'exp6.company': 'የብሔራዊ ዳታ ሃካቶን',
+      'exp6.desc': 'በ48 ሰዓት ውስጥ የእውነተኛ ጊዜ ትንታኔ ዳሽቦርድ ገንብቼ በዳታ ትራክ አንደኛ ደረጃ አግኝቻለሁ።',
+      'exp6.duration': 'መጋቢት 2024',
+      'exp6.tag1': 'ሃካቶን', 'exp6.tag2': 'ፕሎትሊ', 'exp6.tag3': 'የቡድን ሥራ',
+
+      'exp7.title': 'የዳታ ክለብ መሪ',
+      'exp7.company': 'የዩኒቨርሲቲ ዳታ ሳይንስ ክለብ',
+      'exp7.desc': 'ለ50+ ተማሪ አባላት በPython፣ ML እና ዳታ ምስላዊነት ላይ ሳምንታዊ ወርክሾፖችን መርቻለሁ።',
+      'exp7.duration': '2023 – አሁን',
+      'exp7.tag1': 'መሪነት', 'exp7.tag2': 'ማህበረሰብ', 'exp7.tag3': 'ወርክሾፖች',
 
       'certs.title': 'ሰርተፊኬቶች',
       'certs.empty': 'በዚህ ምድብ ውስጥ እስካሁን ምንም ሰርተፊኬት አልተገኘም።',
@@ -456,9 +570,26 @@
 
       'contact.title': 'አግኙኝ',
       'contact.desc': 'ኢሜል ይላኩልኝ እና በተቻለ ፍጥነት ምላሽ እሰጣለሁ።',
+      'contact.orEmail': 'ወይም በቀጥታ ኢሜል ይላኩልኝ በ',
+
+      'contact.visitLabel': 'ይጎብኙኝ',
+      'contact.callLabel': 'ይደውሉልኝ',
+      'contact.emailLabel': 'ኢሜል ይላኩልኝ',
+      'contact.locationLabel': 'አካባቢ',
+      'contact.locationValue': 'ደብረ ብርሃን፣ ኢትዮጵያ',
+      'contact.phoneLabel': 'ስልክ ቁጥር',
+      'contact.phoneValue': '0945637373',
+      'contact.nameLabel': 'ሙሉ ስም',
+      'contact.emailFieldLabel': 'የኢሜል አድራሻ',
+      'contact.subjectLabel': 'ርዕስ',
+      'contact.messageLabel': 'መልእክት',
+      'contact.namePlaceholder': 'ጆን ዶ',
+      'contact.emailPlaceholder': 'john@example.com',
+      'contact.subjectPlaceholder': 'የፕሮጀክት ጥያቄ',
+      'contact.messagePlaceholder': 'ስለ ፕሮጀክትዎ ይንገሩኝ...',
+
       'contact.name': 'ስምዎ', 'contact.email': 'ኢሜልዎ',
       'contact.message': 'መልእክትዎ...', 'contact.send': 'መልእክት ላክ',
-      'contact.orEmail': 'ወይም በቀጥታ ኢሜል ይላኩልኝ በ',
       'contact.success': '✓ መልእክትዎ በተሳካ ሁኔታ ተልኳል!',
       'contact.error': 'እባክዎ ሁሉንም መስኮች ይሙሉ።',
       'contact.sending': 'መልእክት በመላክ ላይ...',
@@ -490,6 +621,7 @@
     certsInitialCount: 3,
     skillsInitialCount: 5,
     srvInitialCount: 4,
+    expInitialCount: 4,
 
     jobTitles: {
       en: ['Data Scientist', 'ML Engineer', 'Data Analyst', 'Python Developer', 'AI Enthusiast'],
@@ -503,6 +635,7 @@
       { id: 'education',    i18n: 'nav.education' },
       { id: 'skills',       i18n: 'nav.skills' },
       { id: 'projects',     i18n: 'nav.projects' },
+      { id: 'experience',   i18n: 'nav.experience' },
       { id: 'certificates', i18n: 'nav.certificates' },
       { id: 'services',     i18n: 'nav.services' },
       { id: 'cv',           i18n: 'nav.cv' },
@@ -533,6 +666,26 @@
       { i18nTitle: 'proj.sales.title', i18nDesc: 'proj.sales.desc', i18nTags: ['tag.sql','tag.postgresql','tag.analytics'], github: 'https://github.com/', media: { type: 'image', src: 'project images/fake.png', alt: 'Sales analytics' } },
       { i18nTitle: 'proj.timeseries.title', i18nDesc: 'proj.timeseries.desc', i18nTags: ['tag.timeseries','tag.arima','tag.lstm'], github: 'https://github.com/', media: { type: 'image', src: 'project images/languages.png', alt: 'Time series' } },
       { i18nTitle: 'proj.fraud.title', i18nDesc: 'proj.fraud.desc', i18nTags: ['tag.anomaly','tag.ml','tag.python'], github: 'https://github.com/', media: { type: 'image', src: 'project images/camera.png', alt: 'Fraud detection' } }
+    ],
+
+    experience: [
+      { i18nTitle: 'exp1.title', i18nCompany: 'exp1.company', i18nDesc: 'exp1.desc', i18nDuration: 'exp1.duration', i18nTags: ['exp1.tag1','exp1.tag2','exp1.tag3','exp1.tag4'], category: 'internship',  icon: 'fas fa-briefcase' },
+      { i18nTitle: 'exp2.title', i18nCompany: 'exp2.company', i18nDesc: 'exp2.desc', i18nDuration: 'exp2.duration', i18nTags: ['exp2.tag1','exp2.tag2','exp2.tag3','exp2.tag4'], category: 'freelance',   icon: 'fas fa-laptop-code' },
+      { i18nTitle: 'exp3.title', i18nCompany: 'exp3.company', i18nDesc: 'exp3.desc', i18nDuration: 'exp3.duration', i18nTags: ['exp3.tag1','exp3.tag2','exp3.tag3'],                category: 'research',    icon: 'fas fa-flask' },
+      { i18nTitle: 'exp4.title', i18nCompany: 'exp4.company', i18nDesc: 'exp4.desc', i18nDuration: 'exp4.duration', i18nTags: ['exp4.tag1','exp4.tag2','exp4.tag3'],                category: 'volunteer',   icon: 'fas fa-code-branch' },
+      { i18nTitle: 'exp5.title', i18nCompany: 'exp5.company', i18nDesc: 'exp5.desc', i18nDuration: 'exp5.duration', i18nTags: ['exp5.tag1','exp5.tag2','exp5.tag3'],                category: 'teaching',    icon: 'fas fa-chalkboard-user' },
+      { i18nTitle: 'exp6.title', i18nCompany: 'exp6.company', i18nDesc: 'exp6.desc', i18nDuration: 'exp6.duration', i18nTags: ['exp6.tag1','exp6.tag2','exp6.tag3'],                category: 'competition', icon: 'fas fa-trophy' },
+      { i18nTitle: 'exp7.title', i18nCompany: 'exp7.company', i18nDesc: 'exp7.desc', i18nDuration: 'exp7.duration', i18nTags: ['exp7.tag1','exp7.tag2','exp7.tag3'],                category: 'community',   icon: 'fas fa-people-group' }
+    ],
+
+    expCategories: [
+      { key: 'internship',  i18nLabel: 'expcat.internship',  icon: 'fas fa-briefcase' },
+      { key: 'freelance',   i18nLabel: 'expcat.freelance',   icon: 'fas fa-laptop-code' },
+      { key: 'research',    i18nLabel: 'expcat.research',    icon: 'fas fa-flask' },
+      { key: 'volunteer',   i18nLabel: 'expcat.volunteer',   icon: 'fas fa-code-branch' },
+      { key: 'teaching',    i18nLabel: 'expcat.teaching',    icon: 'fas fa-chalkboard-user' },
+      { key: 'competition', i18nLabel: 'expcat.competition', icon: 'fas fa-trophy' },
+      { key: 'community',   i18nLabel: 'expcat.community',   icon: 'fas fa-people-group' }
     ],
 
     certificates: [
@@ -633,16 +786,16 @@
     ],
 
     social: [
-      { name: 'LinkedIn',  icon: 'fab fa-linkedin-in',    url: 'https://linkedin.com/in/', cls: 'linkedin' },
-      { name: 'GitHub',    icon: 'fab fa-github',         url: 'https://github.com/',      cls: 'github' },
-      { name: 'Telegram',  icon: 'fab fa-telegram-plane', url: 'https://t.me/',            cls: 'telegram' },
-      { name: 'WhatsApp',  icon: 'fab fa-whatsapp',       url: 'https://wa.me/',           cls: 'whatsapp' },
-      { name: 'Facebook',  icon: 'fab fa-facebook-f',     url: 'https://facebook.com/',    cls: 'facebook' },
-      { name: 'Instagram', icon: 'fab fa-instagram',      url: 'https://instagram.com/',   cls: 'instagram' },
-      { name: 'Discord',   icon: 'fab fa-discord',        url: 'https://discord.com/',     cls: 'discord' },
-      { name: 'Pinterest', icon: 'fab fa-pinterest-p',    url: 'https://pinterest.com/',   cls: 'pinterest' },
-      { name: 'Twitter/X', icon: 'fab fa-x-twitter',      url: 'https://x.com/',           cls: 'twitter' },
-      { name: 'Reddit',    icon: 'fab fa-reddit-alien',   url: 'https://reddit.com/',      cls: 'reddit' }
+      { name: 'LinkedIn',  icon: 'fab fa-linkedin-in',    url: 'https://linkedin.com/in/melismelakie', cls: 'linkedin' },
+      { name: 'GitHub',    icon: 'fab fa-github',         url: 'https://github.com/MELES-DS',          cls: 'github' },
+      { name: 'Telegram',  icon: 'fab fa-telegram',       url: 'https://t.me/Mele2927',                cls: 'telegram' },
+      { name: 'WhatsApp',  icon: 'fab fa-whatsapp',       url: 'https://wa.me/251945637373',           cls: 'whatsapp' },
+      { name: 'Facebook',  icon: 'fab fa-facebook-f',     url: 'https://facebook.com/',                cls: 'facebook' },
+      { name: 'Instagram', icon: 'fab fa-instagram',      url: 'https://instagram.com/',               cls: 'instagram' },
+      { name: 'Discord',   icon: 'fab fa-discord',        url: 'https://discord.com/',                 cls: 'discord' },
+      { name: 'Pinterest', icon: 'fab fa-pinterest-p',    url: 'https://pinterest.com/',               cls: 'pinterest' },
+      { name: 'Twitter/X', icon: 'fab fa-x-twitter',      url: 'https://x.com/',                       cls: 'twitter' },
+      { name: 'Reddit',    icon: 'fab fa-reddit-alien',   url: 'https://reddit.com/',                  cls: 'reddit' }
     ]
   };
 
@@ -1063,6 +1216,139 @@
     const btn = document.getElementById('projectsViewMoreBtn');
     if (!btn) return;
     btn.addEventListener('click', function () { toggleProjects(); });
+  }
+
+  /* ============================================================
+     EXPERIENCE
+     ============================================================ */
+  let currentExpCategory = null;
+  let expExpanded = false;
+  let expRendered = 0;
+
+  function buildExpCard(exp) {
+    const card = document.createElement('div');
+    card.className = 'exp-card';
+
+    const tagHTML = (exp.i18nTags || []).map(function (k) {
+      return '<span class="exp-tag">' + t(k) + '</span>';
+    }).join('');
+
+    card.innerHTML =
+      '<div class="exp-header">' +
+        '<div class="exp-logo"><i class="' + exp.icon + '"></i></div>' +
+        '<div>' +
+          '<div class="exp-title">' + t(exp.i18nTitle) + '</div>' +
+          '<div class="exp-company"><i class="fas fa-building"></i> ' + t(exp.i18nCompany) + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<span class="exp-duration"><i class="fas fa-calendar-alt"></i> ' + t(exp.i18nDuration) + '</span>' +
+      '<p class="exp-desc">' + t(exp.i18nDesc) + '</p>' +
+      '<div class="exp-tags">' + tagHTML + '</div>';
+    return card;
+  }
+
+  function renderExpTotal() {
+    const badge = document.getElementById('expTotalCount');
+    if (badge) badge.textContent = CONFIG.experience.length;
+  }
+
+  function updateExpBtn() {
+    const btn = document.getElementById('expViewMoreBtn');
+    if (!btn) return;
+    if (expExpanded) {
+      btn.innerHTML = '<span>' + t('projects.viewLess') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'true');
+    } else {
+      btn.innerHTML = '<span>' + t('projects.viewMore') +
+                      '</span><i class="fas fa-chevron-down"></i>';
+      btn.setAttribute('data-expanded', 'false');
+    }
+  }
+
+  function renderExpFilterButtons() {
+    const bar = document.getElementById('expFilterBar');
+    if (!bar) return;
+    bar.innerHTML = '';
+    CONFIG.expCategories.forEach(function (cat, index) {
+      const count = CONFIG.experience.filter(function (e) { return e.category === cat.key; }).length;
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn' + (index === 0 ? ' active' : '');
+      btn.dataset.category = cat.key;
+      btn.innerHTML =
+        '<i class="' + cat.icon + '"></i> <span>' + t(cat.i18nLabel) + '</span>' +
+        '<span class="count-badge">' + count + '</span>';
+      btn.addEventListener('click', function () {
+        currentExpCategory = cat.key;
+        bar.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        renderExperience(cat.key);
+      });
+      bar.appendChild(btn);
+    });
+    if (CONFIG.expCategories.length > 0) {
+      currentExpCategory = CONFIG.expCategories[0].key;
+      renderExperience(currentExpCategory);
+    }
+  }
+
+  function renderExperience(category) {
+    const grid = document.getElementById('experienceGrid');
+    const wrap = document.getElementById('expViewMoreWrap');
+    if (!grid) return;
+    grid.innerHTML = '';
+    expRendered = 0;
+    expExpanded = false;
+
+    if (!category) {
+      grid.innerHTML = '<div class="empty-state"><i class="fas fa-hand-pointer"></i>' +
+                       t('skills.selectCategory') + '</div>';
+      if (wrap) wrap.style.display = 'none';
+      updateExpBtn();
+      return;
+    }
+    const filtered = CONFIG.experience.filter(function (e) { return e.category === category; });
+    if (filtered.length === 0) {
+      grid.innerHTML = '<div class="empty-state"><i class="fas fa-inbox"></i>' +
+                       t('exp.empty') + '</div>';
+      if (wrap) wrap.style.display = 'none';
+      updateExpBtn();
+      return;
+    }
+    const initial = Math.min(CONFIG.expInitialCount || 4, filtered.length);
+    for (let i = 0; i < initial; i++) {
+      grid.appendChild(buildExpCard(filtered[i]));
+      expRendered++;
+    }
+    if (wrap) wrap.style.display = (filtered.length > initial) ? 'block' : 'none';
+    updateExpBtn();
+  }
+
+  function toggleExperience() {
+    const grid = document.getElementById('experienceGrid');
+    if (!grid || !currentExpCategory) return;
+    const filtered = CONFIG.experience.filter(function (e) { return e.category === currentExpCategory; });
+    const initial = Math.min(CONFIG.expInitialCount || 4, filtered.length);
+
+    if (!expExpanded) {
+      for (let i = expRendered; i < filtered.length; i++) {
+        grid.appendChild(buildExpCard(filtered[i]));
+      }
+      expRendered = filtered.length;
+      expExpanded = true;
+    } else {
+      grid.querySelectorAll('.exp-card').forEach(function (c, idx) {
+        if (idx >= initial) c.classList.add('hidden');
+      });
+      expExpanded = false;
+    }
+    updateExpBtn();
+  }
+
+  function initExpViewMore() {
+    const btn = document.getElementById('expViewMoreBtn');
+    if (!btn) return;
+    btn.addEventListener('click', function () { toggleExperience(); });
   }
 
   /* SKILLS */
@@ -1538,81 +1824,15 @@
     }
   }
 
-  /* VISITOR / RATING */
+  /* Visitor counter (silent) */
   function initVisitorCounter() {
     incrementVisitorCount();
-    const n = getVisitorCount();
-    const el = document.getElementById('visitorCount');
-    if (!el) return;
-    let current = 0;
-    const step = Math.max(1, Math.floor(n / 40));
-    const timer = setInterval(function () {
-      current += step;
-      if (current >= n) { current = n; clearInterval(timer); }
-      el.textContent = current.toLocaleString();
-    }, 20);
   }
-  function renderStarRow() {
-    const row = document.getElementById('starRow');
-    if (!row) return;
-    row.innerHTML = '';
-    const ratings = getRatings();
-    const avg = ratings.length ? (ratings.reduce(function (a, b) { return a + b; }, 0) / ratings.length) : 0;
-    const userRated = hasRated();
-    for (let i = 1; i <= 5; i++) {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'star-btn';
-      btn.setAttribute('role', 'radio');
-      btn.setAttribute('aria-label', i + ' star' + (i > 1 ? 's' : ''));
-      btn.dataset.value = i;
-      if (i <= Math.round(avg)) btn.classList.add('filled');
-      btn.innerHTML = '<i class="fas fa-star"></i><span class="star-num">' + i + '</span>';
-      if (!userRated) {
-        btn.addEventListener('click', function () { submitRating(i); });
-      } else {
-        btn.style.cursor = 'default';
-        btn.title = t('stats.alreadyRated');
-      }
-      row.appendChild(btn);
-    }
-    const avgEl = document.getElementById('avgRating');
-    const cntEl = document.getElementById('ratingCount');
-    if (avgEl) avgEl.textContent = avg.toFixed(1);
-    if (cntEl) cntEl.textContent = ratings.length;
-  }
-  function submitRating(stars) {
-    if (hasRated()) return;
-    const arr = getRatings();
-    arr.push(stars);
-    saveRatings(arr);
-    markRated();
-    renderStarRow();
-    showToast(t('stats.thanks'));
-  }
-  function showToast(msg) {
-    let toast = document.getElementById('portfolio-toast');
-    if (!toast) {
-      toast = document.createElement('div');
-      toast.id = 'portfolio-toast';
-      toast.style.cssText =
-        'position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(100px);' +
-        'background:var(--text);color:var(--bg);padding:0.75rem 1.25rem;border-radius:2rem;' +
-        'font-size:0.9rem;font-weight:600;z-index:99999;box-shadow:0 10px 30px rgba(0,0,0,0.35);' +
-        'transition:transform 0.4s cubic-bezier(.2,.9,.3,1.2),opacity 0.3s;opacity:0;pointer-events:none;';
-      document.body.appendChild(toast);
-    }
-    toast.textContent = msg;
-    requestAnimationFrame(function () {
-      toast.style.transform = 'translateX(-50%) translateY(0)';
-      toast.style.opacity = '1';
-    });
-    clearTimeout(toast._timer);
-    toast._timer = setTimeout(function () {
-      toast.style.transform = 'translateX(-50%) translateY(100px)';
-      toast.style.opacity = '0';
-    }, 2400);
-  }
+
+  /* Rating (silent — disabled on home) */
+  function renderStarRow() { /* disabled */ }
+  function submitRating() { /* disabled */ }
+  function showToast() { /* disabled */ }
 
   function applyTranslations() {
     document.body.classList.toggle('lang-am', currentLang === 'am');
@@ -1636,6 +1856,8 @@
     renderSkillFilterButtons();
     renderProjects();
     renderProjectsTotal();
+    renderExpFilterButtons();
+    renderExpTotal();
     renderCertFilterButtons();
     renderCertsTotal();
     renderSrvFilterButtons();
@@ -1739,8 +1961,10 @@
     if (!form) return;
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
-      const name = document.getElementById('fromName').value.trim();
-      const email = document.getElementById('fromEmail').value.trim();
+      const name    = document.getElementById('fromName').value.trim();
+      const email   = document.getElementById('fromEmail').value.trim();
+      const subjectEl = document.getElementById('subject');
+      const subject = subjectEl ? subjectEl.value.trim() : '';
       const message = document.getElementById('message').value.trim();
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!name || !email || !message || !emailRegex.test(email)) {
@@ -1761,10 +1985,16 @@
       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ' + t('contact.sending');
       try {
         const templateParams = {
-          from_name: name, from_email: email, message: message,
-          name: name, email: email, user_name: name, user_email: email,
-          reply_to: email, to_email: CONFIG.email,
-          subject: 'New portfolio message from ' + name
+          from_name: name,
+          from_email: email,
+          subject: subject || ('New portfolio message from ' + name),
+          message: message,
+          name: name,
+          email: email,
+          user_name: name,
+          user_email: email,
+          reply_to: email,
+          to_email: CONFIG.email
         };
         await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, { publicKey: EMAILJS_PUBLIC_KEY });
         status.textContent = t('contact.success');
@@ -1811,6 +2041,8 @@
     renderSkillFilterButtons();
     renderProjects();
     renderProjectsTotal();
+    renderExpFilterButtons();
+    renderExpTotal();
     renderCertFilterButtons();
     renderCertsTotal();
     renderSrvFilterButtons();
@@ -1834,11 +2066,22 @@
     initMobileMenu();
     initProjectsViewMore();
     initSkillsViewMore();
+    initExpViewMore();
     initCertsViewMore();
     initSrvViewMore();
     initContactForm();
-    initVisitorCounter();
-    renderStarRow();
+    initVisitorCounter();  // silent
+    renderStarRow();       // silent (no-op)
+
+    /* Ensure Telegram icon is correct even before language toggle */
+    fixTelegramLink();
+  }
+
+  function fixTelegramLink() {
+    const telegram = document.querySelector('.social-icon.telegram');
+    if (telegram) {
+      telegram.href = 'https://t.me/Mele2927';
+    }
   }
 
   if (document.readyState === 'loading') {
