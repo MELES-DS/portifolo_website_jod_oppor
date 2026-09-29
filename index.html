@@ -40,6 +40,7 @@
   <meta name="twitter:image:alt" content="Melis Melakie — Data Scientist">
   <meta name="twitter:creator" content="@melismelakie">
 
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -123,7 +124,9 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="#home" class="logo" aria-label="Melis Melakie Portfolio Home">
@@ -144,7 +147,9 @@
   </div>
 </nav>
 
-<!-- LIGHTBOX -->
+<!-- ============================================================
+     LIGHTBOX
+     ============================================================ -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
   <button class="lightbox-close" id="lightboxClose" aria-label="Close">
     <i class="fas fa-times"></i>
@@ -158,7 +163,7 @@
 <main>
 
   <!-- ============================================================
-       HOME  (visitors & rating REMOVED)
+       HOME
        ============================================================ -->
   <section class="section section-home" id="home">
     <div class="container">
@@ -194,7 +199,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
   <section class="section section-about" id="about">
     <div class="container">
       <div class="section-header">
@@ -235,23 +242,29 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- EDUCATION -->
+  <!-- ============================================================
+       EDUCATION
+       ============================================================ -->
   <section class="section section-education" id="education">
     <div class="container">
       <div class="section-header">
         <h2 data-i18n="edu.title">Education</h2>
         <div class="underline"></div>
+        <p class="section-subtitle" data-i18n="edu.subtitle">My academic journey and the foundations that shaped my data science path.</p>
       </div>
       <div class="education-grid" id="educationGrid"></div>
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ============================================================
+       SKILLS
+       ============================================================ -->
   <section class="section section-skills" id="skills">
     <div class="container">
       <div class="section-header">
         <h2 data-i18n="skills.title">Skills</h2>
         <div class="underline"></div>
+        <p class="section-subtitle" data-i18n="skills.subtitle">Technologies, tools and soft skills I use to bring data to life.</p>
       </div>
       <div class="filter-bar" id="skillsFilterBar"></div>
       <div class="skills-grid" id="skillsGrid"></div>
@@ -264,7 +277,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- ============================================================
+       PROJECTS
+       ============================================================ -->
   <section class="section section-projects" id="projects">
     <div class="container">
       <div class="section-header">
@@ -276,6 +291,7 @@ I'm a passionate Data Science student interested in turning data into meaningful
           </span>
         </div>
         <div class="underline"></div>
+        <p class="section-subtitle" data-i18n="projects.subtitle">A selection of hands-on projects where I apply machine learning and data analysis to real problems.</p>
       </div>
       <div class="projects-grid" id="projectsContainer"></div>
       <div class="view-more-wrap" id="projectsViewMoreWrap" style="display: none;">
@@ -288,7 +304,7 @@ I'm a passionate Data Science student interested in turning data into meaningful
   </section>
 
   <!-- ============================================================
-       EXPERIENCE  (NEW — inserted right after Projects)
+       EXPERIENCE
        ============================================================ -->
   <section class="section section-experience" id="experience">
     <div class="container">
@@ -301,6 +317,7 @@ I'm a passionate Data Science student interested in turning data into meaningful
           </span>
         </div>
         <div class="underline"></div>
+        <p class="section-subtitle" data-i18n="exp.subtitle">Internships, freelance work and community roles that shaped my practical skills.</p>
       </div>
       <div class="filter-bar" id="expFilterBar"></div>
       <div class="experience-grid" id="experienceGrid"></div>
@@ -313,7 +330,9 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- CERTIFICATES -->
+  <!-- ============================================================
+       CERTIFICATES
+       ============================================================ -->
   <section class="section section-certificates" id="certificates">
     <div class="container">
       <div class="section-header">
@@ -325,6 +344,7 @@ I'm a passionate Data Science student interested in turning data into meaningful
           </span>
         </div>
         <div class="underline"></div>
+        <p class="section-subtitle" data-i18n="certs.subtitle">Verified courses and programs I've completed to deepen my expertise.</p>
       </div>
       <div class="filter-bar" id="certsFilterBar"></div>
       <div class="certificates-grid" id="certificatesGrid"></div>
@@ -337,12 +357,15 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- ============================================================
+       SERVICES
+       ============================================================ -->
   <section class="section section-services" id="services">
     <div class="container">
       <div class="section-header">
         <h2 data-i18n="srv.title">Services</h2>
         <div class="underline"></div>
+        <p class="section-subtitle" data-i18n="srv.subtitle">What I can offer you — from data analysis to ML models and dashboards.</p>
       </div>
       <div class="filter-bar" id="srvFilterBar"></div>
       <div class="services-grid" id="servicesGrid"></div>
@@ -355,12 +378,15 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-  <!-- CV -->
+  <!-- ============================================================
+       CV
+       ============================================================ -->
   <section class="section section-cv" id="cv">
     <div class="container">
       <div class="section-header">
         <h2 data-i18n="cv.title">Curriculum Vitae</h2>
         <div class="underline"></div>
+        <p class="section-subtitle" data-i18n="cv.subtitle">A concise overview of my education, skills, projects and certifications.</p>
       </div>
       <div class="cv-card">
         <div class="cv-info">
@@ -387,7 +413,7 @@ I'm a passionate Data Science student interested in turning data into meaningful
     </div>
   </section>
 
-    <!-- ============================================================
+  <!-- ============================================================
        CONTACT
        ============================================================ -->
   <section class="section section-contact" id="contact">
@@ -395,6 +421,7 @@ I'm a passionate Data Science student interested in turning data into meaningful
       <div class="section-header">
         <h2 data-i18n="contact.title">Contact</h2>
         <div class="underline"></div>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Have a project in mind? Let's talk — I'm always open to new ideas and collaborations.</p>
       </div>
 
       <div class="contact-card">
@@ -475,10 +502,12 @@ I'm a passionate Data Science student interested in turning data into meaningful
       </div>
     </div>
   </section>
-  
+
 </main>
 
-<!-- FOOTER -->
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
