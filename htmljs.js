@@ -58,54 +58,106 @@
       'home.viewProjects': 'View Projects', 'home.getInTouch': 'Get in Touch',
 
       'about.title': 'About Me',
-      'about.intro': "Data Science student passionate about transforming data into meaningful insights through analysis, visualization, machine learning, deep learning and Ms-excel.",
+      'about.intro': "I’m Melis Melakie, a Data Science student at Debre Berhan University, Ethiopia, with a strong interest in Machine Learning, Artificial Intelligence, Deep Learning, and Data Analytics.",
       'about.academic': 'Academic Background',
-      'about.academicDesc': 'Currently pursuing a B.Sc. in Data Science with a focus on ML, data science, statistics, and data engineering.',
+      'about.academicDesc': 'Currently pursuing a B.Sc. in Data Science at Debre Berhan University, Ethiopia, with a focus on  Machine Learning, Artificial Intelligence, Deep Learning, Data Analytics ,computer vision, data visualization and statistics.',
       'about.career': 'Career Interests',
-      'about.careerDesc': 'Passionate about applied machine learning, NLP, and building data products that create real impact.',
+      'about.careerDesc': 'improving my technical and professional skills through academic projects, online training, certifications, practical experimentation and building data products that create real impact.',
       'about.goals': 'Professional Goals',
-      'about.goalsDesc': 'To become a data scientist who ships end-to-end ML systems from data collection to deployment.',
+      'about.goalsDesc': 'To become a Data Scientist and AI/ML professional who ships end-to-end ML systems from data collection to deployment and contribute to technology-driven solutions that address real-world challenges.',
 
       'skills.title': 'Skills',
-      'skills.subtitle': 'Technologies, tools and soft skills I use to bring data to life.',
+      'skills.subtitle': 'My core skills in Data Science, Machine Learning, Deep Learning, Artificial Intelligence, Data Analytics, and Data Visualization',
       'skills.empty': 'No skills found in this category.',
       'skills.selectCategory': 'Select a category above.',
-      'cat.programming': 'Programming',
-      'cat.datasci': 'Data Science',
-      'cat.tools': 'Tools & Platforms',
-      'cat.soft': 'Soft Skills',
+
+      'cat.programming': '🐍 Programming',
+      'cat.datasci': '📊 Data Science & Analytics',
+      'cat.mlai': '🤖 Machine Learning & AI',
+      'cat.tools': '🛠️ Tools & Platforms',
+      'cat.soft': '💼 Soft Skills',
+      'cat.other': '📦 Other Skills',
+
       'lvl.advanced': 'Advanced', 'lvl.intermediate': 'Intermediate', 'lvl.basic': 'Basic',
+
       'skill.python': 'Python', 'skill.r': 'R', 'skill.sql': 'SQL',
-      'skill.javascript': 'JavaScript', 'skill.java': 'Java',
-      'skill.pandas': 'Pandas', 'skill.numpy': 'NumPy', 'skill.sklearn': 'Scikit-learn',
-      'skill.tensorflow': 'TensorFlow', 'skill.matplotlib': 'Matplotlib',
-      'skill.statistics': 'Statistics', 'skill.nlp': 'NLP',
-      'skill.git': 'Git / GitHub', 'skill.jupyter': 'Jupyter', 'skill.tableau': 'Tableau',
-      'skill.excel': 'Excel', 'skill.docker': 'Docker', 'skill.aws': 'AWS / Cloud',
-      'skill.communication': 'Communication', 'skill.teamwork': 'Teamwork',
-      'skill.problem': 'Problem Solving', 'skill.time': 'Time Management',
-      'skill.critical': 'Critical Thinking', 'skill.presentation': 'Presentation',
+      'skill.java': 'Java', 'skill.javascript': 'JavaScript',
+      'skill.htmlcss': 'HTML & CSS',
+
+      'skill.dataclean': 'Data Cleaning & Preprocessing',
+      'skill.eda': 'Exploratory Data Analysis (EDA)',
+      'skill.statistical': 'Statistical Analysis',
+      'skill.dataviz': 'Data Visualization',
+      'skill.excel': 'Excel',
+      'skill.powerbi': 'Power BI',
+      'skill.pandas': 'Pandas',
+      'skill.numpy': 'NumPy',
+      'skill.matplotlib': 'Matplotlib',
+      'skill.matlab': 'MATLAB',
+      'skill.spss': 'SPSS',
+
+      'skill.ml': 'Machine Learning',
+      'skill.dl': 'Deep Learning',
+      'skill.nlp': 'Natural Language Processing (NLP)',
+      'skill.cv': 'Computer Vision',
+      'skill.predictive': 'Predictive Modeling',
+      'skill.modeleval': 'Model Evaluation',
+      'skill.featureeng': 'Feature Engineering',
+      'skill.tensorflow': 'TensorFlow',
+      'skill.pytorch': 'PyTorch',
+      'skill.sklearn': 'Scikit-learn',
+      'skill.dashboard': 'Dashboard Development',
+
+      'skill.jupyter': 'Jupyter Notebook',
+      'skill.colab': 'Google Colab',
+      'skill.kaggle': 'Kaggle',
+      'skill.vscode': 'VS Code',
+      'skill.git': 'Git',
+      'skill.github': 'GitHub',
+      'skill.gradio': 'Gradio',
+      'skill.streamlit': 'Streamlit',
+
+      'skill.problem': 'Problem Solving',
+      'skill.critical': 'Critical Thinking',
+      'skill.teamwork': 'Teamwork & Collaboration',
+      'skill.communication': 'Communication',
+      'skill.presentation': 'Presentation',
+      'skill.projectmgmt': 'Project Management',
+      'skill.time': 'Time Management',
+      'skill.learning': 'Continuous Learning',
+
+      'skill.cloud': 'Cloud Platforms',
+      'skill.databases': 'Databases',
+      'skill.qc': 'Quality Control',
 
       'projects.title': 'Projects',
-      'projects.subtitle': 'A selection of hands-on projects where I apply machine learning and data analysis to real problems.',
-      'projects.github': 'View on GitHub',
+      'projects.subtitle': 'Explore my academic and practical projects, where I apply Data Science, Machine Learning, Deep Learning, AI, and data analytics to solve real-world problems.',
+      'projects.github': 'GitHub',
+      'projects.liveDemo': 'Live Demo',
+      'projects.viewDetails': 'View Details',
       'projects.viewMore': 'View More', 'projects.viewLess': 'View Less',
-      'proj.churn.title': 'Customer Churn Prediction',
-      'proj.churn.desc': 'Built a classification model to predict telecom churn using logistic regression and random forests. Achieved 87% accuracy.',
-      'proj.cnn.title': 'Image Classification with CNN',
-      'proj.cnn.desc': 'Developed a convolutional neural network to classify CIFAR-10 images using TensorFlow/Keras. Explored augmentation and dropout.',
-      'proj.covid.title': 'COVID-19 Data Dashboard',
-      'proj.covid.desc': 'Interactive dashboard visualizing global COVID-19 trends using Plotly and Pandas. Deployed as a static site with GitHub Pages.',
-      'proj.movie.title': 'Movie Recommender System',
-      'proj.movie.desc': 'Collaborative filtering and content-based recommendation engine using MovieLens dataset. Built with Surprise and Scikit-learn.',
-      'proj.sentiment.title': 'Sentiment Analysis on Tweets',
-      'proj.sentiment.desc': 'NLP pipeline for sentiment classification using NLTK and transformers. Fine-tuned BERT for tweet sentiment detection.',
-      'proj.sales.title': 'SQL Sales Analytics',
-      'proj.sales.desc': 'Analyzed retail sales data with advanced SQL queries (window functions, CTEs) to identify top products and regional trends.',
-      'proj.timeseries.title': 'Time Series Forecasting',
-      'proj.timeseries.desc': 'Built ARIMA and LSTM models to forecast stock prices. Compared classical statistical methods against deep learning.',
-      'proj.fraud.title': 'Fraud Detection System',
-      'proj.fraud.desc': 'Anomaly detection for credit card transactions using isolation forest and autoencoders. Achieved 94% precision.',
+
+      'proj.sentiment.title': 'Positive & Negative Sentiment Classification',
+      'proj.sentiment.desc': 'A natural language processing (NLP) project designed to classify text sentences as positive or negative based on their expressed sentiment.',
+
+      'proj.translation.title': 'Five Ethiopian Languages ↔ English Bidirectional Translation',
+      'proj.translation.desc': 'A multilingual machine-translation project designed to provide bidirectional translation between English and five Ethiopian languages.',
+
+      'proj.water.title': 'Water Level Forecasting for 14 Ethiopian Hydropower Plants',
+      'proj.water.desc': 'A machine-learning-based forecasting project designed to predict water levels for 14 Ethiopian hydropower plants using historical water-level and related time-series data.',
+
+      'proj.aiimage.title': 'Real vs AI-Generated Human Image Detection',
+      'proj.aiimage.desc': 'A deep-learning-based computer vision project designed to classify human images as either real or AI-generated.',
+
+      'proj.diabetes.title': 'Diabetes Prediction Using Machine Learning',
+      'proj.diabetes.desc': 'A machine-learning project designed to predict the likelihood of diabetes based on selected health and demographic attributes from a diabetes dataset.',
+
+      'proj.weather.title': 'Weather Condition Analysis & Prediction',
+      'proj.weather.desc': 'A data science and machine-learning project focused on analyzing weather conditions and predicting weather-related outcomes using historical weather data.',
+
+      'proj.youth.title': 'DIY Youth Center Attendance Analysis & Reporting Dashboard',
+      'proj.youth.desc': 'An interactive attendance analysis and reporting dashboard developed for a DIY Youth Center to transform attendance records into meaningful statistics, visualizations, and reports.',
+
       'tag.python': 'Python', 'tag.sklearn': 'Scikit-learn', 'tag.pandas': 'Pandas',
       'tag.tensorflow': 'TensorFlow', 'tag.keras': 'Keras', 'tag.cnn': 'CNN',
       'tag.plotly': 'Plotly', 'tag.dataviz': 'Data Viz',
@@ -113,10 +165,10 @@
       'tag.nlp': 'NLP', 'tag.bert': 'BERT', 'tag.nltk': 'NLTK',
       'tag.sql': 'SQL', 'tag.postgresql': 'PostgreSQL', 'tag.analytics': 'Analytics',
       'tag.timeseries': 'Time Series', 'tag.arima': 'ARIMA', 'tag.lstm': 'LSTM',
-      'tag.anomaly': 'Anomaly Detection',
+      'tag.anomaly': 'Anomaly Detection', 'tag.dash': 'Dash',
 
       'exp.title': 'Experience',
-      'exp.subtitle': 'Internships, freelance work and community roles that shaped my practical skills.',
+      'exp.subtitle': 'Showcasing the experiences, opportunities, and hands-on work that have shaped my skills and professional journey',
       'exp.empty': 'No experience in this category yet.',
       'expcat.internship': 'Internship',
       'expcat.freelance': 'Freelance',
@@ -155,7 +207,7 @@
       'exp7.tag1': 'Leadership', 'exp7.tag2': 'Community', 'exp7.tag3': 'Workshops',
 
       'certs.title': 'Certificates',
-      'certs.subtitle': "Verified courses and programs I've completed to deepen my expertise.",
+      'certs.subtitle': "Explore my professional certificates, training achievements, and milestones that reflect my continuous learning, technical growth, and commitment to developing new skills.",
       'certs.empty': 'No certificates found in this category yet.',
       'certs.view': 'View',
       'certcat.oreilly': "O'Reilly", 'certcat.gebeya': 'Gebeya',
@@ -202,7 +254,7 @@
       'cert.ibm.desc': 'Hands-on program covering Python, SQL, ML, and data science methodology.',
 
       'srv.title': 'Services',
-      'srv.subtitle': 'What I can offer you — from data analysis to ML models and dashboards.',
+      'srv.subtitle': 'Explore the services I have delivered across Data Science, Machine Learning, Artificial Intelligence, data analysis, visualization, and digital solutions designed to address real-world needs.',
       'srv.empty': 'No services in this category yet.',
       'srvcat.data-analysis': 'Data Analysis', 'srvcat.ml': 'Machine Learning',
       'srvcat.dataviz': 'Data Visualization', 'srvcat.consulting': 'Consulting',
@@ -229,7 +281,7 @@
       'srv5.tag1': 'Python', 'srv5.tag2': 'ML', 'srv5.tag3': 'Mentoring',
 
       'edu.title': 'Education',
-      'edu.subtitle': 'My academic journey and the foundations that shaped my data science path.',
+      'edu.subtitle': 'My educational journey reflects a continuous commitment to learning, developing technical expertise, and preparing for real-world challenges',
       'edu.elementary.title': 'Primary Education', 'edu.elementary.sub': 'Abessken Elementary School',
       'edu.elementary.desc': 'Participated in science fairs and math competitions.', 'edu.elementary.meta': '2010 – 2018',
       'edu.highschool.title': 'High School', 'edu.highschool.sub': 'Abay Minch preparatory school',
@@ -270,136 +322,236 @@
       'contact.serverError': 'Something went wrong. Please email me directly.',
 
       'media.noImage': 'No image', 'media.noPreview': 'No preview',
+      'footer.brand.name': 'Melis Melakie',
       'footer.tagline': 'Data Science Student · Building intelligent systems',
       'footer.copy': '© 2025 Melis Melakie · All rights are reserved. <i class="fas fa-heart"></i>'
     },
 
-    am: {
+        am: {
       'brand': 'ፖርትፎሊዮ',
       'nav.home': 'መነሻ', 'nav.about': 'ስለ እኔ', 'nav.education': 'ትምህርት',
       'nav.skills': 'ክህሎቶች', 'nav.projects': 'ፕሮጀክቶች', 'nav.experience': 'ልምድ',
       'nav.certificates': 'ሰርተፊኬቶች', 'nav.services': 'አገልግሎቶች',
-      'nav.cv': 'ሲቪ', 'nav.contact': 'አግኙኝ',
+      'nav.cv': 'የሥራ ማስረጃ', 'nav.contact': 'አግኙኝ',
 
-      'home.title': 'እንኳን ደህና መጡ', 'home.greet': 'ሰላም፣ እኔ', 'home.name': ' መልስ መላኬ ነኝ',
-      'home.desc': 'መረጃን ወደ ትርጉም ግንዛቤዎች እና ተግባራዊ መፍትሄዎች ለመለወጥ ፍላጎት ያለው የውሂብ ሳይንስ ተማሪ ነኝ። ከውሂብ ጋር መስራት፣ ቅጦችን ማሰስ፣ መረጃን በመተንተን፣ የማሽን መማሪያ ሞዴሎችን መገንባት፣ በውሂብ ላይ የተመሰረቱ አፕሊኬሽኖችን ማዳበር እና የገሃዱ አለም ችግሮችን የሚፈቱ ፕሮጀክቶችን መስራት ያስደስተኛል።',
-      'home.viewProjects': 'ፕሮጀክቶችን ይመልከቱ', 'home.getInTouch': 'ያግኙኝ',
+      /* ==================== HOME ==================== */
+      'home.title': 'እንኳን ደህና መጡ',
+      'home.greet': 'ሰላም፣ እኔ',
+      'home.name': 'መልስ መላኪዬ ነኝ',
+      'home.desc': 'እኔ መረጃን ወደ ትርጉም ያለው ግንዛቤ እና ተግባራዊ መፍትሄዎች የመቀየር ፍላጎት ያለው የዳታ ሳይንስ ተማሪ ነኝ። ከዳታ ጋር መሥራት፣ ቅጦችን ማሰስ፣ ዳታን መተንተን፣ የማሽን ለርኒን ሞዴሎችን መገንባት፣ በዳታ ላይ የተመሰረቱ አፕሊኬሽኖችን ማዘጋጀት እና የዕውነተኛ ዓለምን ችግሮች የሚፈቱ ፕሮጀክቶችን መሥራት ያስደስተኛል።',
+      'home.viewProjects': 'ፕሮጀክቶችን ይመልከቱ',
+      'home.getInTouch': 'ያግኙኝ',
 
+      /* ==================== ABOUT ==================== */
       'about.title': 'ስለ እኔ',
-      'about.intro': 'እኔ የውሂብ ሳይንስ ተማሪ ነኝ መረጃን በመተንተን፣ በምስል እይታ፣ በማሽን መማር፣ በጥልቅ መማር እና በኤምኤስ-ኤክሴል ትርጉም ወዳለው ግንዛቤ የመቀየር ፍላጎት አለኝ።',
+      'about.intro': 'እኔ መልስ መላኪዬ ነኝ፤ በደብረ ብርሃን ዩኒቨርሲቲ (ኢትዮጵያ) የዳታ ሳይንስ ተማሪ ነኝ፤ በማሽን ለርኒን፣ በሰው ሰራሽ አስተውሎት (AI)፣ በጥልቅ ትምህርት (Deep Learning) እና በዳታ ትንተና ላይ ጥልቅ ፍላጎት አለኝ።',
       'about.academic': 'የትምህርት ዳራ',
-      'about.academicDesc': 'በዳታ ሳይንስ የB.Sc. ዲግሪ በML፣ በስታቲስቲክስ እና በዳታ ኢንጂኒየሪንግ ላይ ትኩረት በማድረግ እያጠና ነው።',
+      'about.academicDesc': 'በደብረ ብርሃን ዩኒቨርሲቲ (ኢትዮጵያ) የዳታ ሳይንስ የመጀመሪያ ዲግሪ በማጠናቀቅ ላይ ስሆን፣ ትኩረቴ በማሽን ለርኒን፣ በሰው ሰራሽ አስተውሎት፣ በጥልቅ ትምህርት፣ በዳታ ትንተና፣ በኮምፒውተር እይታ፣ በዳታ ምስላዊነት እና በስታቲስቲክስ ላይ ነው።',
       'about.career': 'የሙያ ፍላጎቶች',
-      'about.careerDesc': 'በተግባራዊ ማሽን ለርኒን፣ በNLP እና እውነተኛ ተጽዕኖ የሚፈጥሩ የዳታ ምርቶችን በመገንባት ላይ ፍላጎት አለኝ።',
+      'about.careerDesc': 'በትምህርታዊ ፕሮጀክቶች፣ በመስመር ላይ ስልጠናዎች፣ በሰርተፊኬቶች፣ በተግባራዊ ሙከራዎች እና እውነተኛ ተጽዕኖ የሚፈጥሩ የዳታ ምርቶችን በመገንባት ቴክኒካዊ እና ሙያዊ ክህሎቶቼን በማሻሻል ላይ ነኝ።',
       'about.goals': 'ሙያዊ ግቦች',
-      'about.goalsDesc': 'ከዳታ ስብሰባ እስከ ማሰማራት ድረስ ሙሉ በሙሉ የML ስርዓቶችን የሚያቀርብ የዳታ ሳይንቲስት መሆን።',
+      'about.goalsDesc': 'ከዳታ ስብሰባ እስከ ማሰማራት ድረስ ሙሉ በሙሉ የማሽን ለርኒን ስርዓቶችን የሚያቀርብ የዳታ ሳይንቲስት እና የሰው ሰራሽ አስተውሎት/ማሽን ለርኒን ባለሙያ በመሆን በቴክኖሎጂ የሚመሩ የዕውነተኛ ዓለም ችግሮችን መፍታት።',
 
+      /* ==================== SKILLS ==================== */
       'skills.title': 'ክህሎቶች',
-      'skills.subtitle': 'ዳታን ወደ ሕይወት ለማምጣት የምጠቀምባቸው ቴክኖሎጂዎች፣ መሳሪያዎች እና ለስላሳ ክህሎቶች።',
+      'skills.subtitle': 'በዳታ ሳይንስ፣ በማሽን ለርኒን፣ በጥልቅ ትምህርት፣ በሰው ሰራሽ አስተውሎት፣ በዳታ ትንተና እና በዳታ ምስላዊነት ያሉኝ ዋና ዋና ክህሎቶች',
       'skills.empty': 'በዚህ ምድብ ውስጥ ምንም ክህሎት አልተገኘም።',
-      'skills.selectCategory': 'ከላይ ምድብ ይምረጡ።',
-      'cat.programming': 'ፕሮግራሚንግ', 'cat.datasci': 'ዳታ ሳይንስ',
-      'cat.tools': 'መሳሪያዎች እና መድረኮች', 'cat.soft': 'ለስላሳ ክህሎቶች',
-      'lvl.advanced': 'የላቀ', 'lvl.intermediate': 'መካከለኛ', 'lvl.basic': 'መሠረታዊ',
-      'skill.python': 'ፓይተን', 'skill.r': 'አር', 'skill.sql': 'ኤስኪዩኤል',
-      'skill.javascript': 'ጃቫስክሪፕት', 'skill.java': 'ጃቫ',
-      'skill.pandas': 'ፓንዳስ', 'skill.numpy': 'ኒውምፓይ', 'skill.sklearn': 'ሳይኪት-ለርን',
-      'skill.tensorflow': 'ቴንሰርፍሎው', 'skill.matplotlib': 'ማትፕሎትሊብ',
-      'skill.statistics': 'ስታቲስቲክስ', 'skill.nlp': 'ኤንኤልፒ',
-      'skill.git': 'ጊት / ጊትሃብ', 'skill.jupyter': 'ጁፒተር', 'skill.tableau': 'ታብሎ',
-      'skill.excel': 'ኤክሴል', 'skill.docker': 'ዶከር', 'skill.aws': 'ኤደብሊውኤስ / ክላውድ',
-      'skill.communication': 'ግንኙነት', 'skill.teamwork': 'የቡድን ሥራ',
-      'skill.problem': 'ችግር መፍታት', 'skill.time': 'የጊዜ አስተዳደር',
-      'skill.critical': 'አስተሳሰብ', 'skill.presentation': 'አቀራረብ',
+      'skills.selectCategory': 'ከላይ ካሉት ምድቦች አንዱን ይምረጡ።',
 
+      'cat.programming': '🐍 ፕሮግራሚንግ',
+      'cat.datasci': '📊 ዳታ ሳይንስ እና ትንታኔ',
+      'cat.mlai': '🤖 ማሽን ለርኒን እና ሰው ሰራሽ አስተውሎት',
+      'cat.tools': '🛠️ መሳሪያዎች እና መድረኮች',
+      'cat.soft': '💼 ለስላሳ ክህሎቶች',
+      'cat.other': '📦 ሌሎች ክህሎቶች',
+
+      'lvl.advanced': 'የላቀ',
+      'lvl.intermediate': 'መካከለኛ',
+      'lvl.basic': 'መሠረታዊ',
+
+      /* --- Programming --- */
+      'skill.python': 'ፓይተን',
+      'skill.r': 'አር (R)',
+      'skill.sql': 'ኤስኪዩኤል (SQL)',
+      'skill.java': 'ጃቫ',
+      'skill.javascript': 'ጃቫስክሪፕት',
+      'skill.htmlcss': 'HTML እና CSS',
+
+      /* --- Data Science & Analytics --- */
+      'skill.dataclean': 'የዳታ ማጽዳት እና ቅድመ ማዘጋጀት',
+      'skill.eda': 'አሰሳ ዳታ ትንተና (EDA)',
+      'skill.statistical': 'ስታቲስቲካዊ ትንተና',
+      'skill.dataviz': 'ዳታ ምስላዊነት',
+      'skill.excel': 'ኤክሴል',
+      'skill.powerbi': 'ፓወር BI (Power BI)',
+      'skill.pandas': 'ፓንዳስ',
+      'skill.numpy': 'ኒውምፓይ',
+      'skill.matplotlib': 'ማትፕሎትሊብ',
+      'skill.matlab': 'MATLAB',
+      'skill.spss': 'SPSS',
+
+      /* --- Machine Learning & AI --- */
+      'skill.ml': 'ማሽን ለርኒን',
+      'skill.dl': 'ጥልቅ ትምህርት (Deep Learning)',
+      'skill.nlp': 'የተፈጥሮ ቋንቋ ማቀነባበር (NLP)',
+      'skill.cv': 'የኮምፒውተር እይታ (Computer Vision)',
+      'skill.predictive': 'ትንበያ ሞዴሊንግ',
+      'skill.modeleval': 'የሞዴል ግምገማ',
+      'skill.featureeng': 'የባህሪ ምህንድስና (Feature Engineering)',
+      'skill.tensorflow': 'ቴንሰርፍሎው',
+      'skill.pytorch': 'ፓይተርች (PyTorch)',
+      'skill.sklearn': 'ሳይኪት ለርን (Scikit-learn)',
+      'skill.dashboard': 'ዳሽቦርድ ልማት',
+
+      /* --- Tools & Platforms --- */
+      'skill.jupyter': 'ጁፒተር ኖትቡክ',
+      'skill.colab': 'ጉግል ኮላብ (Colab)',
+      'skill.kaggle': 'ካግል (Kaggle)',
+      'skill.vscode': 'VS Code',
+      'skill.git': 'ጊት (Git)',
+      'skill.github': 'ጊትሃብ (GitHub)',
+      'skill.gradio': 'ግራዲዮ (Gradio)',
+      'skill.streamlit': 'ስትሪምሊት (Streamlit)',
+
+      /* --- Soft Skills --- */
+      'skill.problem': 'ችግር መፍታት',
+      'skill.critical': 'ተቺ አስተሳሰብ',
+      'skill.teamwork': 'የቡድን ሥራ እና ትብብር',
+      'skill.communication': 'ግንኙነት',
+      'skill.presentation': 'አቀራረብ',
+      'skill.projectmgmt': 'የፕሮጀክት አስተዳደር',
+      'skill.time': 'የጊዜ አስተዳደር',
+      'skill.learning': 'ቀጣይ ትምህርት',
+
+      /* --- Other Skills --- */
+      'skill.cloud': 'የክላውድ መድረኮች',
+      'skill.databases': 'ዳታቤዞች',
+      'skill.qc': 'የጥራት ቁጥጥር',
+
+      /* ==================== PROJECTS ==================== */
       'projects.title': 'ፕሮጀክቶች',
-      'projects.subtitle': 'በማሽን ለርኒን እና በዳታ ትንተና ላይ የተመሠረቱ ተግባራዊ ፕሮጀክቶች ስብስብ።',
-      'projects.github': 'በ GitHub ይመልከቱ',
-      'projects.viewMore': 'ተጨማሪ ይመልከቱ', 'projects.viewLess': 'ያነሰ ይመልከቱ',
-      'proj.churn.title': 'የደንበኛ መቀየር ትንበያ',
-      'proj.churn.desc': 'ሎጂስቲክ ሪግሬሽን እና ራንደም ፎረስትን በመጠቀም የቴሌኮም መቀየርን ለመተንበይ ሞዴል ተገንብቷል። 87% ትክክለኛነት አግኝቷል።',
-      'proj.cnn.title': 'በሲኤንኤን ምስል ምደባ',
-      'proj.cnn.desc': 'TensorFlow/Keras በመጠቀም CIFAR-10 ምስሎችን ለመመደብ ኮንቮሉሽናል ኒውራል ኔትወርክ ተገንብቷል።',
-      'proj.covid.title': 'የኮቪድ-19 ዳታ ዳሽቦርድ',
-      'proj.covid.desc': 'Plotly እና Pandas በመጠቀም የአለም አቀፍ የኮቪድ-19 አዝማሚያዎችን የሚያሳይ በይነተገናኝ ዳሽቦርድ።',
-      'proj.movie.title': 'የፊልም ምክር ስርዓት',
-      'proj.movie.desc': 'MovieLens ዳታሴትን በመጠቀም በትብብር ማጣሪያ እና በይዘት ላይ የተመሠረተ ምክር ስርዓት።',
-      'proj.sentiment.title': 'በትዊት ላይ ስሜት ትንተና',
-      'proj.sentiment.desc': 'NLTK እና ትራንስፎርመሮችን በመጠቀም ለስሜት ምደባ የNLP ቧንቧ።',
-      'proj.sales.title': 'የSQL ሽያጭ ትንተና',
-      'proj.sales.desc': 'ዋና ምርቶችን እና የክልል አዝማሚያዎችን ለመለየት የላቀ SQL መጠይቆችን በመጠቀም የችርቻሮ ሽያጭ ዳታ ተተነተነ።',
-      'proj.timeseries.title': 'የጊዜ ተከታታይ ትንበያ',
-      'proj.timeseries.desc': 'የአክሲዮን ዋጋዎችን ለመተንበይ ARIMA እና LSTM ሞዴሎች ተገንብተዋል።',
-      'proj.fraud.title': 'የማጭበርበር ማወቂያ ስርዓት',
-      'proj.fraud.desc': 'isolation forest እና autoencoders በመጠቀም የክሬዲት ካርድ ግብይቶችን የማወቂያ ስርዓት። 94% ትክክለኛነት አግኝቷል።',
-      'tag.python': 'ፓይተን', 'tag.sklearn': 'ሳይኪት-ለርን', 'tag.pandas': 'ፓንዳስ',
-      'tag.tensorflow': 'ቴንሰርፍሎው', 'tag.keras': 'ኬራስ', 'tag.cnn': 'ሲኤንኤን',
+      'projects.subtitle': 'የትምህርት እና ተግባራዊ ፕሮጀክቶቼን ይመልከቱ፤ በዳታ ሳይንስ፣ በማሽን ለርኒን፣ በጥልቅ ትምህርት፣ በሰው ሰራሽ አስተውሎት እና በዳታ ትንተና የዕውነተኛ ዓለምን ችግሮች የምፈታባቸው።',
+      'projects.github': 'ጊትሃብ',
+      'projects.liveDemo': 'ቀጥታ ማሳያ',
+      'projects.viewDetails': 'ዝርዝር ይመልከቱ',
+      'projects.viewMore': 'ተጨማሪ ይመልከቱ',
+      'projects.viewLess': 'ያነሰ ያሳዩ',
+
+      'proj.sentiment.title': 'አዎንታዊ እና አሉታዊ ስሜት ምደባ',
+      'proj.sentiment.desc': 'የጽሑፍ ዓረፍተ ነገሮችን በተገለጸው ስሜት መሰረት እንደ አዎንታዊ ወይም አሉታዊ ለመመደብ የተነደፈ የተፈጥሮ ቋንቋ ማቀነባበር (NLP) ፕሮጀክት።',
+
+      'proj.translation.title': 'አምስት የኢትዮጵያ ቋንቋዎች ↔ እንግሊዝኛ በሁለት አቅጣጫ ትርጉም',
+      'proj.translation.desc': 'በእንግሊዝኛ እና በአምስት የኢትዮጵያ ቋንቋዎች መካከል በሁለት አቅጣጫ ትርጉም ለማድረግ የተነደፈ የብዙ ቋንቋ ማሽን ትርጉም ፕሮጀክት።',
+
+      'proj.water.title': 'ለ14 የኢትዮጵያ የውሃ ኃይል ማመንጫዎች የውሃ መጠን ትንበያ',
+      'proj.water.desc': 'ታሪካዊ የውሃ መጠን እና ተዛማጅ የጊዜ ተከታታይ ዳታን በመጠቀም ለ14 የኢትዮጵያ የውሃ ኃይል ማመንጫዎች የውሃ መጠንን ለመተንበይ የተነደፈ በማሽን ለርኒን ላይ የተመሰረተ የትንበያ ፕሮጀክት።',
+
+      'proj.aiimage.title': 'ትክክለኛ እና በAI የተፈጠሩ የሰው ምስሎችን መለየት',
+      'proj.aiimage.desc': 'የሰው ምስሎችን እንደ ትክክለኛ ወይም በAI የተፈጠሩ ለመመደብ የተነደፈ በጥልቅ ትምህርት ላይ የተመሰረተ የኮምፒውተር እይታ ፕሮጀክት።',
+
+      'proj.diabetes.title': 'በማሽን ለርኒን የስኳር በሽታ ትንበያ',
+      'proj.diabetes.desc': 'ከስኳር በሽታ ዳታሴት በተመረጡ የጤና እና የስነ-ህዝብ ባህሪያት ላይ ተመስርቶ የስኳር በሽታ የመያዝ እድልን ለመተንበይ የተነደፈ የማሽን ለርኒን ፕሮጀክት።',
+
+      'proj.weather.title': 'የአየር ሁኔታ ትንተና እና ትንበያ',
+      'proj.weather.desc': 'ታሪካዊ የአየር ሁኔታ ዳታን በመጠቀም የአየር ሁኔታን በመተንተን እና ከአየር ሁኔታ ጋር የተያያዙ ውጤቶችን ለመተንበይ ያተኮረ የዳታ ሳይንስ እና የማሽን ለርኒን ፕሮጀክት።',
+
+      'proj.youth.title': 'የDIY የወጣቶች ማዕከል የመገኘት ትንተና እና ሪፖርት ማድረጊያ ዳሽቦርድ',
+      'proj.youth.desc': 'የመገኘት መዝገቦችን ወደ ትርጉም ያላቸው ስታቲስቲክሶች፣ ምስላዊነቶች እና ሪፖርቶች ለመቀየር ለDIY የወጣቶች ማዕከል የተሰራ በይነተገናኝ የመገኘት ትንተና እና ሪፖርት ማድረጊያ ዳሽቦርድ።',
+
+      /* --- Project tags --- */
+      'tag.python': 'ፓይተን', 'tag.sklearn': 'ሳይኪት ለርን', 'tag.pandas': 'ፓንዳስ',
+      'tag.tensorflow': 'ቴንሰርፍሎው', 'tag.keras': 'ኬራስ', 'tag.cnn': 'ሲኤንኤን (CNN)',
       'tag.plotly': 'ፕሎትሊ', 'tag.dataviz': 'ዳታ ምስላዊነት',
       'tag.surprise': 'ሰርፕራይዝ', 'tag.ml': 'ML',
       'tag.nlp': 'NLP', 'tag.bert': 'BERT', 'tag.nltk': 'NLTK',
       'tag.sql': 'SQL', 'tag.postgresql': 'PostgreSQL', 'tag.analytics': 'ትንታኔ',
-      'tag.timeseries': 'ጊዜ ተከታታይ', 'tag.arima': 'ARIMA', 'tag.lstm': 'LSTM',
-      'tag.anomaly': 'ማንጋት ማወቂያ',
+      'tag.timeseries': 'የጊዜ ተከታታይ', 'tag.arima': 'ARIMA', 'tag.lstm': 'LSTM',
+      'tag.anomaly': 'ማንጋት ማወቂያ', 'tag.dash': 'ዳሽ (Dash)',
 
+      /* ==================== EXPERIENCE ==================== */
       'exp.title': 'ልምድ',
-      'exp.subtitle': 'ተግባራዊ ክህሎቴን የቀረጹት የልምምድ፣ የነጻ ሥራ እና የማህበረሰብ ሚናዎች።',
+      'exp.subtitle': 'ክህሎቴን እና ሙያዊ ጉዞዬን የቀረጹትን ልምዶች፣ ዕድሎች እና ተግባራዊ ሥራዎች ያሳያል',
       'exp.empty': 'በዚህ ምድብ ውስጥ እስካሁን ምንም ልምድ አልተገኘም።',
-      'expcat.internship': 'የልምምድ', 'expcat.freelance': 'ነጻ ሥራ',
-      'expcat.research': 'ምርምር', 'expcat.volunteer': 'በጎ ፈቃድ',
-      'expcat.teaching': 'ማስተማር', 'expcat.competition': 'ውድድር',
-      'expcat.community': 'ማህበረሰብ',
-      'exp1.title': 'የዳታ ሳይንስ ተለማማጅ', 'exp1.company': 'የቴክ ኢኖቬሽን ማዕከል',
-      'exp1.desc': 'ከመረጃ ማጽዳት እና የባህሪ ምህንድስና እስከ ሞዴል ስልጠና እና ግምገማ ድረስ በሙሉ የML ቧንቧዎች ላይ ሰርቻለሁ።',
+      'expcat.internship': 'የልምምድ',
+      'expcat.freelance': 'ነጻ ሥራ',
+      'expcat.research': 'ምርምር',
+      'expcat.volunteer': 'በጎ ፈቃድ',
+      'expcat.teaching': 'ማስተማር',
+      'expcat.competition': 'ውድድር',
+      'expcat.community': 'የማህበረሰብ አገልግሎት',
+
+      'exp1.title': 'የዳታ ሳይንስ ተለማማጅ',
+      'exp1.company': 'የቴክ ኢኖቬሽን ማዕከል',
+      'exp1.desc': 'ከዳታ ማጽዳት እና ከባህሪ ምህንድስና ጀምሮ እስከ ሞዴል ስልጠና እና ግምገማ ድረስ በሙሉ የማሽን ለርኒን ቧንቧዎች ላይ ሰርቻለሁ። የደንበኛ መቀየር ትንበያ ሞዴልን ወደ ምርት አሰማርቻለሁ።',
       'exp1.duration': 'ሰኔ 2024 – መስከረም 2024',
-      'exp1.tag1': 'ፓይተን', 'exp1.tag2': 'ፓንዳስ', 'exp1.tag3': 'ሳይኪት-ለርን', 'exp1.tag4': 'ማሰማራት',
-      'exp2.title': 'ነጻ የዳታ ተንታኝ', 'exp2.company': 'ራስን በራስ መቅጠር',
-      'exp2.desc': 'ለአነስተኛ ንግዶች እና መንግስታዊ ያልሆኑ ድርጅቶች የዳታ ትንተና እና በይነተገናኝ ዳሽቦርድ ፕሮጀክቶችን አቅርቤያለሁ።',
+      'exp1.tag1': 'ፓይተን', 'exp1.tag2': 'ፓንዳስ', 'exp1.tag3': 'ሳይኪት ለርን', 'exp1.tag4': 'ማሰማራት',
+
+      'exp2.title': 'ነጻ የዳታ ተንታኝ',
+      'exp2.company': 'ራስን በራስ መቅጠር',
+      'exp2.desc': 'ለአነስተኛ ንግዶች እና መንግስታዊ ያልሆኑ ድርጅቶች የዳታ ትንተና እና በይነተገናኝ ዳሽቦርድ ፕሮጀክቶችን አቅርቤያለሁ። ጥሬ ዳታን ወደ ተግባራዊ የንግድ ግንዛቤዎች በመቀየር ላይ ትኩረት አድርጌያለሁ።',
       'exp2.duration': '2023 – አሁን',
       'exp2.tag1': 'SQL', 'exp2.tag2': 'ፕሎትሊ', 'exp2.tag3': 'ዳሽ', 'exp2.tag4': 'ሪፖርት',
-      'exp3.title': 'የመጀመሪያ ዲግሪ የምርምር ረዳት', 'exp3.company': 'የዩኒቨርሲቲ ዳታ ላብ',
-      'exp3.desc': 'በአማርኛ ጽሑፍ ላይ በNLP ላይ የተመሠረተ ስሜት ትንተና ምርምር ላይ ረድቻለሁ።',
+
+      'exp3.title': 'የመጀመሪያ ዲግሪ የምርምር ረዳት',
+      'exp3.company': 'የዩኒቨርሲቲ ዳታ ላብ',
+      'exp3.desc': 'በአማርኛ ጽሑፍ ላይ በተፈጥሮ ቋንቋ ማቀነባበር (NLP) ላይ የተመሰረተ የስሜት ትንተና ምርምር ላይ ረድቻለሁ። የቅድመ ማዘጋጀት ቧንቧዎችን ገንብቼ የትራንስፎርመር ሞዴሎችን ገምግሜያለሁ።',
       'exp3.duration': 'ጃንዋሪ 2024 – ሜይ 2024',
       'exp3.tag1': 'NLP', 'exp3.tag2': 'ትራንስፎርመሮች', 'exp3.tag3': 'ምርምር',
-      'exp4.title': 'የክፍት ምንጭ አስተዋጽኦ አድራጊ', 'exp4.company': 'GitHub ማህበረሰብ',
-      'exp4.desc': 'ለክፍት ምንጭ የዳታ ሳይንስ ፕሮጀክቶች አስተዋጽኦ አድርጌያለሁ።',
+
+      'exp4.title': 'የክፍት ምንጭ አስተዋጽኦ አድራጊ',
+      'exp4.company': 'የGitHub ማህበረሰብ',
+      'exp4.desc': 'ለክፍት ምንጭ የዳታ ሳይንስ ፕሮጀክቶች አስተዋጽኦ አድርጌያለሁ — ሰነዶችን አሻሽያለሁ፣ ሳንካዎችን ጠግኜያለሁ እና ለታዋቂ የPython ላይብረሪዎች አዲስ የML መገልገያዎችን ጨምሬያለሁ።',
       'exp4.duration': '2023 – አሁን',
       'exp4.tag1': 'ክፍት ምንጭ', 'exp4.tag2': 'ፓይተን', 'exp4.tag3': 'ጊት',
-      'exp5.title': 'የPython እና ML አስተማሪ', 'exp5.company': 'የተማሪ መማሪያ ማዕከል',
-      'exp5.desc': 'ለ30+ ተማሪዎች የPython መሠረታዊ ነገሮችን እና የመግቢያ ማሽን ለርኒንን አስተምሬያለሁ።',
+
+      'exp5.title': 'የPython እና ML አስተማሪ',
+      'exp5.company': 'የተማሪ መማሪያ ማዕከል',
+      'exp5.desc': 'ለ30+ ተማሪዎች የPython መሠረታዊ ነገሮችን እና የመግቢያ ማሽን ለርኒንን አስተምሬያለሁ። ተግባራዊ ጥቃቅን ፕሮጀክቶችን ነድፌ ካፕስቶን ሥራዎችን መርቻለሁ።',
       'exp5.duration': '2023 – 2024',
       'exp5.tag1': 'ማስተማር', 'exp5.tag2': 'ፓይተን', 'exp5.tag3': 'ማማከር',
-      'exp6.title': 'የሃካቶን ተሳታፊ', 'exp6.company': 'የብሔራዊ ዳታ ሃካቶን',
-      'exp6.desc': 'በ48 ሰዓት ውስጥ የእውነተኛ ጊዜ ትንታኔ ዳሽቦርድ ገንብቼ በዳታ ትራክ አንደኛ ደረጃ አግኝቻለሁ።',
+
+      'exp6.title': 'የሃካቶን ተሳታፊ',
+      'exp6.company': 'የብሔራዊ ዳታ ሃካቶን',
+      'exp6.desc': 'በ4 ሰዎች ቡድን ውስጥ በመሆን በ48 ሰዓት ውስጥ የእውነተኛ ጊዜ ትንታኔ ዳሽቦርድ ገንብቻለሁ። በዳታ ትራክ ለተጽዕኖ እና ለቴክኒካዊ አፈጻጸም አንደኛ ደረጃ አግኝቻለሁ።',
       'exp6.duration': 'መጋቢት 2024',
       'exp6.tag1': 'ሃካቶን', 'exp6.tag2': 'ፕሎትሊ', 'exp6.tag3': 'የቡድን ሥራ',
-      'exp7.title': 'የዳታ ክለብ መሪ', 'exp7.company': 'የዩኒቨርሲቲ ዳታ ሳይንስ ክለብ',
-      'exp7.desc': 'ለ50+ ተማሪ አባላት በPython፣ ML እና ዳታ ምስላዊነት ላይ ሳምንታዊ ወርክሾፖችን መርቻለሁ።',
+
+      'exp7.title': 'የዳታ ክለብ መሪ',
+      'exp7.company': 'የዩኒቨርሲቲ ዳታ ሳይንስ ክለብ',
+      'exp7.desc': 'ለ50+ ተማሪ አባላት በPython፣ በML እና በዳታ ምስላዊነት ላይ ሳምንታዊ ወርክሾፖችን መርቻለሁ። የእንግዳ ንግግሮችን እና የጥናት ቡድኖችን አዘጋጅቻለሁ።',
       'exp7.duration': '2023 – አሁን',
       'exp7.tag1': 'መሪነት', 'exp7.tag2': 'ማህበረሰብ', 'exp7.tag3': 'ወርክሾፖች',
 
+      /* ==================== CERTIFICATES ==================== */
       'certs.title': 'ሰርተፊኬቶች',
-      'certs.subtitle': 'ብቃቴን ለማጠናከር ያጠናቀቋቸው የተረጋገጡ ኮርሶች እና ፕሮግራሞች።',
+      'certs.subtitle': 'ቀጣይ ትምህርቴን፣ ቴክኒካዊ እድገቴን እና አዲስ ክህሎቶችን ለማዳበር ያለኝን ቁርጠኝነት የሚያንጸባርቁ ሙያዊ ሰርተፊኬቶቼን፣ የስልጠና ስኬቶቼን እና ምዕራፎቼን ይመልከቱ።',
       'certs.empty': 'በዚህ ምድብ ውስጥ እስካሁን ምንም ሰርተፊኬት አልተገኘም።',
       'certs.view': 'ይመልከቱ',
-      'certcat.udacity': 'ዩዳሲቲ', 'certcat.gebeya': 'ገበያ',
-      'certcat.oreilly': 'ኦራይሊ', 'certcat.demera': 'ደመራ ፕሮጀክት',
-      'certcat.kenexio': 'ኬኔክሲዮ', 'certcat.club': 'ክለብ',
-      'certcat.recognition': 'እውቅና', 'certcat.other': 'ሌላ',
+
+      'certcat.oreilly': 'ኦራይሊ (O\'Reilly)',
+      'certcat.gebeya': 'ገበያ',
+      'certcat.demera': 'ደመራ ፕሮጀክት',
+      'certcat.club': 'ክለብ',
+      'certcat.udacity': 'ዩዳሲቲ (Udacity)',
+      'certcat.kenexio': 'ኬኔክሲዮ (Kenexio)',
+      'certcat.recognition': 'እውቅና',
+      'certcat.other': 'ሌላ',
+
       'cert.ml.title': 'የማሽን ለርኒን ኢንጂኒየር ናኖዲግሪ',
       'cert.ml.desc': 'በቁጥጥር የሚደረግ እና ቁጥጥር የማይደረግ ትምህርት፣ ጥልቅ ትምህርት እና ማሰማራትን የሚሸፍን አጠቃላይ ፕሮግራም።',
       'cert.da.title': 'የዳታ ተንታኝ ናኖዲግሪ',
-      'cert.da.desc': 'በዳታ ማጽዳት፣ አሰሳ ዳታ ትንተና እና በPython ዳታ ምስላዊነት ላይ ያተኮረ።',
+      'cert.da.desc': 'በዳታ ማጽዳት፣ በአሰሳ ዳታ ትንተና እና በPython ዳታ ምስላዊነት ላይ ያተኮረ።',
       'cert.ds.title': 'የዳታ ሳይንስ ቡትካምፕ',
-      'cert.ds.desc': 'Python፣ ስታቲስቲክስ፣ ማሽን ለርኒን እና ካፕስቶን ፕሮጀክቶችን የሚሸፍን ከባድ ቡትካምፕ።',
+      'cert.ds.desc': 'Python፣ ስታቲስቲክስ፣ ማሽን ለርኒን እና የካፕስቶን ፕሮጀክቶችን የሚሸፍን ከባድ ቡትካምፕ።',
       'cert.cloud.title': 'የክላውድ መሠረታዊ ነገሮች',
       'cert.cloud.desc': 'የክላውድ ኮምፒውቲንግ ፅንሰ-ሀሳቦች፣ የAWS ዋና አገልግሎቶች እና የዳታ ሥራዎችን ማሰማራት መግቢያ።',
       'cert.ds2.title': 'የዳታ ሳይንስ መሠረታዊ ነገሮች',
       'cert.ds2.desc': 'የዳታ ሳይንስ ዋና ፅንሰ-ሀሳቦች፡ የዳታ ዓይነቶች፣ ስታቲስቲካዊ አስተሳሰብ እና የትንታኔ አስተሳሰብ።',
       'cert.entre.title': 'ሥራ ፈጣሪነት',
       'cert.entre.desc': 'የሥራ ፈጣሪ አስተሳሰብ፣ የንግድ ሞዴሎች እና የጀማሪ ንግድ መሠረታዊ ነገሮች።',
-      'cert.homl.title': 'በተግባር ላይ የተመሠረተ ማሽን ለርኒን',
+      'cert.homl.title': 'በተግባር ላይ የተመሰረተ ማሽን ለርኒን',
       'cert.homl.desc': 'በScikit-learn፣ TensorFlow እና Keras የML ቧንቧዎችን በመገንባት ላይ ተግባራዊ ስልጠና።',
-      'cert.de.title': 'በPython ዳታ ኢንጂኒየሪንግ',
+      'cert.de.title': 'በPython የዳታ ኢንጂኒየሪንግ',
       'cert.de.desc': 'የETL ቧንቧዎች፣ የዳታ መጋዘን እና በPython እና Airflow የሥራ ፍሰት ማስተባበር።',
       'cert.social.title': 'ለማህበራዊ ተጽዕኖ ዳታ',
       'cert.social.desc': 'ለማህበራዊ ጥቅም ፕሮጀክቶች የተተገበረ ዳታ ሳይንስ፣ የጤና እና የትምህርት ትንተናን ጨምሮ።',
@@ -424,72 +576,103 @@
       'cert.ibm.title': 'የIBM ዳታ ሳይንስ ሙያዊ',
       'cert.ibm.desc': 'Python፣ SQL፣ ML እና የዳታ ሳይንስ ዘዴን የሚሸፍን ተግባራዊ ፕሮግራም።',
 
+      /* ==================== SERVICES ==================== */
       'srv.title': 'አገልግሎቶች',
-      'srv.subtitle': 'ለእርስዎ ማቅረብ የምችላቸው — ከዳታ ትንተና እስከ ML ሞዴሎች እና ዳሽቦርዶች።',
+      'srv.subtitle': 'በዳታ ሳይንስ፣ በማሽን ለርኒን፣ በሰው ሰራሽ አስተውሎት፣ በዳታ ትንተና፣ በዳታ ምስላዊነት እና በዲጂታል መፍትሄዎች ላይ የማቀርባቸውን አገልግሎቶች ይመልከቱ።',
       'srv.empty': 'በዚህ ምድብ ውስጥ እስካሁን ምንም አገልግሎት አልተገኘም።',
-      'srvcat.data-analysis': 'ዳታ ትንተና', 'srvcat.ml': 'ማሽን ለርኒን',
-      'srvcat.dataviz': 'ዳታ ምስላዊነት', 'srvcat.consulting': 'ምክር', 'srvcat.training': 'ስልጠና',
-      'srv1.job': 'ዳታ ትንተና እና ግንዛቤ', 'srv1.company': 'ለንግድ እና ምርምር',
-      'srv1.desc': 'ውስብስብ ዳታሴቶችን ማጽዳት፣ ማሰስ እና መተርጎም። ውሳኔዎችን የሚያራምዱ ግልጽ ሪፖርቶችን ከምክረ ሀሳቦች ጋር ማቅረብ።',
+      'srvcat.data-analysis': 'ዳታ ትንተና',
+      'srvcat.ml': 'ማሽን ለርኒን',
+      'srvcat.dataviz': 'ዳታ ምስላዊነት',
+      'srvcat.consulting': 'ምክር',
+      'srvcat.training': 'ስልጠና',
+
+      'srv1.job': 'የዳታ ትንተና እና ግንዛቤዎች',
+      'srv1.company': 'ለንግድ እና ምርምር',
+      'srv1.desc': 'ውስብስብ ዳታሴቶችን በማጽዳት፣ በማሰስ እና በመተርጎም ተግባራዊ ግንዛቤዎችን ማውጣት። የንግድ ውሳኔዎችን የሚያራምዱ ግልጽ ሪፖርቶችን ከምክረ-ሀሳቦች ጋር ማቅረብ።',
       'srv1.duration': 'አሁን ይገኛል',
-      'srv1.tag1': 'ፓይተን', 'srv1.tag2': 'SQL', 'srv1.tag3': 'ኤክሴል', 'srv1.tag4': 'ሪፖርት',
-      'srv2.job': 'የማሽን ለርኒን ሞዴሎች', 'srv2.company': 'ለትንበያ ምርቶች',
-      'srv2.desc': 'ለምደባ፣ ሪግሬሽን፣ ትንበያ እና ማንጋት ማወቂያ የተቆጣጠሩ እና ያልተቆጣጠሩ የML ሞዴሎችን መንደፍ፣ ማሰልጠን እና ማሰማራት።',
+      'srv1.tag1': 'ፓይተን', 'srv1.tag2': 'SQL', 'srv1.tag3': 'ኤክሴል', 'srv1.tag4': 'ሪፖርት ማድረግ',
+
+      'srv2.job': 'የማሽን ለርኒን ሞዴሎች',
+      'srv2.company': 'ለትንበያ ምርቶች',
+      'srv2.desc': 'ለምደባ፣ ለሪግሬሽን፣ ለትንበያ እና ለማንጋት ማወቂያ የቁጥጥር ስር እና ያልሆኑ የML ሞዴሎችን መንደፍ፣ ማሰልጠን እና ማሰማራት።',
       'srv2.duration': 'አሁን ይገኛል',
-      'srv2.tag1': 'ሳይኪት-ለርን', 'srv2.tag2': 'ቴንሰርፍሎው', 'srv2.tag3': 'XGBoost',
-      'srv3.job': 'በይነተገናኝ ዳሽቦርዶች', 'srv3.company': 'ለእውነተኛ ጊዜ ክትትል',
-      'srv3.desc': 'በPlotly፣ Dash እና Tableau ዘመናዊ በይነተገናኝ ዳታ ምስላዊነቶችን መገንባት። ቋሚ ሰንጠረዦችን ወደ ሕያው ዳሽቦርዶች መቀየር።',
+      'srv2.tag1': 'ሳይኪት ለርን', 'srv2.tag2': 'ቴንሰርፍሎው', 'srv2.tag3': 'XGBoost',
+
+      'srv3.job': 'በይነተገናኝ ዳሽቦርዶች',
+      'srv3.company': 'ለእውነተኛ ጊዜ ክትትል',
+      'srv3.desc': 'በPlotly፣ Dash እና Tableau ዘመናዊ እና በይነተገናኝ የዳታ ምስላዊነቶችን መገንባት። ቋሚ ሰንጠረዦችን ወደ ሕያው ዳሽቦርዶች መቀየር።',
       'srv3.duration': 'አሁን ይገኛል',
       'srv3.tag1': 'ፕሎትሊ', 'srv3.tag2': 'ዳሽ', 'srv3.tag3': 'ታብሎ',
-      'srv4.job': 'የዳታ ስትራቴጂ ምክር', 'srv4.company': 'ለዳታ ተኮር ቡድኖች',
-      'srv4.desc': 'በዳታ ስብሰባ፣ ማከማቻ እና የትንታኔ የሥራ ፍሰቶች ላይ ምክር መስጠት። ከንግድ ግቦች ጋር የሚያድጉ የKPI እና የትንታኔ ፍኖተ ካርታዎችን ለመንደፍ ቡድኖችን መርዳት።',
+
+      'srv4.job': 'የዳታ ስትራቴጂ ምክር',
+      'srv4.company': 'ለዳታ ተኮር ቡድኖች',
+      'srv4.desc': 'በዳታ ስብሰባ፣ በዳታ ማከማቻ እና በትንታኔ የሥራ ፍሰቶች ላይ ምክር መስጠት። ከንግድ ግቦች ጋር የሚያድጉ የKPI እና የትንታኔ ፍኖተ ካርታዎችን ለመንደፍ ቡድኖችን መርዳት።',
       'srv4.duration': 'በቀጠሮ',
       'srv4.tag1': 'ስትራቴጂ', 'srv4.tag2': 'KPIs', 'srv4.tag3': 'ፍኖተ ካርታ',
-      'srv5.job': 'የPython እና ML ስልጠና', 'srv5.company': 'ለግለሰቦች እና ቡድኖች',
+
+      'srv5.job': 'የPython እና ML ስልጠና',
+      'srv5.company': 'ለግለሰቦች እና ቡድኖች',
       'srv5.desc': 'በPython፣ በዳታ ሳይንስ መሠረታዊ ነገሮች እና በተግባራዊ ማሽን ለርኒን ላይ ተግባራዊ ወርክሾፖች። ለቡድንዎ ደረጃ እና ግቦች የተበጁ።',
       'srv5.duration': 'ተለዋዋጭ መርሐግብር',
       'srv5.tag1': 'ፓይተን', 'srv5.tag2': 'ML', 'srv5.tag3': 'ማማከር',
 
+      /* ==================== EDUCATION ==================== */
       'edu.title': 'ትምህርት',
-      'edu.subtitle': 'የትምህርቴ ጉዞ እና የዳታ ሳይንስ መንገዴን የቀረጹት መሠረቶች።',
-      'edu.elementary.title': 'የመጀመሪያ ደረጃ ትምህርት', 'edu.elementary.sub': 'የመጀመሪያ ደረጃ ትምህርት',
-      'edu.elementary.desc': 'በሂሳብ፣ በሳይንስ እና በቋንቋዎች ጠንካራ መሠረት ተጥሏል። በሳይንስ ትርኢቶች እና በሂሳብ ውድድሮች ተሳትፏል።',
-      'edu.elementary.meta': '2008 – 2016',
-      'edu.highschool.title': 'ሁለተኛ ደረጃ ትምህርት', 'edu.highschool.sub': 'የሳይንስ ክፍል',
-      'edu.highschool.desc': 'በሂሳብ፣ በፊዚክስ እና በኮምፒውተር ሳይንስ ላይ ልዩ ትኩረት አድርጓል። የትምህርት ቤቱን ኮዲንግ ክለብ መርቷል እና የክልል ፕሮግራሚንግ ውድድር አሸንፏል።',
-      'edu.highschool.meta': '2016 – 2022',
-      'edu.university.title': 'ዩኒቨርሲቲ', 'edu.university.sub': 'የB.Sc. በዳታ ሳይንስ',
+      'edu.subtitle': 'የትምህርቴ ጉዞ ቀጣይ የመማር ቁርጠኝነትን፣ ቴክኒካዊ እውቀትን ማዳበርን እና ለዕውነተኛ ዓለም ተግዳሮቶች መዘጋጀትን ያንጸባርቃል',
+      'edu.elementary.title': 'የመጀመሪያ ደረጃ ትምህርት',
+      'edu.elementary.sub': 'አበስከን የመጀመሪያ ደረጃ ትምህርት ቤት',
+      'edu.elementary.desc': 'በሳይንስ ትርኢቶች እና በሂሳብ ውድድሮች ተሳትፏል።',
+      'edu.elementary.meta': '2010 – 2018',
+      'edu.highschool.title': 'ሁለተኛ ደረጃ ትምህርት',
+      'edu.highschool.sub': 'አባይ ምንጭ መሠረታዊ ትምህርት ቤት',
+      'edu.highschool.desc': 'የተፈጥሮ ሳይንስ ዥረት።',
+      'edu.highschool.meta': '2019 – 2022',
+      'edu.university.title': 'ዩኒቨርሲቲ',
+      'edu.university.sub': 'የB.Sc. በዳታ ሳይንስ',
       'edu.university.desc': 'በአሁኑ ጊዜ በዳታ ሳይንስ የመጀመሪያ ዲግሪ በማሽን ለርኒን፣ በስታቲስቲክስ እና በዳታ ኢንጂኒየሪንግ ላይ ትኩረት በማድረግ እያጠና ነው።',
       'edu.university.meta': '2023 – አሁን',
-      'edu.online.title': 'የመስመር ላይ ስፔሻላይዜሽኖች', 'edu.online.sub': 'ሰርተፊኬቶች እና ኮርሶች',
-      'edu.online.desc': "ተግባራዊ የML እና የትንታኔ ክህሎቶችን ለማጠናከር በO'Reilly፣ Gebeya፣ Demera/Percipio፣ Amazon፣ Data Camp እና Udacity ላይ በርካታ ስፔሻላይዜሽኖችን አጠናቋል።",
+      'edu.online.title': 'የመስመር ላይ ስፔሻላይዜሽኖች',
+      'edu.online.sub': 'ሰርተፊኬቶች እና ኮርሶች',
+      'edu.online.desc': 'ተግባራዊ የML እና የትንታኔ ክህሎቶችን ለማጠናከር በO\'Reilly፣ Gebeya፣ Demera/Percipio፣ Amazon፣ DataCamp እና Udacity ላይ በርካታ ስፔሻላይዜሽኖችን አጠናቋል።',
       'edu.online.meta': 'ቀጣይ',
 
+      /* ==================== CV ==================== */
       'cv.title': 'የሥራ ማስረጃ',
       'cv.subtitle': 'ስለ ትምህርቴ፣ ክህሎቶቼ፣ ፕሮጀክቶቼ እና ሰርተፊኬቶቼ አጭር መግለጫ።',
-      'cv.heading': 'ሜሊስ መላኪዬ — የሥራ ማስረጃ',
+      'cv.heading': 'መልስ መላኪዬ — የሥራ ማስረጃ',
       'cv.desc': 'ስለ ትምህርቴ፣ ቴክኒካዊ ክህሎቶቼ፣ ፕሮጀክቶቼ እና ሰርተፊኬቶቼ አጭር መግለጫ።',
-      'cv.open': 'ሲቪ ክፈት', 'cv.download': 'ሲቪ አውርድ',
+      'cv.open': 'ሲቪ ክፈት',
+      'cv.download': 'ሲቪ አውርድ',
 
+      /* ==================== CONTACT ==================== */
       'contact.title': 'አግኙኝ',
       'contact.subtitle': 'ፕሮጀክት አለዎት? እንነጋገር — ለአዳዲስ ሀሳቦች እና ትብብሮች ሁልጊዜ ክፍት ነኝ።',
       'contact.orEmail': 'ወይም በቀጥታ ኢሜል ይላኩልኝ በ',
-      'contact.visitLabel': 'ይጎብኙኝ', 'contact.callLabel': 'ይደውሉልኝ', 'contact.emailLabel': 'ኢሜል ይላኩልኝ',
+      'contact.visitLabel': 'ይጎብኙኝ',
+      'contact.callLabel': 'ይደውሉልኝ',
+      'contact.emailLabel': 'ኢሜል ይላኩልኝ',
       'contact.locationValue': 'ደብረ ብርሃን፣ ኢትዮጵያ',
       'contact.phoneValue': '0945637373',
-      'contact.nameLabel': 'ሙሉ ስም', 'contact.emailFieldLabel': 'የኢሜል አድራሻ',
-      'contact.subjectLabel': 'ርዕስ', 'contact.messageLabel': 'መልእክት',
-      'contact.namePlaceholder': 'ጆን ዶ', 'contact.emailPlaceholder': 'john@example.com',
-      'contact.subjectPlaceholder': 'የፕሮጀክት ጥያቄ', 'contact.messagePlaceholder': 'ስለ ፕሮጀክትዎ ይንገሩኝ...',
+      'contact.nameLabel': 'ሙሉ ስም',
+      'contact.emailFieldLabel': 'የኢሜል አድራሻ',
+      'contact.subjectLabel': 'ርዕስ',
+      'contact.messageLabel': 'መልእክት',
+      'contact.namePlaceholder': 'ጆን ዶ',
+      'contact.emailPlaceholder': 'john@example.com',
+      'contact.subjectPlaceholder': 'የፕሮጀክት ጥያቄ',
+      'contact.messagePlaceholder': 'ስለ ፕሮጀክትዎ ይንገሩኝ...',
       'contact.send': 'መልእክት ላክ',
-      'contact.success': '✓ መልእክትዎ በተሳካ ሁኔታ ተልኳል!',
-      'contact.error': 'እባክዎ ሁሉንም መስኮች ይሙሉ።',
+      'contact.success': '✓ መልእክትዎ በተሳካ ሁኔታ ተልኳል! በቅርቡ ምላሽ እሰጣለሁ።',
+      'contact.error': 'እባክዎ ሁሉንም መስኮች በትክክለኛ ኢሜል ይሙሉ።',
       'contact.sending': 'መልእክት በመላክ ላይ...',
       'contact.serverError': 'ችግር ተፈጥሯል። እባክዎ በቀጥታ ኢሜል ይላኩልኝ።',
 
-      'media.noImage': 'ምስል የለም', 'media.noPreview': 'ቅድመ እይታ የለም',
+      /* ==================== MEDIA / FOOTER ==================== */
+      'media.noImage': 'ምስል የለም',
+      'media.noPreview': 'ቅድመ እይታ የለም',
+      'footer.brand.name': 'መልስ መላኪዬ',
       'footer.tagline': 'የዳታ ሳይንስ ተማሪ · ብልህ ስርዓቶችን መገንባት',
-      'footer.copy': '© 2025 ሜሊስ መላኪዬ · በ <i class="fas fa-heart"></i> የተሰራ በvanilla HTML, CSS እና JavaScript'
+      'footer.copy': '© 2025 መልስ መላኪዬ · መብቱ በህግ የተጠበቀ ነው። <i class="fas fa-heart"></i>'
     }
   };
 
@@ -506,29 +689,16 @@
 
   /* ============================================================
      ⚙️ CONFIG — THE ONLY PLACE YOU EDIT
-     ════════════════════════════════════════════════════════════
-     ICON CHEAT SHEET
-     ────────────────
-     Every item AND every category has an `icon:` field.
-     Just paste any Font Awesome class (e.g. 'fas fa-code'
-     or 'fab fa-python').
-
-     To add: paste a new object with an icon: line.
-     To remove: delete the object.
-     To change an icon: edit only the icon: value.
-     ════════════════════════════════════════════════════════════ */
+     ============================================================ */
   const CONFIG = {
 
     email: 'melismelakie27@gmail.com',
 
-    /* Number of items shown before "View More".
-       Experience & Services = 3 → show 3, then "View More"
-       when a category has more than 3. */
     initialCounts: {
       projects:     5,
       experience:   3,
       certificates: 3,
-      skills:       5,
+      skills:       6,
       services:     3
     },
 
@@ -577,32 +747,58 @@
         icon: 'fas fa-laptop', media: { type: 'none', src: '' } }
     ],
 
-    /* --- PROJECTS --- */
+    /* --- PROJECTS ---
+       `live` and `details` are OPTIONAL.
+       If you remove / leave them blank, the button will not appear. */
     projects: [
-      { i18nTitle: 'proj.churn.title', i18nDesc: 'proj.churn.desc',
-        i18nTags: ['tag.python','tag.sklearn','tag.pandas'], github: 'https://github.com/',
-        media: { type: 'image', src: 'project images/eep.png', alt: 'Churn analytics' } },
-      { i18nTitle: 'proj.cnn.title', i18nDesc: 'proj.cnn.desc',
-        i18nTags: ['tag.tensorflow','tag.keras','tag.cnn'], github: 'https://github.com/',
-        media: { type: 'pdf', src: 'project images/Data analysis.pdf' } },
-      { i18nTitle: 'proj.covid.title', i18nDesc: 'proj.covid.desc',
-        i18nTags: ['tag.plotly','tag.pandas','tag.dataviz'], github: 'https://github.com/',
-        media: { type: 'pdf', src: 'project images/Data analysis.pdf' } },
-      { i18nTitle: 'proj.movie.title', i18nDesc: 'proj.movie.desc',
-        i18nTags: ['tag.python','tag.surprise','tag.ml'], github: 'https://github.com/',
-        media: { type: 'video', src: 'project images/Best Funny People Falling Over Videos of The Week - Fail Unlucky (1080p, h264).mp4' } },
       { i18nTitle: 'proj.sentiment.title', i18nDesc: 'proj.sentiment.desc',
-        i18nTags: ['tag.nlp','tag.bert','tag.nltk'], github: 'https://github.com/',
-        media: { type: 'video', src: 'project images/Best Funny People Falling Over Videos of The Week - Fail Unlucky (1080p, h264).mp4' } },
-      { i18nTitle: 'proj.sales.title', i18nDesc: 'proj.sales.desc',
-        i18nTags: ['tag.sql','tag.postgresql','tag.analytics'], github: 'https://github.com/',
-        media: { type: 'image', src: 'project images/fake.png', alt: 'Sales analytics' } },
-      { i18nTitle: 'proj.timeseries.title', i18nDesc: 'proj.timeseries.desc',
-        i18nTags: ['tag.timeseries','tag.arima','tag.lstm'], github: 'https://github.com/',
-        media: { type: 'image', src: 'project images/languages.png', alt: 'Time series' } },
-      { i18nTitle: 'proj.fraud.title', i18nDesc: 'proj.fraud.desc',
-        i18nTags: ['tag.anomaly','tag.ml','tag.python'], github: 'https://github.com/',
-        media: { type: 'image', src: 'project images/camera.png', alt: 'Fraud detection' } }
+        i18nTags: ['tag.nlp','tag.ml','tag.python'],
+        github: 'https://github.com/MELES-DS',
+        live: '',
+        details: { type: 'pdf', src: 'project images/Data analysis.pdf' },
+        media: { type: 'image', src: 'project images/sentiment.png', alt: 'Sentiment classification' } },
+
+      { i18nTitle: 'proj.translation.title', i18nDesc: 'proj.translation.desc',
+        i18nTags: ['tag.nlp','tag.ml','tag.tensorflow'],
+        github: 'https://github.com/MELES-DS',
+        live: '',
+        details: { type: 'pdf', src: 'project details/translation.pdf' },
+        media: { type: 'image', src: 'project images/languages.png', alt: 'Multilingual translation' } },
+
+      { i18nTitle: 'proj.water.title', i18nDesc: 'proj.water.desc',
+        i18nTags: ['tag.timeseries','tag.ml','tag.python'],
+        github: 'https://github.com/MELES-DS',
+        live: '',
+        details: { type: 'image', src: 'project images/eep.png' },
+        media: { type: 'image', src: 'project images/eep.png', alt: 'Water level forecasting' } },
+
+      { i18nTitle: 'proj.aiimage.title', i18nDesc: 'proj.aiimage.desc',
+        i18nTags: ['tag.tensorflow','tag.cnn','tag.ml'],
+        github: 'https://github.com/MELES-DS',
+        live: '',
+        details: { type: 'pdf', src: 'project details/ai-image-detection.pdf' },
+        media: { type: 'image', src: 'project images/fake.png', alt: 'AI image detection' } },
+
+      { i18nTitle: 'proj.diabetes.title', i18nDesc: 'proj.diabetes.desc',
+        i18nTags: ['tag.ml','tag.sklearn','tag.python'],
+        github: 'https://github.com/MELES-DS',
+        live: '',
+        details: { type: 'pdf', src: 'project details/diabetes-prediction.pdf' },
+        media: { type: 'image', src: 'profiles images/Diabet.png', alt: 'Diabetes prediction' } },
+
+      { i18nTitle: 'proj.weather.title', i18nDesc: 'proj.weather.desc',
+        i18nTags: ['tag.ml','tag.dataviz','tag.python'],
+        github: 'https://github.com/MELES-DS',
+        live: '',
+        details: { type: 'pptx', src: 'project details/weather-analysis.pptx' },
+        media: { type: 'image', src: 'project images/weather.png', alt: 'Weather analysis' } },
+
+      { i18nTitle: 'proj.youth.title', i18nDesc: 'proj.youth.desc',
+        i18nTags: ['tag.dataviz','tag.dash','tag.python'],
+        github: 'https://github.com/MELES-DS',
+        live: '',
+        details: { type: 'pdf', src: 'project details/youth-center-dashboard.pdf' },
+        media: { type: 'image', src: 'project images/DIY.jpg', alt: 'Youth center attendance dashboard' } }
     ],
 
     /* --- EXPERIENCE --- */
@@ -717,37 +913,67 @@
 
     /* --- SKILLS --- */
     skillCategories: [
-      { key: 'programming', i18nLabel: 'cat.programming', icon: 'fas fa-code' },
-      { key: 'datasci',     i18nLabel: 'cat.datasci',     icon: 'fas fa-brain' },
-      { key: 'tools',       i18nLabel: 'cat.tools',       icon: 'fas fa-screwdriver-wrench' },
-      { key: 'soft',        i18nLabel: 'cat.soft',        icon: 'fas fa-handshake' }
+      { key: 'programming',  i18nLabel: 'cat.programming',  icon: 'fab fa-python' },
+      { key: 'datasci',      i18nLabel: 'cat.datasci',      icon: 'fas fa-chart-line' },
+      { key: 'mlai',         i18nLabel: 'cat.mlai',         icon: 'fas fa-robot' },
+      { key: 'tools',        i18nLabel: 'cat.tools',        icon: 'fas fa-screwdriver-wrench' },
+      { key: 'soft',         i18nLabel: 'cat.soft',         icon: 'fas fa-handshake' },
+      { key: 'other',        i18nLabel: 'cat.other',        icon: 'fas fa-cube' }
     ],
 
     skills: [
-      { i18nName: 'skill.python',     icon: 'fab fa-python',          category: 'programming', i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.r',          icon: 'fab fa-r-project',       category: 'programming', i18nLevel: 'lvl.intermediate' },
-      { i18nName: 'skill.sql',        icon: 'fas fa-database',        category: 'programming', i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.javascript', icon: 'fab fa-js',              category: 'programming', i18nLevel: 'lvl.intermediate' },
-      { i18nName: 'skill.java',       icon: 'fab fa-java',            category: 'programming', i18nLevel: 'lvl.basic' },
-      { i18nName: 'skill.pandas',     icon: 'fas fa-table',           category: 'datasci',     i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.numpy',      icon: 'fas fa-calculator',      category: 'datasci',     i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.sklearn',    icon: 'fas fa-brain',           category: 'datasci',     i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.tensorflow', icon: 'fas fa-project-diagram', category: 'datasci',     i18nLevel: 'lvl.intermediate' },
-      { i18nName: 'skill.matplotlib', icon: 'fas fa-chart-bar',       category: 'datasci',     i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.statistics', icon: 'fas fa-chart-area',      category: 'datasci',     i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.nlp',        icon: 'fas fa-language',        category: 'datasci',     i18nLevel: 'lvl.intermediate' },
-      { i18nName: 'skill.git',        icon: 'fab fa-git-alt',         category: 'tools',       i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.jupyter',    icon: 'fas fa-flask',           category: 'tools',       i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.tableau',    icon: 'fas fa-chart-pie',       category: 'tools',       i18nLevel: 'lvl.intermediate' },
-      { i18nName: 'skill.excel',      icon: 'fas fa-file-excel',      category: 'tools',       i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.docker',     icon: 'fab fa-docker',          category: 'tools',       i18nLevel: 'lvl.basic' },
-      { i18nName: 'skill.aws',        icon: 'fas fa-cloud',           category: 'tools',       i18nLevel: 'lvl.basic' },
-      { i18nName: 'skill.communication', icon: 'fas fa-comments',        category: 'soft', i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.teamwork',      icon: 'fas fa-people-group',    category: 'soft', i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.problem',       icon: 'fas fa-lightbulb',       category: 'soft', i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.time',          icon: 'fas fa-clock',           category: 'soft', i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.critical',      icon: 'fas fa-brain',           category: 'soft', i18nLevel: 'lvl.advanced' },
-      { i18nName: 'skill.presentation',  icon: 'fas fa-chalkboard-user', category: 'soft', i18nLevel: 'lvl.intermediate' }
+      { i18nName: 'skill.python',      icon: 'fab fa-python',               category: 'programming', i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.r',           icon: 'fab fa-r-project',            category: 'programming', i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.sql',         icon: 'fas fa-database',             category: 'programming', i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.java',        icon: 'fab fa-java',                 category: 'programming', i18nLevel: 'lvl.basic' },
+      { i18nName: 'skill.javascript',  icon: 'fab fa-js',                   category: 'programming', i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.htmlcss',     icon: 'fab fa-html5',                category: 'programming', i18nLevel: 'lvl.intermediate' },
+
+      { i18nName: 'skill.dataclean',   icon: 'fas fa-broom',                category: 'datasci',     i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.eda',         icon: 'fas fa-search',               category: 'datasci',     i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.statistical', icon: 'fas fa-chart-area',           category: 'datasci',     i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.dataviz',     icon: 'fas fa-chart-pie',            category: 'datasci',     i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.excel',       icon: 'fas fa-file-excel',           category: 'datasci',     i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.powerbi',     icon: 'fas fa-chart-bar',            category: 'datasci',     i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.pandas',      icon: 'fas fa-table',                category: 'datasci',     i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.numpy',       icon: 'fas fa-calculator',           category: 'datasci',     i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.matplotlib',  icon: 'fas fa-chart-line',           category: 'datasci',     i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.matlab',      icon: 'fas fa-square-root-variable', category: 'datasci',     i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.spss',        icon: 'fas fa-chart-simple',         category: 'datasci',     i18nLevel: 'lvl.intermediate' },
+
+      { i18nName: 'skill.ml',          icon: 'fas fa-brain',                category: 'mlai',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.dl',          icon: 'fas fa-network-wired',        category: 'mlai',        i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.nlp',         icon: 'fas fa-language',             category: 'mlai',        i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.cv',          icon: 'fas fa-eye',                  category: 'mlai',        i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.predictive',  icon: 'fas fa-chart-line',           category: 'mlai',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.modeleval',   icon: 'fas fa-check-double',         category: 'mlai',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.featureeng',  icon: 'fas fa-sliders-h',            category: 'mlai',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.tensorflow',  icon: 'fas fa-project-diagram',      category: 'mlai',        i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.pytorch',     icon: 'fas fa-fire',                 category: 'mlai',        i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.sklearn',     icon: 'fas fa-cogs',                 category: 'mlai',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.dashboard',   icon: 'fas fa-tachometer-alt',       category: 'mlai',        i18nLevel: 'lvl.advanced' },
+
+      { i18nName: 'skill.jupyter',     icon: 'fas fa-book',                 category: 'tools',       i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.colab',       icon: 'fas fa-flask',                category: 'tools',       i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.kaggle',      icon: 'fab fa-kaggle',               category: 'tools',       i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.vscode',      icon: 'fas fa-code',                 category: 'tools',       i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.git',         icon: 'fab fa-git-alt',              category: 'tools',       i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.github',      icon: 'fab fa-github',               category: 'tools',       i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.gradio',      icon: 'fas fa-rocket',               category: 'tools',       i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.streamlit',   icon: 'fas fa-bolt',                 category: 'tools',       i18nLevel: 'lvl.intermediate' },
+
+      { i18nName: 'skill.problem',       icon: 'fas fa-lightbulb',          category: 'soft',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.critical',      icon: 'fas fa-brain',              category: 'soft',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.teamwork',      icon: 'fas fa-people-group',       category: 'soft',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.communication', icon: 'fas fa-comments',           category: 'soft',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.presentation',  icon: 'fas fa-chalkboard-user',    category: 'soft',        i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.projectmgmt',   icon: 'fas fa-tasks',              category: 'soft',        i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.time',          icon: 'fas fa-clock',              category: 'soft',        i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.learning',      icon: 'fas fa-graduation-cap',     category: 'soft',        i18nLevel: 'lvl.advanced' },
+
+      { i18nName: 'skill.cloud',       icon: 'fas fa-cloud',                category: 'other',       i18nLevel: 'lvl.intermediate' },
+      { i18nName: 'skill.databases',   icon: 'fas fa-database',             category: 'other',       i18nLevel: 'lvl.advanced' },
+      { i18nName: 'skill.qc',          icon: 'fas fa-clipboard-check',      category: 'other',       i18nLevel: 'lvl.intermediate' }
     ],
 
     /* --- SOCIAL --- */
@@ -791,6 +1017,10 @@
     if (className) node.className = className;
     if (html != null) node.innerHTML = html;
     return node;
+  }
+
+  function hasValue(v) {
+    return typeof v === 'string' && v.trim() !== '' && v.trim() !== '#';
   }
 
   /* ============================================================
@@ -1050,7 +1280,6 @@
         const count = opts.items.filter(function (it) { return it.category === cat.key; }).length;
         const btn = el('button', 'filter-btn' + (i === 0 ? ' active' : ''));
         btn.dataset.category = cat.key;
-        /* Icon sits right before the label — no gap on either side */
         btn.innerHTML =
           '<i class="' + cat.icon + '"></i>' +
           '<span class="filter-btn-label">' + t(cat.i18nLabel) + '</span>' +
@@ -1148,6 +1377,7 @@
      ============================================================ */
   function buildProjectCard(p) {
     const card = el('div', 'project-card');
+
     const mediaEl = el('div', 'project-media');
     renderMediaInto(mediaEl, p.media, {
       showEmpty: true, emptyClass: 'media-empty', emptyLabel: t('media.noImage')
@@ -1166,14 +1396,49 @@
     });
     body.appendChild(tags);
 
-    if (p.github) {
-      const link = document.createElement('a');
-      link.href = p.github;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.className = 'project-link';
-      link.innerHTML = t('projects.github') + ' <i class="fab fa-github"></i>';
-      body.appendChild(link);
+    /* Action buttons — conditional on data */
+    const actions = el('div', 'project-actions');
+
+    if (hasValue(p.live)) {
+      const live = document.createElement('a');
+      live.href = p.live;
+      live.target = '_blank';
+      live.rel = 'noopener noreferrer';
+      live.className = 'project-btn project-btn-live';
+      live.innerHTML = '<i class="fas fa-external-link-alt"></i> ' + t('projects.liveDemo');
+      actions.appendChild(live);
+    }
+
+    if (hasValue(p.github)) {
+      const gh = document.createElement('a');
+      gh.href = p.github;
+      gh.target = '_blank';
+      gh.rel = 'noopener noreferrer';
+      gh.className = 'project-btn project-btn-github';
+      gh.innerHTML = '<i class="fab fa-github"></i> ' + t('projects.github');
+      actions.appendChild(gh);
+    }
+
+    if (p.details && hasValue(p.details.src)) {
+      const details = document.createElement('button');
+      details.type = 'button';
+      details.className = 'project-btn project-btn-details';
+      details.innerHTML = '<i class="fas fa-file-lines"></i> ' + t('projects.viewDetails');
+      details.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        const src = asset(normalizePath(p.details.src));
+        window.open(
+          src,
+          '_blank',
+          'noopener,noreferrer,width=1200,height=850,left=80,top=60'
+        );
+      });
+      actions.appendChild(details);
+    }
+
+    if (actions.children.length > 0) {
+      body.appendChild(actions);
     }
 
     card.appendChild(mediaEl);
@@ -1187,7 +1452,6 @@
       return '<span class="exp-tag">' + t(k) + '</span>';
     }).join('');
 
-    /* Icon sits IMMEDIATELY to the left of the title */
     card.innerHTML =
       '<div class="exp-header">' +
         '<div class="exp-logo"><i class="' + exp.icon + '"></i></div>' +
@@ -1219,7 +1483,6 @@
       showEmpty: true, emptyClass: 'cert-preview-empty', emptyLabel: t('media.noPreview')
     });
 
-    /* Icon sits IMMEDIATELY to the left of the title */
     const top = el('div', 'cert-top');
     top.innerHTML =
       '<div class="cert-icon"><i class="' + cert.icon + '"></i></div>' +
@@ -1255,7 +1518,6 @@
       return '<span class="srv-tag">' + t(k) + '</span>';
     }).join('');
 
-    /* Icon sits IMMEDIATELY to the left of the title */
     card.innerHTML =
       '<div class="srv-header">' +
         '<div class="srv-logo"><i class="' + srv.icon + '"></i></div>' +
@@ -1283,7 +1545,7 @@
     items: CONFIG.experience,
     categories: CONFIG.experienceCategories,
     buildCard: buildExperienceCard,
-    initialCount: CONFIG.initialCounts.experience,  /* = 3 */
+    initialCount: CONFIG.initialCounts.experience,
     emptyLabel: 'exp.empty'
   });
 
@@ -1311,7 +1573,7 @@
     items: CONFIG.services,
     categories: CONFIG.serviceCategories,
     buildCard: buildServiceCard,
-    initialCount: CONFIG.initialCounts.services,    /* = 3 */
+    initialCount: CONFIG.initialCounts.services,
     emptyLabel: 'srv.empty'
   });
 
@@ -1453,6 +1715,7 @@
       a.className = 'social-icon ' + s.cls;
       a.setAttribute('aria-label', s.name);
       a.setAttribute('title', s.name);
+      a.setAttribute('data-name', s.name);
       a.innerHTML = '<i class="' + s.icon + '"></i>';
       container.appendChild(a);
     });
@@ -1516,33 +1779,30 @@
   }
 
   /* ============================================================
-     VISITOR COUNTER (silent)
-     ============================================================ */
-  function initVisitorCounter() {
-    try {
-      if (!sessionStorage.getItem('portfolio-session-counted')) {
-        const n = parseInt(localStorage.getItem('portfolio-visitor-count') || '0', 10) || 0;
-        localStorage.setItem('portfolio-visitor-count', String(n + 1));
-        sessionStorage.setItem('portfolio-session-counted', '1');
-      }
-    } catch (e) { /* storage unavailable — ignore */ }
-  }
-
-  /* ============================================================
-     TRANSLATIONS APPLY
+     TRANSLATIONS APPLY — bidirectional EN ⇄ AM
      ============================================================ */
   function applyTranslations() {
     document.body.classList.toggle('lang-am', currentLang === 'am');
     document.documentElement.lang = currentLang;
 
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
-      el.textContent = t(el.getAttribute('data-i18n'));
+      const key = el.getAttribute('data-i18n');
+      if (key) el.textContent = t(key);
     });
+
     document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
-      el.innerHTML = t(el.getAttribute('data-i18n-html'));
+      const key = el.getAttribute('data-i18n-html');
+      if (key) el.innerHTML = t(key);
     });
+
     document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
-      el.placeholder = t(el.getAttribute('data-i18n-placeholder'));
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (key) el.placeholder = t(key);
+    });
+
+    document.querySelectorAll('[data-i18n-title]').forEach(function (el) {
+      const key = el.getAttribute('data-i18n-title');
+      if (key) el.title = t(key);
     });
 
     const langLabel = document.getElementById('langLabel');
@@ -1556,8 +1816,14 @@
     servicesSection.rebuild();
     skillsSection.rebuild();
 
-    updateActiveNav();
     startJobRotator();
+
+    document.querySelectorAll('.social-icon').forEach(function (a) {
+      const name = a.getAttribute('data-name');
+      if (name) { a.setAttribute('aria-label', name); a.setAttribute('title', name); }
+    });
+
+    updateActiveNav();
   }
 
   /* ============================================================
@@ -1632,7 +1898,7 @@
     const btn = document.getElementById('langBtn');
     if (!btn) return;
     btn.addEventListener('click', function () {
-      currentLang = currentLang === 'en' ? 'am' : 'en';
+      currentLang = (currentLang === 'en') ? 'am' : 'en';
       localStorage.setItem('portfolio-lang', currentLang);
       applyTranslations();
     });
@@ -1771,7 +2037,6 @@
     servicesSection.initViewMore();
     skillsSection.initViewMore();
     initContactForm();
-    initVisitorCounter();
 
     document.dispatchEvent(new Event('portfolio:ready'));
   }
