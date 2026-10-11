@@ -301,12 +301,12 @@
 
       'contact.title': 'Contact',
       'contact.subtitle': "Have a project in mind? Let's talk — I'm always open to new ideas and collaborations.",
-      'contact.orEmail': 'Or email me directly at',
+      'contact.orEmail': ' Email me directly at',
       'contact.visitLabel': 'Visit Me',
       'contact.callLabel': 'Call Me',
       'contact.emailLabel': 'Email Me',
       'contact.locationValue': 'Debre Birhan, Ethiopia',
-      'contact.phoneValue': '0945637373',
+      'contact.phoneValue': '+251918498348',
       'contact.nameLabel': 'Full Name',
       'contact.emailFieldLabel': 'Email Address',
       'contact.subjectLabel': 'Subject',
@@ -652,7 +652,7 @@
       'contact.callLabel': 'ይደውሉልኝ',
       'contact.emailLabel': 'ኢሜል ይላኩልኝ',
       'contact.locationValue': 'ደብረ ብርሃን፣ ኢትዮጵያ',
-      'contact.phoneValue': '0945637373',
+      'contact.phoneValue': '+251918498348',
       'contact.nameLabel': 'ሙሉ ስም',
       'contact.emailFieldLabel': 'የኢሜል አድራሻ',
       'contact.subjectLabel': 'ርዕስ',
@@ -672,7 +672,7 @@
       'media.noPreview': 'ቅድመ እይታ የለም',
       'footer.brand.name': 'መልስ መላኪዬ',
       'footer.tagline': 'የዳታ ሳይንስ ተማሪ · ብልህ ስርዓቶችን መገንባት',
-      'footer.copy': '© 2025 መልስ መላኪዬ · መብቱ በህግ የተጠበቀ ነው። <i class="fas fa-heart"></i>'
+      'footer.copy': '© 2025 መልስ መላኬ· መብቱ በህግ የተጠበቀ ነው። <i class="fas fa-heart"></i>'
     }
   };
 
@@ -695,10 +695,10 @@
     email: 'melismelakie27@gmail.com',
 
     initialCounts: {
-      projects:     5,
+      projects:     3,
       experience:   3,
       certificates: 3,
-      skills:       6,
+      skills:       5,
       services:     3
     },
 
@@ -796,7 +796,7 @@
       { i18nTitle: 'proj.youth.title', i18nDesc: 'proj.youth.desc',
         i18nTags: ['tag.dataviz','tag.dash','tag.python'],
         github: 'https://github.com/MELES-DS',
-        live: '',
+        live: 'melismelakie.vercel.app',
         details: { type: 'pdf', src: 'project details/youth-center-dashboard.pdf' },
         media: { type: 'image', src: 'project images/DIY.jpg', alt: 'Youth center attendance dashboard' } }
     ],
@@ -982,12 +982,12 @@
       { name: 'GitHub',    icon: 'fab fa-github',      url: 'https://github.com/MELES-DS',          cls: 'github' },
       { name: 'Telegram',  icon: 'fab fa-telegram',    url: 'https://t.me/Mele2927',                cls: 'telegram' },
       { name: 'WhatsApp',  icon: 'fab fa-whatsapp',    url: 'https://wa.me/251945637373',           cls: 'whatsapp' },
-      { name: 'Facebook',  icon: 'fab fa-facebook-f',  url: 'https://facebook.com/',                cls: 'facebook' },
-      { name: 'Instagram', icon: 'fab fa-instagram',   url: 'https://instagram.com/',               cls: 'instagram' },
-      { name: 'Discord',   icon: 'fab fa-discord',     url: 'https://discord.com/',                 cls: 'discord' },
+      { name: 'Facebook',  icon: 'fab fa-facebook-f',  url: 'https://facebook.com/melis.melakie',                cls: 'facebook' },
+      { name: 'Instagram', icon: 'fab fa-instagram',   url: 'https://instagram.com/mele292721',               cls: 'instagram' },
+      { name: 'Discord',   icon: 'fab fa-discord',     url: 'https://discord.com/mele2927',                 cls: 'discord' },
       { name: 'Pinterest', icon: 'fab fa-pinterest-p', url: 'https://pinterest.com/',               cls: 'pinterest' },
-      { name: 'Twitter/X', icon: 'fab fa-x-twitter',   url: 'https://x.com/',                       cls: 'twitter' },
-      { name: 'Reddit',    icon: 'fab fa-reddit-alien',url: 'https://reddit.com/',                  cls: 'reddit' }
+      { name: 'Twitter/X', icon: 'fab fa-x-twitter',   url: 'https://x.com/@MelakieMel38871',                       cls: 'twitter' },
+      { name: 'Reddit',    icon: 'fab fa-reddit-alien',url: 'https://reddit.com/u/OkPomelo6843',                  cls: 'reddit' }
     ]
   };
 
@@ -1919,22 +1919,23 @@
     });
   }
 
-  /* ============================================================
+    /* ============================================================
      CONTACT FORM
      ============================================================ */
   function initContactForm() {
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('formStatus');
+    const form      = document.getElementById('contactForm');
+    const status    = document.getElementById('formStatus');
     const submitBtn = document.getElementById('submitBtn');
     if (!form) return;
 
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
-      const name    = document.getElementById('fromName').value.trim();
-      const email   = document.getElementById('fromEmail').value.trim();
+
+      const name     = document.getElementById('fromName').value.trim();
+      const email    = document.getElementById('fromEmail').value.trim();
       const subjectEl = document.getElementById('subject');
-      const subject = subjectEl ? subjectEl.value.trim() : '';
-      const message = document.getElementById('message').value.trim();
+      const subject  = subjectEl ? subjectEl.value.trim() : '';
+      const message  = document.getElementById('message').value.trim();
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
       if (!name || !email || !message || !emailRegex.test(email)) {
@@ -1956,19 +1957,40 @@
       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ' + t('contact.sending');
 
       try {
+        /* -------------------------------------------------------
+           EmailJS template variables.
+           Make sure your EmailJS template uses these EXACT names:
+             From Name  →  {{from_name}}
+             From Email →  {{from_email}}
+             Reply-To   →  {{reply_to}}
+             Subject    →  {{subject}}
+             Message    →  {{message}}
+           ------------------------------------------------------- */
+        const templateParams = {
+          /* Human-readable pieces */
+          from_name:  name,
+          from_email: email,
+          reply_to:   email,                        /* ← so Reply goes to the visitor */
+          subject:    subject || ('New portfolio message from ' + name),
+          message:    message,
+
+          /* Aliases for extra safety (some templates use different keys) */
+          name:       name,
+          email:      email,
+          user_name:  name,
+          user_email: email,
+
+          /* Where it should arrive */
+          to_email:   CONFIG.email
+        };
+
         await emailjs.send(
           EMAILJS_SERVICE_ID,
           EMAILJS_TEMPLATE_ID,
-          {
-            from_name: name, from_email: email,
-            subject: subject || ('New portfolio message from ' + name),
-            message: message,
-            name: name, email: email,
-            user_name: name, user_email: email,
-            reply_to: email, to_email: CONFIG.email
-          },
+          templateParams,
           { publicKey: EMAILJS_PUBLIC_KEY }
         );
+
         status.textContent = t('contact.success');
         status.className = 'form-status success';
         form.reset();
@@ -1989,7 +2011,6 @@
       }
     });
   }
-
   /* ============================================================
      INIT
      ============================================================ */
