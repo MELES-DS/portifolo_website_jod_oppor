@@ -754,9 +754,9 @@
       { i18nTitle: 'proj.sentiment.title', i18nDesc: 'proj.sentiment.desc',
         i18nTags: ['tag.nlp','tag.ml','tag.python'],
         github: 'https://github.com/MELES-DS',
-        live: '',
+        live: 'melismelakie.vercel.app',
         details: { type: 'pdf', src: 'project images/Data analysis.pdf' },
-        media: { type: 'image', src: 'project images/sentiment.png', alt: 'Sentiment classification' } },
+        media: { type: 'image', pdf: 'certificates/demera/Improving Machine Learning Models.pdf', alt: 'Sentiment classification' } },
 
       { i18nTitle: 'proj.translation.title', i18nDesc: 'proj.translation.desc',
         i18nTags: ['tag.nlp','tag.ml','tag.tensorflow'],
