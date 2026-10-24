@@ -58,7 +58,7 @@
       'home.viewProjects': 'View Projects', 'home.getInTouch': 'Get in Touch',
 
       'about.title': 'About Me',
-      'about.intro': "I’m Melis Melakie, a Data Science student at Debre Berhan University, Ethiopia, with a strong interest in Machine Learning, Artificial Intelligence, Deep Learning, and Data Analytics.",
+      //'about.intro': "I’m Melis Melakie, a Data Science student at Debre Berhan University, Ethiopia, with a strong interest in Machine Learning, Artificial Intelligence, Deep Learning, and Data Analytics.",
       'about.academic': 'Academic Background',
       'about.academicDesc': 'Currently pursuing a B.Sc. in Data Science at Debre Berhan University, Ethiopia, with a focus on  Machine Learning, Artificial Intelligence, Deep Learning, Data Analytics ,computer vision, data visualization and statistics.',
       'about.career': 'Career Interests',
@@ -344,7 +344,7 @@
 
       /* ==================== ABOUT ==================== */
       'about.title': 'ስለ እኔ',
-      'about.intro': 'እኔ መልስ መላኪዬ ነኝ፤ በደብረ ብርሃን ዩኒቨርሲቲ (ኢትዮጵያ) የዳታ ሳይንስ ተማሪ ነኝ፤ በማሽን ለርኒን፣ በሰው ሰራሽ አስተውሎት (AI)፣ በጥልቅ ትምህርት (Deep Learning) እና በዳታ ትንተና ላይ ጥልቅ ፍላጎት አለኝ።',
+      //'about.intro': 'እኔ መልስ መላኪዬ ነኝ፤ በደብረ ብርሃን ዩኒቨርሲቲ (ኢትዮጵያ) የዳታ ሳይንስ ተማሪ ነኝ፤ በማሽን ለርኒን፣ በሰው ሰራሽ አስተውሎት (AI)፣ በጥልቅ ትምህርት (Deep Learning) እና በዳታ ትንተና ላይ ጥልቅ ፍላጎት አለኝ።',
       'about.academic': 'የትምህርት ዳራ',
       'about.academicDesc': 'በደብረ ብርሃን ዩኒቨርሲቲ (ኢትዮጵያ) የዳታ ሳይንስ የመጀመሪያ ዲግሪ በማጠናቀቅ ላይ ስሆን፣ ትኩረቴ በማሽን ለርኒን፣ በሰው ሰራሽ አስተውሎት፣ በጥልቅ ትምህርት፣ በዳታ ትንተና፣ በኮምፒውተር እይታ፣ በዳታ ምስላዊነት እና በስታቲስቲክስ ላይ ነው።',
       'about.career': 'የሙያ ፍላጎቶች',
@@ -703,7 +703,7 @@
     },
 
     jobTitles: {
-      en: ['Data Scientist', 'ML Engineer', 'Data Analyst', 'Python Developer', 'AI Enthusiast'],
+      en: ['Data Scientist', 'ML Engineer', 'Data Analyst', 'Data visualizer and interpreter', 'AI Enthusiast'],
       am: ['የዳታ ሳይንቲስት', 'የML ኢንጂኒየር', 'የዳታ ተንታኝ', 'የPython ገንቢ', 'የAI አፍቃሪ']
     },
     jobRotateInterval: 2400,
@@ -726,7 +726,7 @@
     aboutMedia: { type: 'image', src: 'profile images/meleb.jpg', alt: 'Working with data' },
 
     cv: {
-      src: 'certificates/gebeya/product creation with AI_advanced level.pdf',
+      src: 'cv/Melis_Melakie_Shiferaw_CV-last.pdf',
       fileName: 'Melis-Melakie-CV.pdf'
     },
 
@@ -754,15 +754,15 @@
       { i18nTitle: 'proj.sentiment.title', i18nDesc: 'proj.sentiment.desc',
         i18nTags: ['tag.nlp','tag.ml','tag.python'],
         github: 'https://github.com/MELES-DS',
-        live: 'melismelakie.vercel.app',
-        details: { type: 'pdf', src: 'project images/Data analysis.pdf' },
-        media: { type: 'image', pdf: 'certificates/demera/Improving Machine Learning Models.pdf', alt: 'Sentiment classification' } },
+        live: 'https://melismelakie.vercel.app',
+        details: { type: 'docx', src: 'project images/wase research 1.docx' },
+        media: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf', alt: 'Sentiment classification' } },
 
       { i18nTitle: 'proj.translation.title', i18nDesc: 'proj.translation.desc',
         i18nTags: ['tag.nlp','tag.ml','tag.tensorflow'],
         github: 'https://github.com/MELES-DS',
-        live: '',
-        details: { type: 'pdf', src: 'project details/translation.pdf' },
+        live: 'https://melismelakie.netlify.app',
+        details: { type: 'pdf', src: 'project images/Adane_et_al_2023_Optimization_Based_Traffic_Safety_Improvement_Strategy (1).pdf' },
         media: { type: 'image', src: 'project images/languages.png', alt: 'Multilingual translation' } },
 
       { i18nTitle: 'proj.water.title', i18nDesc: 'proj.water.desc',
