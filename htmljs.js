@@ -58,7 +58,6 @@
       'home.viewProjects': 'View Projects', 'home.getInTouch': 'Get in Touch',
 
       'about.title': 'About Me',
-      //'about.intro': "I’m Melis Melakie, a Data Science student at Debre Berhan University, Ethiopia, with a strong interest in Machine Learning, Artificial Intelligence, Deep Learning, and Data Analytics.",
       'about.academic': 'Academic Background',
       'about.academicDesc': 'Currently pursuing a B.Sc. in Data Science at Debre Berhan University, Ethiopia, with a focus on  Machine Learning, Artificial Intelligence, Deep Learning, Data Analytics ,computer vision, data visualization and statistics.',
       'about.career': 'Career Interests',
@@ -214,44 +213,74 @@
       'certcat.demera': 'Demera Project', 'certcat.club': 'Club',
       'certcat.udacity': 'Udacity', 'certcat.kenexio': 'Kenexio',
       'certcat.recognition': 'Recognition', 'certcat.other': 'Other',
-      'cert.ml.title': 'Machine Learning Engineer Nanodegree',
-      'cert.ml.desc': 'Comprehensive program covering supervised and unsupervised learning, deep learning, and deployment.',
-      'cert.da.title': 'Data Analyst Nanodegree',
-      'cert.da.desc': 'Focused on data wrangling, exploratory data analysis, and data visualization with Python.',
-      'cert.ds.title': 'Data Science Bootcamp',
-      'cert.ds.desc': 'Intensive bootcamp covering Python, statistics, machine learning, and capstone projects.',
-      'cert.cloud.title': 'Cloud Fundamentals',
-      'cert.cloud.desc': 'Introduction to cloud computing concepts, AWS core services, and deploying data workloads.',
-      'cert.ds2.title': 'Data Science Fundamentals',
-      'cert.ds2.desc': 'Core concepts of data science: data types, statistical reasoning, and analytical thinking.',
-      'cert.entre.title': 'Entrepreneurship',
-      'cert.entre.desc': 'Building entrepreneurial mindset, business models, and startup fundamentals.',
-      'cert.homl.title': 'Hands-On Machine Learning',
-      'cert.homl.desc': 'Practical training on building ML pipelines with Scikit-learn, TensorFlow, and Keras.',
-      'cert.de.title': 'Data Engineering with Python',
-      'cert.de.desc': 'ETL pipelines, data warehousing, and workflow orchestration using Python and Airflow.',
-      'cert.social.title': 'Data for Social Impact',
-      'cert.social.desc': 'Applied data science to social-good projects, including health and education analytics.',
-      'cert.community.title': 'Community Data Analytics',
-      'cert.community.desc': 'Hands-on program analyzing community datasets and building dashboards for local NGOs.',
-      'cert.sqladv.title': 'Advanced SQL for Analytics',
-      'cert.sqladv.desc': 'Mastering window functions, CTEs, query optimization, and analytical SQL patterns.',
-      'cert.pbi.title': 'Power BI Essentials',
-      'cert.pbi.desc': 'Building interactive dashboards and reports with Power BI and DAX fundamentals.',
-      'cert.clublead.title': 'Data Science Club Lead',
-      'cert.clublead.desc': 'Led weekly workshops on Python, ML, and data visualization for 50+ student members.',
-      'cert.hack.title': 'Hackathon Winner — Data Track',
-      'cert.hack.desc': 'First place for a real-time analytics dashboard built in 48 hours using Python and Plotly.',
-      'cert.dean.title': "Dean's List — Academic Excellence",
-      'cert.dean.desc': 'Recognized for outstanding academic performance in the Data Science program.',
-      'cert.capstone.title': 'Best Capstone Project Award',
-      'cert.capstone.desc': 'Awarded for an outstanding capstone project on predictive maintenance using ML.',
-      'cert.google.title': 'Google Data Analytics Certificate',
-      'cert.google.desc': 'Professional certificate covering data cleaning, analysis, visualization, and R programming.',
-      'cert.dl.title': 'Deep Learning Specialization',
-      'cert.dl.desc': 'Five-course specialization on neural networks, CNNs, RNNs, and sequence models.',
-      'cert.ibm.title': 'IBM Data Science Professional',
-      'cert.ibm.desc': 'Hands-on program covering Python, SQL, ML, and data science methodology.',
+
+      /* ==================== CERTIFICATES (EN) — 33 UNIQUE KEYS ==================== */
+      'cert.udacity.progfund.title': 'Programming Fundamentals',
+      'cert.udacity.progfund.desc': 'Foundational course covering programming logic, variables, control flow, functions, and problem-solving with hands-on exercises.',
+      'cert.udacity.dataanalysis.title': 'Data Analysis',
+      'cert.udacity.dataanalysis.desc': 'Focused on data wrangling, exploratory data analysis, and data visualization with Python.',
+      'cert.gebeya.aiessentials.title': 'AI Essentials for Everyone',
+      'cert.gebeya.aiessentials.desc': 'Beginner-friendly introduction to artificial intelligence concepts, real-world applications, and responsible AI use.',
+      'cert.gebeya.cloudcomputing.title': 'Cloud Computing',
+      'cert.gebeya.cloudcomputing.desc': 'Introduction to cloud computing concepts, AWS core services, and deploying data workloads.',
+      'cert.gebeya.dsfundamentals.title': 'Data Science Fundamentals',
+      'cert.gebeya.dsfundamentals.desc': 'Core concepts of data science: data types, statistical reasoning, and analytical thinking.',
+      'cert.gebeya.entrepreneurship.title': 'Entrepreneurship',
+      'cert.gebeya.entrepreneurship.desc': 'Building entrepreneurial mindset, business models, and startup fundamentals.',
+      'cert.gebeya.langcomm.title': 'Language & Communication Skills',
+      'cert.gebeya.langcomm.desc': 'Professional communication, workplace writing, and interpersonal skills for effective collaboration.',
+      'cert.gebeya.powerbi.title': 'Power BI Fundamentals',
+      'cert.gebeya.powerbi.desc': 'Building interactive reports and dashboards with Power BI, including data modeling and DAX basics.',
+      'cert.gebeya.prodai.title': 'Product Creation with AI (Advanced)',
+      'cert.gebeya.prodai.desc': 'Advanced techniques for designing and building AI-powered products, from ideation to deployment.',
+      'cert.oreilly.aisecurity.title': 'AI Security & Ethics',
+      'cert.oreilly.aisecurity.desc': 'Practical training on securing AI models against cyber threats and implementing ethical, unbiased AI systems.',
+      'cert.oreilly.chatgpteng.title': 'ChatGPT Engineering',
+      'cert.oreilly.chatgpteng.desc': 'Practical training on prompt engineering, fine-tuning LLMs, and integrating OpenAI APIs into application workflows.',
+      'cert.oreilly.awscloud.title': 'Cloud Computing with AWS',
+      'cert.oreilly.awscloud.desc': 'Comprehensive skill in architecting, deploying, and managing scalable cloud infrastructure using core Amazon Web Services.',
+      'cert.oreilly.pyaz.title': 'Python A–Z: 15 Projects',
+      'cert.oreilly.pyaz.desc': 'Project-based Python course covering automation, data handling, web scraping, and application building.',
+      'cert.oreilly.dsmlaz.title': 'Data Science & ML A to Z',
+      'cert.oreilly.dsmlaz.desc': 'End-to-end data science and machine learning workflow: cleaning, EDA, modeling, evaluation, and deployment.',
+      'cert.oreilly.dmanalytics.title': 'Digital Marketing Analytics',
+      'cert.oreilly.dmanalytics.desc': 'Measuring and optimizing digital campaigns using analytics tools, KPIs, and attribution models.',
+      'cert.oreilly.mlpy.title': 'Machine Learning in Python for Everyone',
+      'cert.oreilly.mlpy.desc': 'Practical ML with Python: regression, classification, clustering, and model evaluation using scikit-learn.',
+      'cert.oreilly.mlproj.title': 'ML Projects: Beginner to Pro',
+      'cert.oreilly.mlproj.desc': 'Portfolio-oriented machine learning projects spanning tabular data, NLP, and computer vision.',
+      'cert.oreilly.mlgenai.title': 'ML, Data Science & GenAI',
+      'cert.oreilly.mlgenai.desc': 'Modern ML workflows combined with generative AI concepts, prompt engineering, and LLM integration.',
+      'cert.oreilly.pbimaster.title': 'Power BI Masterclass',
+      'cert.oreilly.pbimaster.desc': 'Advanced Power BI: complex DAX, data modeling, performance tuning, and enterprise dashboard design.',
+      'cert.demera.improvingml.title': 'Improving Machine Learning Models',
+      'cert.demera.improvingml.desc': 'Practical techniques for improving ML models: hyperparameter tuning, regularization, ensembling, and evaluation.',
+      'cert.demera.mlspecialist.title': 'Machine Learning Specialist',
+      'cert.demera.mlspecialist.desc': 'Specialist track covering supervised/unsupervised learning, feature engineering, and model deployment.',
+      'cert.demera.datavizbasics.title': 'Data Visualization Basics',
+      'cert.demera.datavizbasics.desc': 'Principles of effective data visualization: chart selection, color, storytelling, and dashboard design.',
+      'cert.demera.communityanalytics.title': 'Community Data Analytics',
+      'cert.demera.communityanalytics.desc': 'Hands-on program analyzing community datasets and building dashboards for local NGOs.',
+      'cert.demera.mlpipelines.title': 'Machine Learning Pipelines',
+      'cert.demera.mlpipelines.desc': 'Designing reproducible ML pipelines: data ingestion, transformation, training, and serving.',
+      'cert.demera.dataprivacy.title': 'Principles of Data Privacy',
+      'cert.demera.dataprivacy.desc': 'Data protection fundamentals, privacy regulations, consent, anonymization, and ethical data handling.',
+      'cert.kenexio.progfund.title': 'Programming Fundamentals (Kenexio)',
+      'cert.kenexio.progfund.desc': 'Kenexio training on programming fundamentals: syntax, logic, control flow, and hands-on coding practice.',
+      'cert.kenexio.powerbi.title': 'Power BI Essentials (Kenexio)',
+      'cert.kenexio.powerbi.desc': 'Kenexio training on Power BI: building dashboards, data modeling, and DAX fundamentals.',
+      'cert.club.dataclublead.title': 'Data Science Club Lead',
+      'cert.club.dataclublead.desc': 'Led weekly workshops on Python, ML, and data visualization for 50+ student members.',
+      'cert.club.artificialintel.title': 'Artificial Intelligence',
+      'cert.club.artificialintel.desc': 'Club training on AI fundamentals, tools, and real-world applications.',
+      'cert.recognition.deanslist.title': "Dean's List — Academic Excellence",
+      'cert.recognition.deanslist.desc': 'Recognized for outstanding academic performance in the Data Science program.',
+      'cert.recognition.capstone.title': 'Best Capstone Project Award',
+      'cert.recognition.capstone.desc': 'Awarded for an outstanding capstone project on predictive maintenance using ML.',
+      'cert.other.udara.title': 'Udara Certificate',
+      'cert.other.udara.desc': 'Certificate of completion for the Udara training program.',
+      'cert.other.cloudroles.title': 'Job Roles in the Cloud',
+      'cert.other.cloudroles.desc': 'Overview of cloud computing job roles, responsibilities, and career paths.',
 
       'srv.title': 'Services',
       'srv.subtitle': 'Explore the services I have delivered across Data Science, Machine Learning, Artificial Intelligence, data analysis, visualization, and digital solutions designed to address real-world needs.',
@@ -282,10 +311,6 @@
 
       'edu.title': 'Education',
       'edu.subtitle': 'My educational journey reflects a continuous commitment to learning, developing technical expertise, and preparing for real-world challenges',
-      'edu.elementary.title': 'Primary Education', 'edu.elementary.sub': 'Abessken Elementary School',
-      'edu.elementary.desc': 'Participated in science fairs and math competitions.', 'edu.elementary.meta': '2010 – 2018',
-      'edu.highschool.title': 'High School', 'edu.highschool.sub': 'Abay Minch preparatory school',
-      'edu.highschool.desc': 'A stream of natural sciences.', 'edu.highschool.meta': '2019 – 2022',
       'edu.university.title': 'University', 'edu.university.sub': 'B.Sc. in Data Science',
       'edu.university.desc': "Currently pursuing a Bachelor's degree in Data Science with focus on machine learning, statistics, and data engineering.",
       'edu.university.meta': '2023 – Present',
@@ -327,14 +352,13 @@
       'footer.copy': '© 2025 Melis Melakie · All rights are reserved. <i class="fas fa-heart"></i>'
     },
 
-        am: {
+    am: {
       'brand': 'ፖርትፎሊዮ',
       'nav.home': 'መነሻ', 'nav.about': 'ስለ እኔ', 'nav.education': 'ትምህርት',
       'nav.skills': 'ክህሎቶች', 'nav.projects': 'ፕሮጀክቶች', 'nav.experience': 'ልምድ',
       'nav.certificates': 'ሰርተፊኬቶች', 'nav.services': 'አገልግሎቶች',
       'nav.cv': 'የሥራ ማስረጃ', 'nav.contact': 'አግኙኝ',
 
-      /* ==================== HOME ==================== */
       'home.title': 'እንኳን ደህና መጡ',
       'home.greet': 'ሰላም፣ እኔ',
       'home.name': 'መልስ መላኪዬ ነኝ',
@@ -342,9 +366,7 @@
       'home.viewProjects': 'ፕሮጀክቶችን ይመልከቱ',
       'home.getInTouch': 'ያግኙኝ',
 
-      /* ==================== ABOUT ==================== */
       'about.title': 'ስለ እኔ',
-      //'about.intro': 'እኔ መልስ መላኪዬ ነኝ፤ በደብረ ብርሃን ዩኒቨርሲቲ (ኢትዮጵያ) የዳታ ሳይንስ ተማሪ ነኝ፤ በማሽን ለርኒን፣ በሰው ሰራሽ አስተውሎት (AI)፣ በጥልቅ ትምህርት (Deep Learning) እና በዳታ ትንተና ላይ ጥልቅ ፍላጎት አለኝ።',
       'about.academic': 'የትምህርት ዳራ',
       'about.academicDesc': 'በደብረ ብርሃን ዩኒቨርሲቲ (ኢትዮጵያ) የዳታ ሳይንስ የመጀመሪያ ዲግሪ በማጠናቀቅ ላይ ስሆን፣ ትኩረቴ በማሽን ለርኒን፣ በሰው ሰራሽ አስተውሎት፣ በጥልቅ ትምህርት፣ በዳታ ትንተና፣ በኮምፒውተር እይታ፣ በዳታ ምስላዊነት እና በስታቲስቲክስ ላይ ነው።',
       'about.career': 'የሙያ ፍላጎቶች',
@@ -352,7 +374,6 @@
       'about.goals': 'ሙያዊ ግቦች',
       'about.goalsDesc': 'ከዳታ ስብሰባ እስከ ማሰማራት ድረስ ሙሉ በሙሉ የማሽን ለርኒን ስርዓቶችን የሚያቀርብ የዳታ ሳይንቲስት እና የሰው ሰራሽ አስተውሎት/ማሽን ለርኒን ባለሙያ በመሆን በቴክኖሎጂ የሚመሩ የዕውነተኛ ዓለም ችግሮችን መፍታት።',
 
-      /* ==================== SKILLS ==================== */
       'skills.title': 'ክህሎቶች',
       'skills.subtitle': 'በዳታ ሳይንስ፣ በማሽን ለርኒን፣ በጥልቅ ትምህርት፣ በሰው ሰራሽ አስተውሎት፣ በዳታ ትንተና እና በዳታ ምስላዊነት ያሉኝ ዋና ዋና ክህሎቶች',
       'skills.empty': 'በዚህ ምድብ ውስጥ ምንም ክህሎት አልተገኘም።',
@@ -369,7 +390,6 @@
       'lvl.intermediate': 'መካከለኛ',
       'lvl.basic': 'መሠረታዊ',
 
-      /* --- Programming --- */
       'skill.python': 'ፓይተን',
       'skill.r': 'አር (R)',
       'skill.sql': 'ኤስኪዩኤል (SQL)',
@@ -377,7 +397,6 @@
       'skill.javascript': 'ጃቫስክሪፕት',
       'skill.htmlcss': 'HTML እና CSS',
 
-      /* --- Data Science & Analytics --- */
       'skill.dataclean': 'የዳታ ማጽዳት እና ቅድመ ማዘጋጀት',
       'skill.eda': 'አሰሳ ዳታ ትንተና (EDA)',
       'skill.statistical': 'ስታቲስቲካዊ ትንተና',
@@ -390,7 +409,6 @@
       'skill.matlab': 'MATLAB',
       'skill.spss': 'SPSS',
 
-      /* --- Machine Learning & AI --- */
       'skill.ml': 'ማሽን ለርኒን',
       'skill.dl': 'ጥልቅ ትምህርት (Deep Learning)',
       'skill.nlp': 'የተፈጥሮ ቋንቋ ማቀነባበር (NLP)',
@@ -403,7 +421,6 @@
       'skill.sklearn': 'ሳይኪት ለርን (Scikit-learn)',
       'skill.dashboard': 'ዳሽቦርድ ልማት',
 
-      /* --- Tools & Platforms --- */
       'skill.jupyter': 'ጁፒተር ኖትቡክ',
       'skill.colab': 'ጉግል ኮላብ (Colab)',
       'skill.kaggle': 'ካግል (Kaggle)',
@@ -413,7 +430,6 @@
       'skill.gradio': 'ግራዲዮ (Gradio)',
       'skill.streamlit': 'ስትሪምሊት (Streamlit)',
 
-      /* --- Soft Skills --- */
       'skill.problem': 'ችግር መፍታት',
       'skill.critical': 'ተቺ አስተሳሰብ',
       'skill.teamwork': 'የቡድን ሥራ እና ትብብር',
@@ -423,12 +439,10 @@
       'skill.time': 'የጊዜ አስተዳደር',
       'skill.learning': 'ቀጣይ ትምህርት',
 
-      /* --- Other Skills --- */
       'skill.cloud': 'የክላውድ መድረኮች',
       'skill.databases': 'ዳታቤዞች',
       'skill.qc': 'የጥራት ቁጥጥር',
 
-      /* ==================== PROJECTS ==================== */
       'projects.title': 'ፕሮጀክቶች',
       'projects.subtitle': 'የትምህርት እና ተግባራዊ ፕሮጀክቶቼን ይመልከቱ፤ በዳታ ሳይንስ፣ በማሽን ለርኒን፣ በጥልቅ ትምህርት፣ በሰው ሰራሽ አስተውሎት እና በዳታ ትንተና የዕውነተኛ ዓለምን ችግሮች የምፈታባቸው።',
       'projects.github': 'ጊትሃብ',
@@ -458,7 +472,6 @@
       'proj.youth.title': 'የDIY የወጣቶች ማዕከል የመገኘት ትንተና እና ሪፖርት ማድረጊያ ዳሽቦርድ',
       'proj.youth.desc': 'የመገኘት መዝገቦችን ወደ ትርጉም ያላቸው ስታቲስቲክሶች፣ ምስላዊነቶች እና ሪፖርቶች ለመቀየር ለDIY የወጣቶች ማዕከል የተሰራ በይነተገናኝ የመገኘት ትንተና እና ሪፖርት ማድረጊያ ዳሽቦርድ።',
 
-      /* --- Project tags --- */
       'tag.python': 'ፓይተን', 'tag.sklearn': 'ሳይኪት ለርን', 'tag.pandas': 'ፓንዳስ',
       'tag.tensorflow': 'ቴንሰርፍሎው', 'tag.keras': 'ኬራስ', 'tag.cnn': 'ሲኤንኤን (CNN)',
       'tag.plotly': 'ፕሎትሊ', 'tag.dataviz': 'ዳታ ምስላዊነት',
@@ -468,7 +481,6 @@
       'tag.timeseries': 'የጊዜ ተከታታይ', 'tag.arima': 'ARIMA', 'tag.lstm': 'LSTM',
       'tag.anomaly': 'ማንጋት ማወቂያ', 'tag.dash': 'ዳሽ (Dash)',
 
-      /* ==================== EXPERIENCE ==================== */
       'exp.title': 'ልምድ',
       'exp.subtitle': 'ክህሎቴን እና ሙያዊ ጉዞዬን የቀረጹትን ልምዶች፣ ዕድሎች እና ተግባራዊ ሥራዎች ያሳያል',
       'exp.empty': 'በዚህ ምድብ ውስጥ እስካሁን ምንም ልምድ አልተገኘም።',
@@ -522,7 +534,6 @@
       'exp7.duration': '2023 – አሁን',
       'exp7.tag1': 'መሪነት', 'exp7.tag2': 'ማህበረሰብ', 'exp7.tag3': 'ወርክሾፖች',
 
-      /* ==================== CERTIFICATES ==================== */
       'certs.title': 'ሰርተፊኬቶች',
       'certs.subtitle': 'ቀጣይ ትምህርቴን፣ ቴክኒካዊ እድገቴን እና አዲስ ክህሎቶችን ለማዳበር ያለኝን ቁርጠኝነት የሚያንጸባርቁ ሙያዊ ሰርተፊኬቶቼን፣ የስልጠና ስኬቶቼን እና ምዕራፎቼን ይመልከቱ።',
       'certs.empty': 'በዚህ ምድብ ውስጥ እስካሁን ምንም ሰርተፊኬት አልተገኘም።',
@@ -537,46 +548,74 @@
       'certcat.recognition': 'እውቅና',
       'certcat.other': 'ሌላ',
 
-      'cert.ml.title': 'የማሽን ለርኒን ኢንጂኒየር ናኖዲግሪ',
-      'cert.ml.desc': 'በቁጥጥር የሚደረግ እና ቁጥጥር የማይደረግ ትምህርት፣ ጥልቅ ትምህርት እና ማሰማራትን የሚሸፍን አጠቃላይ ፕሮግራም።',
-      'cert.da.title': 'የዳታ ተንታኝ ናኖዲግሪ',
-      'cert.da.desc': 'በዳታ ማጽዳት፣ በአሰሳ ዳታ ትንተና እና በPython ዳታ ምስላዊነት ላይ ያተኮረ።',
-      'cert.ds.title': 'የዳታ ሳይንስ ቡትካምፕ',
-      'cert.ds.desc': 'Python፣ ስታቲስቲክስ፣ ማሽን ለርኒን እና የካፕስቶን ፕሮጀክቶችን የሚሸፍን ከባድ ቡትካምፕ።',
-      'cert.cloud.title': 'የክላውድ መሠረታዊ ነገሮች',
-      'cert.cloud.desc': 'የክላውድ ኮምፒውቲንግ ፅንሰ-ሀሳቦች፣ የAWS ዋና አገልግሎቶች እና የዳታ ሥራዎችን ማሰማራት መግቢያ።',
-      'cert.ds2.title': 'የዳታ ሳይንስ መሠረታዊ ነገሮች',
-      'cert.ds2.desc': 'የዳታ ሳይንስ ዋና ፅንሰ-ሀሳቦች፡ የዳታ ዓይነቶች፣ ስታቲስቲካዊ አስተሳሰብ እና የትንታኔ አስተሳሰብ።',
-      'cert.entre.title': 'ሥራ ፈጣሪነት',
-      'cert.entre.desc': 'የሥራ ፈጣሪ አስተሳሰብ፣ የንግድ ሞዴሎች እና የጀማሪ ንግድ መሠረታዊ ነገሮች።',
-      'cert.homl.title': 'በተግባር ላይ የተመሰረተ ማሽን ለርኒን',
-      'cert.homl.desc': 'በScikit-learn፣ TensorFlow እና Keras የML ቧንቧዎችን በመገንባት ላይ ተግባራዊ ስልጠና።',
-      'cert.de.title': 'በPython የዳታ ኢንጂኒየሪንግ',
-      'cert.de.desc': 'የETL ቧንቧዎች፣ የዳታ መጋዘን እና በPython እና Airflow የሥራ ፍሰት ማስተባበር።',
-      'cert.social.title': 'ለማህበራዊ ተጽዕኖ ዳታ',
-      'cert.social.desc': 'ለማህበራዊ ጥቅም ፕሮጀክቶች የተተገበረ ዳታ ሳይንስ፣ የጤና እና የትምህርት ትንተናን ጨምሮ።',
-      'cert.community.title': 'የማህበረሰብ ዳታ ትንተና',
-      'cert.community.desc': 'የማህበረሰብ ዳታሴቶችን መተንተን እና ለአካባቢያዊ መንግስታዊ ያልሆኑ ድርጅቶች ዳሽቦርዶችን የመገንባት ተግባራዊ ፕሮግራም።',
-      'cert.sqladv.title': 'ለትንተና የላቀ SQL',
-      'cert.sqladv.desc': 'የመስኮት ተግባራት፣ CTEዎች፣ የመጠይቅ ማመቻቸት እና የትንታኝ SQL ቅጦችን መቆጣጠር።',
-      'cert.pbi.title': 'የPower BI መሠረታዊ ነገሮች',
-      'cert.pbi.desc': 'በPower BI እና በDAX መሠረታዊ ነገሮች በይነተገናኝ ዳሽቦርዶችን እና ሪፖርቶችን መገንባት።',
-      'cert.clublead.title': 'የዳታ ሳይንስ ክለብ መሪ',
-      'cert.clublead.desc': 'ለ50+ ተማሪ አባላት በPython፣ ML እና ዳታ ምስላዊነት ላይ ሳምንታዊ ወርክሾፖችን መርቷል።',
-      'cert.hack.title': 'የሃካቶን አሸናፊ — የዳታ ትራክ',
-      'cert.hack.desc': 'በ48 ሰዓት ውስጥ በPython እና Plotly የተገነባ የእውነተኛ ጊዜ ትንታኔ ዳሽቦርድ አንደኛ ደረጃ።',
-      'cert.dean.title': 'የዲን ዝርዝር — የትምህርት ልዕልና',
-      'cert.dean.desc': 'በዳታ ሳይንስ ፕሮግራም ውስጥ ለላቀ የትምህርት አፈጻጸም እውቅና ተሰጥቷል።',
-      'cert.capstone.title': 'ምርጥ ካፕስቶን ፕሮጀክት ሽልማት',
-      'cert.capstone.desc': 'ML በመጠቀም ትንበያ ጥገና ላይ ለላቀ ካፕስቶን ፕሮጀክት ተሸልሟል።',
-      'cert.google.title': 'የGoogle ዳታ ትንታኔ ሰርተፊኬት',
-      'cert.google.desc': 'ዳታ ማጽዳት፣ ትንተና፣ ምስላዊነት እና የR ፕሮግራሚንግ የሚሸፍን ሙያዊ ሰርተፊኬት።',
-      'cert.dl.title': 'የጥልቅ ትምህርት ስፔሻላይዜሽን',
-      'cert.dl.desc': 'በኒውራል ኔትወርኮች፣ CNNዎች፣ RNNዎች እና ተከታታይ ሞዴሎች ላይ አምስት ኮርስ ስፔሻላይዜሽን።',
-      'cert.ibm.title': 'የIBM ዳታ ሳይንስ ሙያዊ',
-      'cert.ibm.desc': 'Python፣ SQL፣ ML እና የዳታ ሳይንስ ዘዴን የሚሸፍን ተግባራዊ ፕሮግራም።',
+      /* ==================== CERTIFICATES (AM) — 33 UNIQUE KEYS ==================== */
+      'cert.udacity.progfund.title': 'የፕሮግራሚንግ መሠረታዊ ነገሮች',
+      'cert.udacity.progfund.desc': 'የፕሮግራሚንግ አመክንዮ፣ ተለዋዋጮች፣ የቁጥጥር ፍሰት፣ ተግባራት እና ችግር መፍታትን የሚሸፍን መሠረታዊ ኮርስ ከተግባራዊ ልምምዶች ጋር።',
+      'cert.udacity.dataanalysis.title': 'የዳታ ትንተና',
+      'cert.udacity.dataanalysis.desc': 'በዳታ ማጽዳት፣ በአሰሳ ዳታ ትንተና እና በPython ዳታ ምስላዊነት ላይ ያተኮረ።',
+      'cert.gebeya.aiessentials.title': 'ለሁሉም ሰው የAI መሠረታዊ ነገሮች',
+      'cert.gebeya.aiessentials.desc': 'የሰው ሰራሽ አስተውሎት ፅንሰ-ሀሳቦች፣ የዕውነተኛ ዓለም አፕሊኬሽኖች እና ኃላፊነት የሚሰማው የAI አጠቃቀም መግቢያ።',
+      'cert.gebeya.cloudcomputing.title': 'የክላውድ ኮምፒውቲንግ',
+      'cert.gebeya.cloudcomputing.desc': 'የክላውድ ኮምፒውቲንግ ፅንሰ-ሀሳቦች፣ የAWS ዋና አገልግሎቶች እና የዳታ ሥራዎችን ማሰማራት መግቢያ።',
+      'cert.gebeya.dsfundamentals.title': 'የዳታ ሳይንስ መሠረታዊ ነገሮች',
+      'cert.gebeya.dsfundamentals.desc': 'የዳታ ሳይንስ ዋና ፅንሰ-ሀሳቦች፡ የዳታ ዓይነቶች፣ ስታቲስቲካዊ አስተሳሰብ እና የትንታኔ አስተሳሰብ።',
+      'cert.gebeya.entrepreneurship.title': 'ሥራ ፈጣሪነት',
+      'cert.gebeya.entrepreneurship.desc': 'የሥራ ፈጣሪ አስተሳሰብ፣ የንግድ ሞዴሎች እና የጀማሪ ንግድ መሠረታዊ ነገሮች።',
+      'cert.gebeya.langcomm.title': 'የቋንቋ እና የግንኙነት ክህሎቶች',
+      'cert.gebeya.langcomm.desc': 'ሙያዊ ግንኙነት፣ የሥራ ቦታ ጽሑፍ እና ለትብብር የሚያገለግሉ የግለሰቦች መስተጋብር ክህሎቶች።',
+      'cert.gebeya.powerbi.title': 'የPower BI መሠረታዊ ነገሮች',
+      'cert.gebeya.powerbi.desc': 'በPower BI በይነተገናኝ ሪፖርቶችን እና ዳሽቦርዶችን መገንባት፣ የዳታ ሞዴሊንግ እና የDAX መሠረታዊ ነገሮችን ጨምሮ።',
+      'cert.gebeya.prodai.title': 'በAI ምርት መፍጠር (የላቀ)',
+      'cert.gebeya.prodai.desc': 'ከሃሳብ እስከ ማሰማራት ድረስ በAI የተጎለበቱ ምርቶችን ለመንደፍ እና ለመገንባት የላቀ ቴክኒኮች።',
+      'cert.oreilly.aisecurity.title': 'የኤአይ ደህንነት እና ሥነ-ምግባር',
+      'cert.oreilly.aisecurity.desc': 'የኤአይ (AI) ሞዴሎችን ከሳይበር ጥቃት የመጠበቅ እና ከአድልዎ ነፃ የሆኑ ሥነ-ምግባራዊ ስርዓቶችን የመገንባት ተግባራዊ ልምድ።',
+      'cert.oreilly.chatgpteng.title': 'ቻት ጂፒቲ ኢንጂነሪንግ',
+      'cert.oreilly.chatgpteng.desc': 'በፕሮምፕት ኢንጂነሪንግ፣ ኤልኤልኤም (LLM) ሞዴሎችን በማሻሻል እና የኦፕንኤአይ (OpenAI) ኤፒአይዎችን በስርዓቶች ውስጥ በማስተናገድ ላይ ያተኮረ ተግባራዊ ልምድ።',
+      'cert.oreilly.awscloud.title': 'ከAWS ጋር የክላውድ ኮምፒውቲንግ',
+      'cert.oreilly.awscloud.desc': 'ዋና የአማዞን ዌብ ሰርቪሶችን በመጠቀም ሊሰፋ የሚችል የክላውድ መሠረተ ልማት የመንደፍ፣ የማሰማራት እና የማስተዳደር አጠቃላይ ክህሎት።',
+      'cert.oreilly.pyaz.title': 'Python A–Z፡ 15 ፕሮጀክቶች',
+      'cert.oreilly.pyaz.desc': 'አውቶሜሽን፣ የዳታ አያያዝ፣ የድር መመርመር እና አፕሊኬሽን መገንባትን የሚሸፍን በፕሮጀክት ላይ የተመሠረተ የPython ኮርስ።',
+      'cert.oreilly.dsmlaz.title': 'ዳታ ሳይንስ እና ML ከA እስከ Z',
+      'cert.oreilly.dsmlaz.desc': 'ከመጽዳት፣ ከEDA፣ ከሞዴሊንግ፣ ከግምገማ እና ከማሰማራት ድረስ ሙሉ የዳታ ሳይንስ እና የማሽን ለርኒን የሥራ ፍሰት።',
+      'cert.oreilly.dmanalytics.title': 'የዲጂታል ግብይት ትንተና',
+      'cert.oreilly.dmanalytics.desc': 'የትንታኔ መሣሪያዎችን፣ KPIs እና የምስክር ሞዴሎችን በመጠቀም ዲጂታል ዘመቻዎችን መለካት እና ማሻሻል።',
+      'cert.oreilly.mlpy.title': 'ለሁሉም ሰው በPython የማሽን ለርኒን',
+      'cert.oreilly.mlpy.desc': 'በPython ተግባራዊ ML፡ ሬግሬሽን፣ ምደባ፣ ክላስተሪንግ እና የሞዴል ግምገማ በscikit-learn።',
+      'cert.oreilly.mlproj.title': 'የML ፕሮጀክቶች፡ ከጀማሪ እስከ ባለሙያ',
+      'cert.oreilly.mlproj.desc': 'በሠንጠረዥ ዳታ፣ በNLP እና በኮምፒውተር እይታ የሚሸፍኑ ለፖርትፎሊዮ የሚያገለግሉ የማሽን ለርኒን ፕሮጀክቶች።',
+      'cert.oreilly.mlgenai.title': 'ML፣ ዳታ ሳይንስ እና GenAI',
+      'cert.oreilly.mlgenai.desc': 'ዘመናዊ የML የሥራ ፍሰቶች ከጄኔሬቲቭ AI ፅንሰ-ሀሳቦች፣ ከፕሮምፕት ኢንጂነሪንግ እና ከLLM ውህደት ጋር።',
+      'cert.oreilly.pbimaster.title': 'የPower BI ማስተርክላስ',
+      'cert.oreilly.pbimaster.desc': 'የላቀ Power BI፡ ውስብስብ DAX፣ የዳታ ሞዴሊንግ፣ የአፈጻጸም ማስተካከያ እና የድርጅት ዳሽቦርድ ንድፍ።',
+      'cert.demera.improvingml.title': 'የማሽን ለርኒን ሞዴሎችን ማሻሻል',
+      'cert.demera.improvingml.desc': 'የML ሞዴሎችን ለማሻሻል ተግባራዊ ቴክኒኮች፡ ሃይፐርፓራሜትር ማስተካከል፣ መደበኛነት፣ ማጣመር እና ግምገማ።',
+      'cert.demera.mlspecialist.title': 'የማሽን ለርኒን ስፔሻሊስት',
+      'cert.demera.mlspecialist.desc': 'በቁጥጥር የሚደረግ/ቁጥጥር የማይደረግ ትምህርት፣ የባህሪ ምህንድስና እና የሞዴል ማሰማራትን የሚሸፍን የስፔሻሊስት ትራክ።',
+      'cert.demera.datavizbasics.title': 'የዳታ ምስላዊነት መሠረታዊ ነገሮች',
+      'cert.demera.datavizbasics.desc': 'ውጤታማ የዳታ ምስላዊነት መርሆች፡ የገበታ ምርጫ፣ ቀለም፣ ታሪክ ተራ እና ዳሽቦርድ ንድፍ።',
+      'cert.demera.communityanalytics.title': 'የማህበረሰብ ዳታ ትንተና',
+      'cert.demera.communityanalytics.desc': 'የማህበረሰብ ዳታሴቶችን መተንተን እና ለአካባቢያዊ መንግስታዊ ያልሆኑ ድርጅቶች ዳሽቦርዶችን የመገንባት ተግባራዊ ፕሮግራም።',
+      'cert.demera.mlpipelines.title': 'የማሽን ለርኒን ቧንቧዎች',
+      'cert.demera.mlpipelines.desc': 'ሊደገሙ የሚችሉ የML ቧንቧዎችን መንደፍ፡ የዳታ ማስገቢያ፣ ለውጥ፣ ስልጠና እና አገልግሎት።',
+      'cert.demera.dataprivacy.title': 'የዳታ ግላዊነት መርሆች',
+      'cert.demera.dataprivacy.desc': 'የዳታ ጥበቃ መሠረታዊ ነገሮች፣ የግላዊነት ደንቦች፣ ፈቃድ፣ ማንነት መደበቅ እና ሥነ-ምግባራዊ የዳታ አያያዝ።',
+      'cert.kenexio.progfund.title': 'የፕሮግራሚንግ መሠረታዊ ነገሮች (Kenexio)',
+      'cert.kenexio.progfund.desc': 'የKenexio ስልጠና በፕሮግራሚንግ መሠረታዊ ነገሮች፡ አገባብ፣ አመክንዮ፣ የቁጥጥር ፍሰት እና ተግባራዊ የኮዲንግ ልምምድ።',
+      'cert.kenexio.powerbi.title': 'የPower BI መሠረታዊ ነገሮች (Kenexio)',
+      'cert.kenexio.powerbi.desc': 'የKenexio ስልጠና በPower BI፡ ዳሽቦርዶችን መገንባት፣ የዳታ ሞዴሊንግ እና የDAX መሠረታዊ ነገሮች።',
+      'cert.club.dataclublead.title': 'የዳታ ሳይንስ ክለብ መሪ',
+      'cert.club.dataclublead.desc': 'ለ50+ ተማሪ አባላት በPython፣ ML እና ዳታ ምስላዊነት ላይ ሳምንታዊ ወርክሾፖችን መርቷል።',
+      'cert.club.artificialintel.title': 'ሰው ሰራሽ አስተውሎት',
+      'cert.club.artificialintel.desc': 'በAI መሠረታዊ ነገሮች፣ መሣሪያዎች እና የዕውነተኛ ዓለም አፕሊኬሽኖች ላይ የክለብ ስልጠና።',
+      'cert.recognition.deanslist.title': 'የዲን ዝርዝር — የትምህርት ልዕልና',
+      'cert.recognition.deanslist.desc': 'በዳታ ሳይንስ ፕሮግራም ውስጥ ለላቀ የትምህርት አፈጻጸም እውቅና ተሰጥቷል።',
+      'cert.recognition.capstone.title': 'ምርጥ ካፕስቶን ፕሮጀክት ሽልማት',
+      'cert.recognition.capstone.desc': 'ML በመጠቀም ትንበያ ጥገና ላይ ለላቀ ካፕስቶን ፕሮጀክት ተሸልሟል።',
+      'cert.other.udara.title': 'የUdara ሰርተፊኬት',
+      'cert.other.udara.desc': 'ለUdara የስልጠና ፕሮግራም የማጠናቀቂያ ሰርተፊኬት።',
+      'cert.other.cloudroles.title': 'በክላውድ ውስጥ የሥራ ሚናዎች',
+      'cert.other.cloudroles.desc': 'የክላውድ ኮምፒውቲንግ የሥራ ሚናዎች፣ ኃላፊነቶች እና የሙያ መንገዶች አጠቃላይ እይታ።',
 
-      /* ==================== SERVICES ==================== */
       'srv.title': 'አገልግሎቶች',
       'srv.subtitle': 'በዳታ ሳይንስ፣ በማሽን ለርኒን፣ በሰው ሰራሽ አስተውሎት፣ በዳታ ትንተና፣ በዳታ ምስላዊነት እና በዲጂታል መፍትሄዎች ላይ የማቀርባቸውን አገልግሎቶች ይመልከቱ።',
       'srv.empty': 'በዚህ ምድብ ውስጥ እስካሁን ምንም አገልግሎት አልተገኘም።',
@@ -616,17 +655,8 @@
       'srv5.duration': 'ተለዋዋጭ መርሐግብር',
       'srv5.tag1': 'ፓይተን', 'srv5.tag2': 'ML', 'srv5.tag3': 'ማማከር',
 
-      /* ==================== EDUCATION ==================== */
       'edu.title': 'ትምህርት',
       'edu.subtitle': 'የትምህርቴ ጉዞ ቀጣይ የመማር ቁርጠኝነትን፣ ቴክኒካዊ እውቀትን ማዳበርን እና ለዕውነተኛ ዓለም ተግዳሮቶች መዘጋጀትን ያንጸባርቃል',
-      'edu.elementary.title': 'የመጀመሪያ ደረጃ ትምህርት',
-      'edu.elementary.sub': 'አበስከን የመጀመሪያ ደረጃ ትምህርት ቤት',
-      'edu.elementary.desc': 'በሳይንስ ትርኢቶች እና በሂሳብ ውድድሮች ተሳትፏል።',
-      'edu.elementary.meta': '2010 – 2018',
-      'edu.highschool.title': 'ሁለተኛ ደረጃ ትምህርት',
-      'edu.highschool.sub': 'አባይ ምንጭ መሠረታዊ ትምህርት ቤት',
-      'edu.highschool.desc': 'የተፈጥሮ ሳይንስ ዥረት።',
-      'edu.highschool.meta': '2019 – 2022',
       'edu.university.title': 'ዩኒቨርሲቲ',
       'edu.university.sub': 'የB.Sc. በዳታ ሳይንስ',
       'edu.university.desc': 'በአሁኑ ጊዜ በዳታ ሳይንስ የመጀመሪያ ዲግሪ በማሽን ለርኒን፣ በስታቲስቲክስ እና በዳታ ኢንጂኒየሪንግ ላይ ትኩረት በማድረግ እያጠና ነው።',
@@ -636,7 +666,6 @@
       'edu.online.desc': 'ተግባራዊ የML እና የትንታኔ ክህሎቶችን ለማጠናከር በO\'Reilly፣ Gebeya፣ Demera/Percipio፣ Amazon፣ DataCamp እና Udacity ላይ በርካታ ስፔሻላይዜሽኖችን አጠናቋል።',
       'edu.online.meta': 'ቀጣይ',
 
-      /* ==================== CV ==================== */
       'cv.title': 'የሥራ ማስረጃ',
       'cv.subtitle': 'ስለ ትምህርቴ፣ ክህሎቶቼ፣ ፕሮጀክቶቼ እና ሰርተፊኬቶቼ አጭር መግለጫ።',
       'cv.heading': 'መልስ መላኪዬ — የሥራ ማስረጃ',
@@ -644,7 +673,6 @@
       'cv.open': 'ሲቪ ክፈት',
       'cv.download': 'ሲቪ አውርድ',
 
-      /* ==================== CONTACT ==================== */
       'contact.title': 'አግኙኝ',
       'contact.subtitle': 'ፕሮጀክት አለዎት? እንነጋገር — ለአዳዲስ ሀሳቦች እና ትብብሮች ሁልጊዜ ክፍት ነኝ።',
       'contact.orEmail': 'ወይም በቀጥታ ኢሜል ይላኩልኝ በ',
@@ -667,7 +695,6 @@
       'contact.sending': 'መልእክት በመላክ ላይ...',
       'contact.serverError': 'ችግር ተፈጥሯል። እባክዎ በቀጥታ ኢሜል ይላኩልኝ።',
 
-      /* ==================== MEDIA / FOOTER ==================== */
       'media.noImage': 'ምስል የለም',
       'media.noPreview': 'ቅድመ እይታ የለም',
       'footer.brand.name': 'መልስ መላኪዬ',
@@ -730,14 +757,8 @@
       fileName: 'Melis-Melakie-CV.pdf'
     },
 
-    /* --- EDUCATION --- */
+    /* --- EDUCATION (Elementary & High School removed permanently) --- */
     education: [
-      { id: 'elementary', i18nTitle: 'edu.elementary.title', i18nSub: 'edu.elementary.sub',
-        i18nDesc: 'edu.elementary.desc', i18nMeta: 'edu.elementary.meta',
-        icon: 'fas fa-child-reaching', media: { type: 'none', src: '' } },
-      { id: 'highschool', i18nTitle: 'edu.highschool.title', i18nSub: 'edu.highschool.sub',
-        i18nDesc: 'edu.highschool.desc', i18nMeta: 'edu.highschool.meta',
-        icon: 'fas fa-school', media: { type: 'image', src: '', alt: 'High school' } },
       { id: 'university', i18nTitle: 'edu.university.title', i18nSub: 'edu.university.sub',
         i18nDesc: 'edu.university.desc', i18nMeta: 'edu.university.meta',
         icon: 'fas fa-university',
@@ -747,9 +768,7 @@
         icon: 'fas fa-laptop', media: { type: 'none', src: '' } }
     ],
 
-    /* --- PROJECTS ---
-       `live` and `details` are OPTIONAL.
-       If you remove / leave them blank, the button will not appear. */
+    /* --- PROJECTS --- */
     projects: [
       { i18nTitle: 'proj.sentiment.title', i18nDesc: 'proj.sentiment.desc',
         i18nTags: ['tag.nlp','tag.ml','tag.python'],
@@ -849,39 +868,39 @@
     ],
 
     certificates: [
-      { i18nTitle: 'cert.ml.title',       i18nDesc: 'cert.ml.desc',       provider: 'Udacity',         category: 'udacity',     icon: 'fas fa-brain',          preview: { type: 'pdf', src: 'certificates/udacity/Programming fundamentals.pdf' },       link: '#' },
-      { i18nTitle: 'cert.da.title',       i18nDesc: 'cert.da.desc',       provider: 'Udacity',         category: 'udacity',     icon: 'fas fa-chart-line',     preview: { type: 'pdf', src: 'certificates/udacity/Data analysis.pdf' },                   link: '#' },
-      { i18nTitle: 'cert.ds.title',       i18nDesc: 'cert.ds.desc',       provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-laptop-code',    preview: { type: 'pdf', src: 'certificates/gebeya/AI essentials for Everyones.pdf' },     link: '#' },
-      { i18nTitle: 'cert.cloud.title',    i18nDesc: 'cert.cloud.desc',    provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-cloud',          preview: { type: 'pdf', src: 'certificates/gebeya/cloud computing.pdf' },                  link: '#' },
-      { i18nTitle: 'cert.ds2.title',      i18nDesc: 'cert.ds2.desc',      provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-laptop-code',    preview: { type: 'pdf', src: 'certificates/gebeya/data science fundamentals.pdf' },        link: '#' },
-      { i18nTitle: 'cert.entre.title',    i18nDesc: 'cert.entre.desc',    provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-lightbulb',      preview: { type: 'pdf', src: 'certificates/gebeya/Entrepreneurship.pdf' },                 link: '#' },
-      { i18nTitle: 'cert.entre.title',    i18nDesc: 'cert.entre.desc',    provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-lightbulb',      preview: { type: 'pdf', src: 'certificates/gebeya/language and communication skill.pdf' }, link: '#' },
-      { i18nTitle: 'cert.entre.title',    i18nDesc: 'cert.entre.desc',    provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-lightbulb',      preview: { type: 'pdf', src: 'certificates/gebeya/Power BI.pdf' },                         link: '#' },
-      { i18nTitle: 'cert.entre.title',    i18nDesc: 'cert.entre.desc',    provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-lightbulb',      preview: { type: 'pdf', src: 'certificates/gebeya/product creation with AI_advanced level.pdf' }, link: '#' },
-      { i18nTitle: 'cert.homl.title',     i18nDesc: 'cert.homl.desc',     provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-robot',          preview: { type: 'pdf', src: 'certificates/others/AI Security & Ethics.pdf' },             link: '#' },
-      { i18nTitle: 'cert.de.title',       i18nDesc: 'cert.de.desc',       provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-database',       preview: { type: 'pdf', src: 'certificates/oreilly/CHAT GPT engineering.pdf' },            link: '#' },
-      { i18nTitle: 'cert.homl.title',     i18nDesc: 'cert.homl.desc',     provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-robot',          preview: { type: 'pdf', src: 'certificates/oreilly/cloud computing with aws.pdf' },        link: '#' },
-      { i18nTitle: 'cert.de.title',       i18nDesc: 'cert.de.desc',       provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-database',       preview: { type: 'pdf', src: 'certificates/oreilly/Python A-Z_ 15 Projects.pdf' },         link: '#' },
-      { i18nTitle: 'cert.homl.title',     i18nDesc: 'cert.homl.desc',     provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-robot',          preview: { type: 'pdf', src: 'certificates/oreilly/Data Science & ML A to Z.pdf' },        link: '#' },
-      { i18nTitle: 'cert.de.title',       i18nDesc: 'cert.de.desc',       provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-database',       preview: { type: 'pdf', src: 'certificates/oreilly/Digital marketing analytics.pdf' },     link: '#' },
-      { i18nTitle: 'cert.homl.title',     i18nDesc: 'cert.homl.desc',     provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-robot',          preview: { type: 'pdf', src: 'certificates/oreilly/ML in python for Everyones.pdf' },      link: '#' },
-      { i18nTitle: 'cert.de.title',       i18nDesc: 'cert.de.desc',       provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-database',       preview: { type: 'pdf', src: 'certificates/oreilly/ML Projects_ Beginner to Pro.pdf' },    link: '#' },
-      { i18nTitle: 'cert.homl.title',     i18nDesc: 'cert.homl.desc',     provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-robot',          preview: { type: 'pdf', src: 'certificates/oreilly/ML, Data Science & GenAI.pdf' },        link: '#' },
-      { i18nTitle: 'cert.de.title',       i18nDesc: 'cert.de.desc',       provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-database',       preview: { type: 'pdf', src: 'certificates/oreilly/Power BI Masterclass.pdf' },            link: '#' },
-      { i18nTitle: 'cert.social.title',   i18nDesc: 'cert.social.desc',   provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-hands-holding-heart', preview: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf' }, link: '#' },
-      { i18nTitle: 'cert.community.title',i18nDesc: 'cert.community.desc',provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-users',          preview: { type: 'image', src: 'certificates/demera/machine learning specialist.png', alt: 'Community Analytics' }, link: '#' },
-      { i18nTitle: 'cert.social.title',   i18nDesc: 'cert.social.desc',   provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-hands-holding-heart', preview: { type: 'pdf', src: 'certificates/demera/Data Visualization Basics.pdf' }, link: '#' },
-      { i18nTitle: 'cert.community.title',i18nDesc: 'cert.community.desc',provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-users',          preview: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf' }, link: '#' },
-      { i18nTitle: 'cert.social.title',   i18nDesc: 'cert.social.desc',   provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-hands-holding-heart', preview: { type: 'image', src: 'certificates/demera/machine learning pipelines.png' }, link: '#' },
-      { i18nTitle: 'cert.community.title',i18nDesc: 'cert.community.desc',provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-users',          preview: { type: 'image', src: 'certificates/demera/principle of data privacy.png' },     link: '#' },
-      { i18nTitle: 'cert.sqladv.title',   i18nDesc: 'cert.sqladv.desc',   provider: 'Kenexio',         category: 'kenexio',     icon: 'fas fa-database',       preview: { type: 'pdf', src: 'certificates/kenexio/Programming fundamentals.pdf' },        link: '#' },
-      { i18nTitle: 'cert.pbi.title',      i18nDesc: 'cert.pbi.desc',      provider: 'Kenexio',         category: 'kenexio',     icon: 'fas fa-chart-pie',      preview: { type: 'none', src: '' },                                                        link: '#' },
-      { i18nTitle: 'cert.clublead.title', i18nDesc: 'cert.clublead.desc', provider: 'Data Club',       category: 'club',        icon: 'fas fa-people-group',   preview: { type: 'image', src: '', alt: 'Club Lead' },             link: '#' },
-      { i18nTitle: 'cert.hack.title',     i18nDesc: 'cert.hack.desc',     provider: 'Tech Club',       category: 'club',        icon: 'fas fa-trophy',         preview: { type: 'pdf', src: 'certificates/club/Artificial intelligence.pdf' },            link: '#' },
-      { i18nTitle: 'cert.dean.title',     i18nDesc: 'cert.dean.desc',     provider: 'University',      category: 'recognition', icon: 'fas fa-medal',          preview: { type: 'image', src: '', alt: "Dean's List" },          link: '#' },
-      { i18nTitle: 'cert.capstone.title', i18nDesc: 'cert.capstone.desc', provider: 'DS Department',   category: 'recognition', icon: 'fas fa-award',          preview: { type: 'pdf', src: 'certificates/recognition/Data analysis.pdf' },               link: '#' },
-      { i18nTitle: 'cert.google.title',   i18nDesc: 'cert.google.desc',   provider: 'Google',          category: 'other',       icon: 'fas fa-certificate',    preview: { type: 'pdf', src: 'certificates/others/udara-certificate.pdf' },                link: '#' },
-      { i18nTitle: 'cert.dl.title',       i18nDesc: 'cert.dl.desc',       provider: 'DeepLearning.AI', category: 'other',       icon: 'fas fa-network-wired',  preview: { type: 'pdf', src: 'certificates/others/Job Roles in the Cloud.pdf' },           link: '#' }
+      { i18nTitle: 'cert.udacity.progfund.title',      i18nDesc: 'cert.udacity.progfund.desc',      provider: 'Udacity',         category: 'udacity',     icon: 'fas fa-code',               preview: { type: 'pdf', src: 'certificates/udacity/Programming fundamentals.pdf' },       link: '#' },
+      { i18nTitle: 'cert.udacity.dataanalysis.title',  i18nDesc: 'cert.udacity.dataanalysis.desc',  provider: 'Udacity',         category: 'udacity',     icon: 'fas fa-chart-line',         preview: { type: 'pdf', src: 'certificates/udacity/Data analysis.pdf' },                   link: '#' },
+      { i18nTitle: 'cert.gebeya.aiessentials.title',   i18nDesc: 'cert.gebeya.aiessentials.desc',   provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-robot',              preview: { type: 'pdf', src: 'certificates/gebeya/AI essentials for Everyones.pdf' },     link: '#' },
+      { i18nTitle: 'cert.gebeya.cloudcomputing.title', i18nDesc: 'cert.gebeya.cloudcomputing.desc', provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-cloud',              preview: { type: 'pdf', src: 'certificates/gebeya/cloud computing.pdf' },                  link: '#' },
+      { i18nTitle: 'cert.gebeya.dsfundamentals.title', i18nDesc: 'cert.gebeya.dsfundamentals.desc', provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-laptop-code',        preview: { type: 'pdf', src: 'certificates/gebeya/data science fundamentals.pdf' },        link: '#' },
+      { i18nTitle: 'cert.gebeya.entrepreneurship.title',i18nDesc:'cert.gebeya.entrepreneurship.desc',provider: 'Gebeya',         category: 'gebeya',      icon: 'fas fa-lightbulb',          preview: { type: 'pdf', src: 'certificates/gebeya/Entrepreneurship.pdf' },                 link: '#' },
+      { i18nTitle: 'cert.gebeya.langcomm.title',       i18nDesc: 'cert.gebeya.langcomm.desc',       provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-comments',           preview: { type: 'pdf', src: 'certificates/gebeya/language and communication skill.pdf' }, link: '#' },
+      { i18nTitle: 'cert.gebeya.powerbi.title',        i18nDesc: 'cert.gebeya.powerbi.desc',        provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-chart-bar',          preview: { type: 'pdf', src: 'certificates/gebeya/Power BI.pdf' },                         link: '#' },
+      { i18nTitle: 'cert.gebeya.prodai.title',         i18nDesc: 'cert.gebeya.prodai.desc',         provider: 'Gebeya',          category: 'gebeya',      icon: 'fas fa-lightbulb',          preview: { type: 'pdf', src: 'certificates/gebeya/product creation with AI_advanced level.pdf' }, link: '#' },
+      { i18nTitle: 'cert.oreilly.aisecurity.title',    i18nDesc: 'cert.oreilly.aisecurity.desc',    provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-robot',              preview: { type: 'pdf', src: 'certificates/others/AI Security & Ethics.pdf' },             link: '#' },
+      { i18nTitle: 'cert.oreilly.chatgpteng.title',    i18nDesc: 'cert.oreilly.chatgpteng.desc',    provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-database',           preview: { type: 'pdf', src: 'certificates/oreilly/CHAT GPT engineering.pdf' },            link: '#' },
+      { i18nTitle: 'cert.oreilly.awscloud.title',      i18nDesc: 'cert.oreilly.awscloud.desc',      provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-hands-holding-heart',preview: { type: 'pdf', src: 'certificates/oreilly/cloud computing with aws.pdf' },        link: '#' },
+      { i18nTitle: 'cert.oreilly.pyaz.title',          i18nDesc: 'cert.oreilly.pyaz.desc',          provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-python',             preview: { type: 'pdf', src: 'certificates/oreilly/Python A-Z_ 15 Projects.pdf' },         link: '#' },
+      { i18nTitle: 'cert.oreilly.dsmlaz.title',        i18nDesc: 'cert.oreilly.dsmlaz.desc',        provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-brain',              preview: { type: 'pdf', src: 'certificates/oreilly/Data Science & ML A to Z.pdf' },        link: '#' },
+      { i18nTitle: 'cert.oreilly.dmanalytics.title',   i18nDesc: 'cert.oreilly.dmanalytics.desc',   provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-chart-pie',          preview: { type: 'pdf', src: 'certificates/oreilly/Digital marketing analytics.pdf' },     link: '#' },
+      { i18nTitle: 'cert.oreilly.mlpy.title',          i18nDesc: 'cert.oreilly.mlpy.desc',          provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-cogs',               preview: { type: 'pdf', src: 'certificates/oreilly/ML in python for Everyones.pdf' },      link: '#' },
+      { i18nTitle: 'cert.oreilly.mlproj.title',        i18nDesc: 'cert.oreilly.mlproj.desc',        provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-project-diagram',    preview: { type: 'pdf', src: 'certificates/oreilly/ML Projects_ Beginner to Pro.pdf' },    link: '#' },
+      { i18nTitle: 'cert.oreilly.mlgenai.title',       i18nDesc: 'cert.oreilly.mlgenai.desc',       provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-network-wired',      preview: { type: 'pdf', src: 'certificates/oreilly/ML, Data Science & GenAI.pdf' },        link: '#' },
+      { i18nTitle: 'cert.oreilly.pbimaster.title',     i18nDesc: 'cert.oreilly.pbimaster.desc',     provider: "O'Reilly",        category: 'oreilly',     icon: 'fas fa-tachometer-alt',     preview: { type: 'pdf', src: 'certificates/oreilly/Power BI Masterclass.pdf' },            link: '#' },
+      { i18nTitle: 'cert.demera.improvingml.title',    i18nDesc: 'cert.demera.improvingml.desc',    provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-hands-holding-heart',preview: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf' }, link: '#' },
+      { i18nTitle: 'cert.demera.mlspecialist.title',   i18nDesc: 'cert.demera.mlspecialist.desc',   provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-users',              preview: { type: 'image', src: 'certificates/demera/machine learning specialist.png', alt: 'ML Specialist' }, link: '#' },
+      { i18nTitle: 'cert.demera.datavizbasics.title',  i18nDesc: 'cert.demera.datavizbasics.desc',  provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-chart-pie',          preview: { type: 'pdf', src: 'certificates/demera/Data Visualization Basics.pdf' },        link: '#' },
+      { i18nTitle: 'cert.demera.communityanalytics.title',i18nDesc:'cert.demera.communityanalytics.desc',provider:'Demera Project', category: 'demera',      icon: 'fas fa-users',              preview: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf' }, link: '#' },
+      { i18nTitle: 'cert.demera.mlpipelines.title',    i18nDesc: 'cert.demera.mlpipelines.desc',    provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-project-diagram',    preview: { type: 'image', src: 'certificates/demera/machine learning pipelines.png' },     link: '#' },
+      { i18nTitle: 'cert.demera.dataprivacy.title',    i18nDesc: 'cert.demera.dataprivacy.desc',    provider: 'Demera Project',  category: 'demera',      icon: 'fas fa-shield-alt',         preview: { type: 'image', src: 'certificates/demera/principle of data privacy.png' },     link: '#' },
+      { i18nTitle: 'cert.kenexio.progfund.title',      i18nDesc: 'cert.kenexio.progfund.desc',      provider: 'Kenexio',         category: 'kenexio',     icon: 'fas fa-database',           preview: { type: 'pdf', src: 'certificates/kenexio/Programming fundamentals.pdf' },        link: '#' },
+      { i18nTitle: 'cert.kenexio.powerbi.title',       i18nDesc: 'cert.kenexio.powerbi.desc',       provider: 'Kenexio',         category: 'kenexio',     icon: 'fas fa-chart-pie',          preview: { type: 'none', src: '' },                                                        link: '#' },
+      { i18nTitle: 'cert.club.dataclublead.title',     i18nDesc: 'cert.club.dataclublead.desc',     provider: 'Data Club',       category: 'club',        icon: 'fas fa-people-group',       preview: { type: 'image', src: '', alt: 'Club Lead' },                                     link: '#' },
+      { i18nTitle: 'cert.club.artificialintel.title',  i18nDesc: 'cert.club.artificialintel.desc',  provider: 'Tech Club',       category: 'club',        icon: 'fas fa-trophy',             preview: { type: 'pdf', src: 'certificates/club/Artificial intelligence.pdf' },            link: '#' },
+      { i18nTitle: 'cert.recognition.deanslist.title', i18nDesc: 'cert.recognition.deanslist.desc', provider: 'University',      category: 'recognition', icon: 'fas fa-medal',              preview: { type: 'image', src: '', alt: "Dean's List" },                                    link: '#' },
+      { i18nTitle: 'cert.recognition.capstone.title',  i18nDesc: 'cert.recognition.capstone.desc',  provider: 'DS Department',   category: 'recognition', icon: 'fas fa-award',              preview: { type: 'pdf', src: 'certificates/recognition/Data analysis.pdf' },               link: '#' },
+      { i18nTitle: 'cert.other.udara.title',           i18nDesc: 'cert.other.udara.desc',           provider: 'Google',          category: 'other',       icon: 'fas fa-certificate',        preview: { type: 'pdf', src: 'certificates/others/udara-certificate.pdf' },                link: '#' },
+      { i18nTitle: 'cert.other.cloudroles.title',      i18nDesc: 'cert.other.cloudroles.desc',      provider: 'DeepLearning.AI', category: 'other',       icon: 'fas fa-network-wired',      preview: { type: 'pdf', src: 'certificates/others/Job Roles in the Cloud.pdf' },           link: '#' }
     ],
 
     /* --- SERVICES --- */
@@ -1396,7 +1415,6 @@
     });
     body.appendChild(tags);
 
-    /* Action buttons — conditional on data */
     const actions = el('div', 'project-actions');
 
     if (hasValue(p.live)) {
@@ -1654,7 +1672,7 @@
   }
 
   /* ============================================================
-     EDUCATION
+     EDUCATION — now only University + Online
      ============================================================ */
   function renderEducation() {
     const grid = document.getElementById('educationGrid');
@@ -1919,7 +1937,7 @@
     });
   }
 
-    /* ============================================================
+  /* ============================================================
      CONTACT FORM
      ============================================================ */
   function initContactForm() {
@@ -1957,30 +1975,16 @@
       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ' + t('contact.sending');
 
       try {
-        /* -------------------------------------------------------
-           EmailJS template variables.
-           Make sure your EmailJS template uses these EXACT names:
-             From Name  →  {{from_name}}
-             From Email →  {{from_email}}
-             Reply-To   →  {{reply_to}}
-             Subject    →  {{subject}}
-             Message    →  {{message}}
-           ------------------------------------------------------- */
         const templateParams = {
-          /* Human-readable pieces */
           from_name:  name,
           from_email: email,
-          reply_to:   email,                        /* ← so Reply goes to the visitor */
+          reply_to:   email,
           subject:    subject || ('New portfolio message from ' + name),
           message:    message,
-
-          /* Aliases for extra safety (some templates use different keys) */
           name:       name,
           email:      email,
           user_name:  name,
           user_email: email,
-
-          /* Where it should arrive */
           to_email:   CONFIG.email
         };
 
@@ -2011,6 +2015,145 @@
       }
     });
   }
+
+  /* ============================================================
+     🛡️ SCREENSHOT RESTRICTION — HOME & ABOUT SECTIONS ONLY
+     ------------------------------------------------------------
+     Protects the media/images inside #home and #about from:
+       • Print Screen key
+       • Ctrl/Cmd + Shift + S / Ctrl/Cmd + Shift + 3/4/5 (OS screenshot)
+       • Right-click → "Save image as…"
+       • Drag-to-save
+       • Ctrl/Cmd + P / Print
+       • Windows Snipping Tool hotkeys
+       • Copy (Ctrl/Cmd + C) on focused media
+     Note: OS-level screenshots (mobile hardware keys) cannot be
+     fully blocked by any web page — this is a best-effort deterrent.
+     ============================================================ */
+  function initScreenshotProtection() {
+    const protectedSections = ['home', 'about'];
+
+    function isInsideProtected(target) {
+      if (!target || !target.closest) return false;
+      for (let i = 0; i < protectedSections.length; i++) {
+        const sec = document.getElementById(protectedSections[i]);
+        if (sec && sec.contains(target)) return true;
+      }
+      return false;
+    }
+
+    /* 1) Block Print Screen & known screenshot shortcuts */
+    document.addEventListener('keydown', function (e) {
+      const key = (e.key || '').toLowerCase();
+
+      /* Print Screen */
+      if (key === 'printscreen' || e.code === 'PrintScreen') {
+        e.preventDefault();
+        e.stopPropagation();
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText('Screenshots are disabled on this page.');
+          }
+        } catch (err) { /* ignore */ }
+        return false;
+      }
+
+      /* Ctrl/Cmd + Shift + S  (browser screenshot) */
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && key === 's') {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+
+      /* Ctrl/Cmd + Shift + 3 / 4 / 5  (macOS screenshots) */
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey &&
+          (key === '3' || key === '4' || key === '5')) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+
+      /* Ctrl/Cmd + P — Print */
+      if ((e.ctrlKey || e.metaKey) && key === 'p') {
+        if (isInsideProtected(document.activeElement)) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      }
+    }, true);
+
+    /* 2) Block Windows Snipping Tool / Snip & Sketch hotkeys
+          (Win + Shift + S is captured by the OS, but we try anyway) */
+    document.addEventListener('keyup', function (e) {
+      if (e.key === 'PrintScreen' || e.code === 'PrintScreen') {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText('Screenshots are disabled on this page.');
+          }
+        } catch (err) { /* ignore */ }
+      }
+    }, true);
+
+    /* 3) Disable right-click / context menu inside home & about */
+    document.addEventListener('contextmenu', function (e) {
+      if (isInsideProtected(e.target)) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    }, true);
+
+    /* 4) Disable drag-to-save on all media inside home & about */
+    document.addEventListener('dragstart', function (e) {
+      if (isInsideProtected(e.target)) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    }, true);
+
+    /* 5) Disable Ctrl/Cmd + C (copy) inside protected sections */
+    document.addEventListener('copy', function (e) {
+      if (isInsideProtected(e.target) || isInsideProtected(document.activeElement)) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    }, true);
+
+    /* 6) Disable Ctrl/Cmd + S (save page) inside protected sections */
+    document.addEventListener('keydown', function (e) {
+      if ((e.ctrlKey || e.metaKey) && (e.key || '').toLowerCase() === 's') {
+        if (isInsideProtected(document.activeElement)) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      }
+    }, true);
+
+    /* 7) Block "Save image as…" via long-press on mobile */
+    document.addEventListener('touchstart', function (e) {
+      if (isInsideProtected(e.target) && e.target.tagName === 'IMG') {
+        e.target.style.pointerEvents = 'none';
+        setTimeout(function () { e.target.style.pointerEvents = ''; }, 300);
+      }
+    }, { passive: true, capture: true });
+
+    /* 8) Visual deterrent — overlay on home & about media */
+    protectedSections.forEach(function (id) {
+      const sec = document.getElementById(id);
+      if (!sec) return;
+      sec.querySelectorAll('.circular-media, .project-media, .cert-preview, .edu-media, .about-layout').forEach(function (m) {
+        m.addEventListener('contextmenu', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        });
+      });
+    });
+  }
+
   /* ============================================================
      INIT
      ============================================================ */
@@ -2058,6 +2201,7 @@
     servicesSection.initViewMore();
     skillsSection.initViewMore();
     initContactForm();
+    initScreenshotProtection();
 
     document.dispatchEvent(new Event('portfolio:ready'));
   }
