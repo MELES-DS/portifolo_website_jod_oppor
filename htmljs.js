@@ -722,9 +722,9 @@
     email: 'melismelakie27@gmail.com',
 
     initialCounts: {
-      projects:     3,
+      projects:     4,
       experience:   3,
-      certificates: 3,
+      certificates: 4,
       skills:       5,
       services:     3
     },
