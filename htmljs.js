@@ -770,26 +770,20 @@
 
     /* --- PROJECTS --- */
     projects: [
-      { i18nTitle: 'proj.sentiment.title', i18nDesc: 'proj.sentiment.desc',
-        i18nTags: ['tag.nlp','tag.ml','tag.python'],
-        github: 'https://github.com/MELES-DS',
-        live: '',
-        details: { type: 'docx', src: '' },
-        media: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf', alt: 'Sentiment classification' } },
-
+      
       { i18nTitle: 'proj.translation.title', i18nDesc: 'proj.translation.desc',
         i18nTags: ['tag.nlp','tag.ml','tag.tensorflow'],
         github: 'https://github.com/MELES-DS',
         live: '',
         details: { type: 'pdf', src: 'project images/Ethiopian language/Five ethiopian language and english bidirectional translation (1).pdf' },
-        media: { type: 'image', src: 'project images/Ethiopian language/languages.png', alt: 'Multilingual translation' } },
+        media: { type: 'pdf', src: 'project images/Ethiopian language/translation_system.pdf', alt: 'Multilingual translation' } },
 
       { i18nTitle: 'proj.water.title', i18nDesc: 'proj.water.desc',
         i18nTags: ['tag.timeseries','tag.ml','tag.python'],
         github: 'https://github.com/MELES-DS/water-level-prediction-for-ethiopian-hydropower-plants',
         live: '',
         details: { type: 'pdf', src: 'project images/EEp/Melis_project_document(EEP)_may_2026 (1).pdf' },
-        media: { type: 'image', src: 'project images/EEp/Screenshot 2026-10-25 112321.png', alt: 'Water level forecasting' } },
+        media: { type: 'pdf', src: 'project images/EEp/Ethiopian_hydropower_plants_water_level_forecasting_image.pdf', alt: 'Water level forecasting' } },
 
       { i18nTitle: 'proj.aiimage.title', i18nDesc: 'proj.aiimage.desc',
         i18nTags: ['tag.tensorflow','tag.cnn','tag.ml'],
@@ -812,7 +806,14 @@
         details: { type: 'pptx', src: 'project details/weather-analysis.pptx' },
         media: { type: 'image', src: 'project images/weather prediction project/weather.png', alt: 'Weather analysis' } },
 
-      { i18nTitle: 'proj.youth.title', i18nDesc: 'proj.youth.desc',
+      { i18nTitle: 'proj.sentiment.title', i18nDesc: 'proj.sentiment.desc',
+        i18nTags: ['tag.nlp','tag.ml','tag.python'],
+        github: 'https://github.com/MELES-DS',
+        live: '',
+        details: { type: 'docx', src: '' },
+        media: { type: 'pdf', src: 'certificates/demera/Improving Machine Learning Models.pdf', alt: 'Sentiment classification' } },
+
+        { i18nTitle: 'proj.youth.title', i18nDesc: 'proj.youth.desc',
         i18nTags: ['tag.dataviz','tag.dash','tag.python'],
         github: 'https://github.com/MELES-DS',
         live: 'melismelakie.vercel.app',
